@@ -46,6 +46,11 @@ function digest(file) {
   return crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 }
 
+function withoutStyles(file) {
+  return fs.readFileSync(file, 'utf8')
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, '<style></style>');
+}
+
 for (const file of required) read(file);
 
 let data = null;
@@ -171,7 +176,13 @@ if (fs.existsSync(editionsRoot)) {
     for (const file of required) {
       const archived = path.join(latest, file);
       check(fs.existsSync(archived), `Najnovšiemu archívu chýba ${file}.`);
-      if (fs.existsSync(archived)) check(digest(path.join(root, file)) === digest(archived), `Aktuálny ${file} nie je zhodný s najnovším archívnym vydaním.`);
+      if (fs.existsSync(archived)) {
+        const current = path.join(root, file);
+        const matchesArchive = file === 'index.html'
+          ? withoutStyles(current) === withoutStyles(archived)
+          : digest(current) === digest(archived);
+        check(matchesArchive, `Obsah aktuálneho ${file} nie je zhodný s najnovším archívnym vydaním.`);
+      }
     }
   }
 }

@@ -43,6 +43,20 @@ for (const width of [320, 768, 1440]) {
   });
 }
 
+test('hlavička databázy neprekrýva prvý riadok udalostí', async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto('/');
+  await page.waitForSelector('#event-rows tr');
+  await page.locator('#database').scrollIntoViewIfNeeded();
+
+  const header = await page.locator('thead th').first().boundingBox();
+  const firstRow = await page.locator('#event-rows tr').first().boundingBox();
+
+  expect(header).not.toBeNull();
+  expect(firstRow).not.toBeNull();
+  expect(firstRow.y).toBeGreaterThanOrEqual(header.y + header.height - 1);
+});
+
 test('tlač rozbalí podrobnosti a obnoví pôvodný stav', async ({ page }) => {
   await page.goto('/');
   await page.waitForSelector('#event-rows tr');
