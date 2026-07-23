@@ -1,0 +1,469 @@
+{
+  "candidate_breakpoint": {
+    "date": "2026-07-12",
+    "title": "Rozsiahla obmena ukrajinskej vlády a najvyššieho vojenského velenia (12.–22. júla 2026)",
+    "rationale": "Ohlásená zmena politickej stratégie prerástla do výmeny premiérky a kabinetu, odvolania populárneho ministra obrany, zriedkavých viacmestských protestov a napokon výmeny hlavného veliteľa. Udalosti pokračovali viac než jeden spravodajský cyklus, odkryli spor o model riadenia armády, vyvolali merateľnú reakciu verejnosti a prinútili prezidenta k ďalšej personálnej korekcii; preto spĺňajú kritériá politického zlomu. Dátum 12. júla označuje začiatok súvislej udalostnej sekvencie, ktorej posledné potvrdené rozhodnutia pred cutoffom prišli 22. júla."
+  },
+  "events": [
+    {
+      "id": "POL-20260721-001",
+      "theme": "politics",
+      "subtheme": "vojenské velenie",
+      "title": "Drapatyi nahradil Syrského na čele Ozbrojených síl Ukrajiny",
+      "summary": "Prezident Volodymyr Zelenskyj 21. júla oznámil vymenovanie Mychajla Drapatého za hlavného veliteľa namiesto Oleksandra Syrského; dekrét č. 630/2026 bol zverejnený 22. júla. Rozhodnutie nasledovalo po niekoľkodňových protestoch a verejnom spore medzi odvolaným ministrom obrany Mychajlom Fedorovom a Syrským. Drapatyi dostal za úlohu pripraviť aktualizovanú obrannú stratégiu, pokračovať v zborovej reforme a predložiť jasnejšiu koncepciu mobilizácie.",
+      "event_date": "2026-07-21",
+      "date_precision": "exact",
+      "end_date": "2026-07-22",
+      "geography": ["Ukrajina", "Kyjev"],
+      "actors": ["Volodymyr Zelenskyj", "Mychajlo Drapatyi", "Oleksandr Syrskyi", "Ozbrojené sily Ukrajiny"],
+      "significance": 5,
+      "status": "confirmed",
+      "trend_tags": ["vojenské velenie", "personálna zmena", "mobilizácia", "politická zodpovednosť"],
+      "evidence": [
+        {
+          "source_name": "Prezident Ukrajiny",
+          "source_url": "https://www.president.gov.ua/en/news/ya-viznachiv-sho-novim-golovnokomanduvachem-zbrojnih-sil-ukr-105541",
+          "published_at": "2026-07-21T22:43:00+03:00",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "official",
+          "reliability_tier": "A",
+          "claim_supported": "Prezident oznámil výmenu hlavného veliteľa, pomenoval úlohy pre Drapatého a opísal odovzdanie funkcie."
+        },
+        {
+          "source_name": "Ministerstvo obrany Ukrajiny",
+          "source_url": "https://mod.gov.ua/en/news/president-of-ukraine-outlines-personnel-changes-and-development-priorities-for-the-defence-forces",
+          "published_at": "2026-07-22T13:39:00+03:00",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "official",
+          "reliability_tier": "A",
+          "claim_supported": "Potvrdzuje Drapatého vo funkcii a priority vrátane mobilizácie, zborovej reformy a zmien v generálnom štábe."
+        },
+        {
+          "source_name": "Associated Press",
+          "source_url": "https://apnews.com/article/ukraine-zelenskyy-syrskyi-army-chief-504513cfcc5cbc55175dc605cc711793",
+          "published_at": "2026-07-21",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Nezávisle potvrdzuje výmenu a zasadzuje ju do kontextu protestov a konfliktu Fedorov–Syrskyi."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Personálna zmena je potvrdená oficiálnymi zdrojmi aj dvoma etablovanými agentúrnymi správami.",
+      "disputed_points": ["Nie je ešte možné vyhodnotiť operačný výsledok zmeny ani to, či stabilizuje politickú situáciu."],
+      "related_event_ids": ["POL-20260712-001", "POL-20260716-001", "POL-20260612-001"],
+      "quantitative_data": []
+    },
+    {
+      "id": "POL-20260712-001",
+      "theme": "politics",
+      "subtheme": "vláda a parlament",
+      "title": "Ukrajina vymenila premiérku a vytvorila nový kabinet",
+      "summary": "Po oznámení prezidenta z 12. júla o zmene politickej stratégie odstúpila premiérka Julija Svyrydenková. Verchovna rada 16. júla vymenovala Serhija Koreckého za premiéra a 264 hlasmi schválila nové zloženie kabinetu. Ministerstvo obrany zostalo v prechodnom režime pod vedením povereného Jevhenija Chmaru.",
+      "event_date": "2026-07-12",
+      "date_precision": "range",
+      "end_date": "2026-07-16",
+      "geography": ["Ukrajina", "Kyjev"],
+      "actors": ["Volodymyr Zelenskyj", "Julija Svyrydenková", "Serhij Koreckyi", "Verchovna rada Ukrajiny", "Jevhenij Chmara"],
+      "significance": 5,
+      "status": "confirmed",
+      "trend_tags": ["vládna prestavba", "parlament", "centralizácia", "obranná politika"],
+      "evidence": [
+        {
+          "source_name": "Verchovna rada Ukrajiny",
+          "source_url": "https://www.rada.gov.ua/news/Novyny/274325.html",
+          "published_at": "2026-07-16T16:25:00+03:00",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "official",
+          "reliability_tier": "A",
+          "claim_supported": "Parlament prijal uznesenie o vytvorení nového kabinetu 264 hlasmi a zverejnil jeho zloženie."
+        },
+        {
+          "source_name": "Reuters",
+          "source_url": "https://www.investing.com/news/world-news/dismissal-of-ukraines-defence-chief-sparks-political-crisis-4795513",
+          "published_at": "2026-07-16",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Potvrdzuje vymenovanie Koreckého, prechodné vedenie rezortu obrany a politický kontext prestavby."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Zloženie kabinetu a hlasovanie sú doložené oficiálnym záznamom; politický kontext potvrdzuje Reuters.",
+      "disputed_points": ["Deklarovaný cieľ 'obnovy' vlády je politické zdôvodnenie, nie nezávisle overený výsledok."],
+      "related_event_ids": ["POL-20260716-001", "POL-20260721-001"],
+      "quantitative_data": [
+        {
+          "metric": "hlasy poslancov za nové zloženie kabinetu",
+          "value": 264,
+          "unit": "hlasov",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-07-16"
+        }
+      ]
+    },
+    {
+      "id": "POL-20260716-001",
+      "theme": "politics",
+      "subtheme": "protesty a civilno-vojenské vzťahy",
+      "title": "Odvolanie Fedorova vyvolalo zriedkavé protesty a otvorený spor o vedenie armády",
+      "summary": "Odvolanie ministra obrany Mychajla Fedorova priviedlo 16. júla tisíce ľudí do ulíc Kyjeva a ďalších miest. Fedorov verejne obvinil Syrského z blokovania reforiem; protestujúci žiadali Fedorovov návrat a Syrského odvolanie. Rating Group následne pri zbere 20.–21. júla zistila, že 72 % respondentov nepodporovalo odvolanie Fedorova a 55 % podporovalo odvolanie Syrského. Zber bol ukončený pred mediálnou správou o Syrského odvolaní.",
+      "event_date": "2026-07-16",
+      "date_precision": "exact",
+      "end_date": "2026-07-21",
+      "geography": ["Ukrajina", "Kyjev", "ďalšie ukrajinské mestá"],
+      "actors": ["Mychajlo Fedorov", "Oleksandr Syrskyi", "Volodymyr Zelenskyj", "ukrajinskí demonštranti", "príslušníci Ozbrojených síl Ukrajiny"],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": ["protesty", "civilno-vojenské vzťahy", "legitimita", "vojenská reforma"],
+      "evidence": [
+        {
+          "source_name": "Associated Press",
+          "source_url": "https://apnews.com/article/russia-ukraine-war-defense-minister-reshuffle-fedorov-88083e4381b1690f5048088d75954d3a",
+          "published_at": "2026-07-16",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Reportuje tisíce protestujúcich, rozsah vládnej prestavby a konflikt medzi Fedorovom a Syrským."
+        },
+        {
+          "source_name": "Reuters",
+          "source_url": "https://www.investing.com/news/world-news/dismissal-of-ukraines-defence-chief-sparks-political-crisis-4795513",
+          "published_at": "2026-07-16",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Potvrdzuje viacmestské protesty, verejný spor a rezignáciu vysokého predstaviteľa vzdušných síl."
+        },
+        {
+          "source_name": "Rating Group",
+          "source_url": "https://www.ratinggroup.ua/news/socpol-jul2026",
+          "published_at": "2026-07-22",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "survey",
+          "reliability_tier": "A",
+          "claim_supported": "Primárna metodická stránka uvádza otázky, výsledky, termín zberu, CATI, náhodnú mobilnú vzorku n=1 000 a maximálnu chybu 3,1 %."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Rozsah protestov a jadro sporu nezávisle opisujú AP aj Reuters; bezprostredná verejná odozva je doložená transparentným prieskumom.",
+      "disputed_points": ["Presný počet účastníkov nebol jednotne a systematicky spočítaný.", "Skok v dôvere k Fedorovovi za jediný týždeň môže odrážať krízový mobilizačný efekt a citlivosť na načasovanie; nejde ešte o stabilný trend."],
+      "related_event_ids": ["POL-20260712-001", "POL-20260721-001", "POL-20260603-001", "POL-20260603-002"],
+      "quantitative_data": [
+        {"metric": "nesúhlas s odvolaním Fedorova", "value": 72, "unit": "% respondentov", "value_type": "estimate", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-07-21"},
+        {"metric": "podpora odvolania Syrského", "value": 55, "unit": "% respondentov", "value_type": "estimate", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-07-21"},
+        {"metric": "dôvera Fedorovovi", "value": 65, "unit": "% respondentov", "value_type": "estimate", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-07-21"},
+        {"metric": "dôvera Zelenskému", "value": 59, "unit": "% respondentov", "value_type": "estimate", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-07-21"},
+        {"metric": "dôvera Syrskému", "value": 23, "unit": "% respondentov", "value_type": "estimate", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-07-21"}
+      ]
+    },
+    {
+      "id": "POL-20260717-001",
+      "theme": "politics",
+      "subtheme": "represia a voľby v Rusku",
+      "title": "Odsúdenie Nadeždina odstránilo najviditeľnejšieho protivojnového kandidáta z volieb",
+      "summary": "Ruský súd 17. júla odsúdil Borisa Nadeždina za zobrazenie 'extrémistických symbolov', čo mu znemožnilo pokračovať v kampani do septembrových volieb do Štátnej dumy. V ten istý deň bol Iľja Remeslo vzatý do väzby pre údajné šírenie nepravdivých informácií o armáde. Udalosti posilňujú trend zužovania aj symbolického opozičného priestoru pred voľbami.",
+      "event_date": "2026-07-17",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": ["Rusko", "Moskovská oblasť", "Petrohrad"],
+      "actors": ["Boris Nadeždin", "Iľja Remeslo", "ruské súdy", "Ministerstvo spravodlivosti Ruskej federácie"],
+      "significance": 3,
+      "status": "confirmed",
+      "trend_tags": ["represia", "voľby", "protivojnová opozícia", "legitimita"],
+      "evidence": [
+        {
+          "source_name": "Associated Press",
+          "source_url": "https://apnews.com/article/russia-crackdown-opposition-putin-nadezhdin-remeslo-9f3d974e1a8afdac319c8b97db019604",
+          "published_at": "2026-07-17",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Reportuje rozsudok, jeho volebný dôsledok a väzbu Remesla."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Súdne rozhodnutie a väzba sú verejne reportované renomovanou agentúrou; hodnotenie politického účelu je analytická interpretácia podporená načasovaním a následkom.",
+      "disputed_points": ["Ruské orgány prezentujú prípady ako aplikáciu zákona; dotknutí ich označujú za politicky motivované."],
+      "related_event_ids": ["POL-20260712-002", "POL-20260601-001"],
+      "quantitative_data": []
+    },
+    {
+      "id": "POL-20260712-002",
+      "theme": "politics",
+      "subtheme": "verejná mienka v Rusku",
+      "title": "Viaceré prieskumy zaznamenali oslabenie podpory Putina a väčšiu preferenciu rokovaní",
+      "summary": "Levada Center pri zbere 23.–30. júna zaznamenal pokles schvaľovania Putina z 79 % na 74 %, pokles podielu hodnotiaceho smer krajiny ako správny zo 61 % na 52 %, pokles podpory krokov ruských ozbrojených síl zo 74 % na 67 % a 64 % preferenciu prechodu k mierovým rokovaniam. Štátom prepojený VCIOM zároveň uviedol pokles súhrnnej dôvery Putinovi zo 76,7 % v sedemdňovom priemere k 21. júnu na 71,0 % k 12. júlu. Ide o zreteľné zhoršenie v krátkom období, nie však o dôkaz bezprostrednej nestability režimu.",
+      "event_date": "2026-07-12",
+      "date_precision": "range",
+      "end_date": "2026-07-12",
+      "geography": ["Rusko"],
+      "actors": ["Levada Center", "VCIOM", "Vladimir Putin", "obyvateľstvo Ruskej federácie"],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": ["verejná mienka", "podpora vojny", "rokovania", "legitimita", "vojnová únava"],
+      "evidence": [
+        {
+          "source_name": "Levada Center",
+          "source_url": "https://www.levada.ru/2026/07/07/konflikt-s-ukrainoj-v-iyune-2026-goda-vnimanie-podderzhka-rossijskih-vooruzhennyh-sil-mnenie-o-neobhodimosti-peregovorov-i-primenenii-yadernogo-oruzhiya/",
+          "published_at": "2026-07-07",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "survey",
+          "reliability_tier": "A",
+          "claim_supported": "Uvádza podporu ozbrojených síl, preferenciu rokovaní, presný zber 23.–30. júna, osobné rozhovory a vzorku n=1 607."
+        },
+        {
+          "source_name": "Levada Center",
+          "source_url": "https://www.levada.ru/2026/07/02/reitingi-iyunya-2026-goda/",
+          "published_at": "2026-07-02",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "survey",
+          "reliability_tier": "A",
+          "claim_supported": "Uvádza pokles schvaľovania Putina a hodnotenia smerovania krajiny pri rovnakej vzorke a metodike."
+        },
+        {
+          "source_name": "VCIOM",
+          "source_url": "https://wciom.com/our-news/ratings/trust-in-politicians",
+          "published_at": "2026-07-12",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "survey",
+          "reliability_tier": "B",
+          "claim_supported": "Sedemdňové priemery denného celoštátneho telefonického prieskumu ukazujú pokles dôvery Putinovi a rast nedôvery od 21. júna do 12. júla."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Smer zmeny potvrdzujú nezávislý aj štátom prepojený prieskum, ale absolútne hodnoty nie sú priamo porovnateľné pre rozdielne otázky a metodiky; autoritárske a vojnové prostredie zvyšuje sociálne žiaduce odpovede a neodpovedanie.",
+      "disputed_points": ["Prieskumy nemožno interpretovať ako slobodné volebné preferencie; cenzúra a riziko postihu môžu nadhodnocovať podporu režimu a vojny.", "Levada a VCIOM používajú odlišné otázky, preto sa porovnáva iba smer, nie úroveň."],
+      "related_event_ids": ["POL-20260717-001", "POL-20260601-001"],
+      "quantitative_data": [
+        {"metric": "schvaľovanie činnosti Putina podľa Levada", "value": 74, "unit": "% respondentov", "value_type": "estimate", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-06-30"},
+        {"metric": "presvedčenie, že krajina ide správnym smerom podľa Levada", "value": 52, "unit": "% respondentov", "value_type": "estimate", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-06-30"},
+        {"metric": "podpora krokov ruských ozbrojených síl podľa Levada", "value": 67, "unit": "% respondentov", "value_type": "estimate", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-06-30"},
+        {"metric": "preferencia prechodu k mierovým rokovaniam podľa Levada", "value": 64, "unit": "% respondentov", "value_type": "estimate", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-06-30"},
+        {"metric": "dôvera Putinovi podľa VCIOM", "value": 71, "unit": "% respondentov", "value_type": "estimate", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-07-12"}
+      ]
+    },
+    {
+      "id": "POL-20260612-001",
+      "theme": "politics",
+      "subtheme": "mobilizačná politika Ukrajiny",
+      "title": "Ukrajinské vedenie predstavilo reformu zameranú na personálnu krízu armády",
+      "summary": "Zelenskyj a vtedajší minister obrany Fedorov predstavili vyššie platy, nové zmluvy s jasnými lehotami služby, jednoduchšie prestupy medzi jednotkami a širší nábor zahraničných dobrovoľníkov. Oznámenie reagovalo na chronický nedostatok personálu, dezercie a spoločenský tlak na predvídateľné podmienky služby; časť opatrení však vyžadovala zákony, vykonávacie rozhodnutia a udržateľné financovanie.",
+      "event_date": "2026-06-12",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": ["Ukrajina"],
+      "actors": ["Volodymyr Zelenskyj", "Mychajlo Fedorov", "Ministerstvo obrany Ukrajiny", "Verchovna rada Ukrajiny", "Ozbrojené sily Ukrajiny"],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": ["mobilizácia", "nábor", "podmienky služby", "dezercie"],
+      "evidence": [
+        {
+          "source_name": "Prezident Ukrajiny",
+          "source_url": "https://www.president.gov.ua/en/news/pogodzheno-shlyah-zbilshiti-finansovu-stijkist-nashoyi-oboro-104885",
+          "published_at": "2026-06-12T14:33:00+03:00",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "official",
+          "reliability_tier": "A",
+          "claim_supported": "Potvrdzuje schválený smer reformy, deklarované platy, dĺžky kontraktov a ďalšie náborové opatrenia."
+        },
+        {
+          "source_name": "Le Monde",
+          "source_url": "https://www.lemonde.fr/en/international/article/2026/06/15/ukraine-announces-new-measures-to-address-army-staffing-crisis_6754497_4.html",
+          "published_at": "2026-06-15",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "media",
+          "reliability_tier": "B",
+          "claim_supported": "Nezávisle opisuje personálny kontext, potrebu legislatívy a neistotu financovania."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Oznámenie a jeho parametre sú potvrdené, ale úplná implementácia a výsledok pri nábore neboli do cutoffu preukázané.",
+      "disputed_points": ["Oficiálne parametre kontraktov a mediálny opis sa v detailoch dĺžok čiastkovo rozchádzajú; rozhodujúce budú prijaté právne texty.", "Nie je doložené, že reforma už materiálne znížila dezercie alebo personálny deficit."],
+      "related_event_ids": ["POL-20260721-001", "POL-20260716-001"],
+      "quantitative_data": [
+        {"metric": "minimálna mesačná odmena v tyle podľa oznámenia", "value": 30000, "unit": "UAH mesačne", "value_type": "party_claim", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-06-12"},
+        {"metric": "priemerná odmena na fronte podľa oznámenia", "value": 300000, "unit": "UAH mesačne", "value_type": "party_claim", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-06-12"}
+      ]
+    },
+    {
+      "id": "POL-20260603-001",
+      "theme": "politics",
+      "subtheme": "legitimita a deľba moci na Ukrajine",
+      "title": "Podpora prezidentského zasahovania klesla, dopyt po povojnovej obnove vedenia vzrástol",
+      "summary": "KIIS zistil, že 52 % respondentov akceptovalo, aby prezident počas vojny zasahoval do činnosti vlády a parlamentu s cieľom posilniť obranu, oproti 79 % v júli 2022; 38 % uprednostnilo dodržiavanie ústavnej deľby moci. Až 88 % očakávalo po vojne výmenu aspoň jednej úrovne centrálnej moci a 67 % očakávalo výmenu prezidenta. Výsledky signalizujú súčasnú legitimitu vojnového vedenia, ale rastúci dopyt po povojnovej politickej obnove.",
+      "event_date": "2026-06-03",
+      "date_precision": "range",
+      "end_date": "2026-06-03",
+      "geography": ["Ukrajina", "vládou kontrolované územie"],
+      "actors": ["Kyiv International Institute of Sociology", "Volodymyr Zelenskyj", "Verchovna rada Ukrajiny", "Kabinet ministrov Ukrajiny"],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": ["legitimita", "deľba moci", "verejná mienka", "povojnová obnova"],
+      "evidence": [
+        {
+          "source_name": "KIIS – výsledky reprodukované Interfax-Ukraine",
+          "source_url": "https://en.interfax.com.ua/news/general/1177240.html",
+          "published_at": "2026-06-17T13:31:00+03:00",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "survey",
+          "reliability_tier": "B",
+          "claim_supported": "Uvádza výsledky, znenie tém otázok, CATI zber 7. mája až 3. júna, náhodnú mobilnú vzorku n=1 000 a vojnové obmedzenia."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Metodika je transparentne zhrnutá, ale primárna stránka KIIS bola pri kontrole technicky nečitateľná; navyše vzorka nezahŕňa okupované územia ani väčšinu občanov v zahraničí.",
+      "disputed_points": ["Očakávanie výmeny po vojne nie je totožné so súčasnou nedôverou ani s požiadavkou na okamžité voľby."],
+      "related_event_ids": ["POL-20260712-001", "POL-20260716-001"],
+      "quantitative_data": [
+        {"metric": "akceptácia prezidentského zasahovania do vlády a parlamentu počas vojny", "value": 52, "unit": "% respondentov", "value_type": "estimate", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-06-03"},
+        {"metric": "preferencia ústavnej deľby moci", "value": 38, "unit": "% respondentov", "value_type": "estimate", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-06-03"},
+        {"metric": "očakávanie povojnovej výmeny prezidenta", "value": 67, "unit": "% respondentov", "value_type": "estimate", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-06-03"}
+      ]
+    },
+    {
+      "id": "POL-20260603-002",
+      "theme": "politics",
+      "subtheme": "postoje k prímeriu na Ukrajine",
+      "title": "Prijateľnosť prímeria závisela od konkrétnych bezpečnostných záruk",
+      "summary": "V experimentálnom prieskume KIIS 61 % respondentov odmietlo prímerie na súčasnej línii bez bezpečnostných záruk a významnej finančnej a zbrojnej podpory. Pri scenári rozsiahlej podpory by prímerie prijalo 53 %, pri európskych silách blízko frontu pripravených odraziť nový útok 61 %. Výsledok ukazuje, že jednoduchá otázka 'rokovania alebo boj' zakrýva rozhodujúci vplyv podmienok dohody.",
+      "event_date": "2026-06-03",
+      "date_precision": "range",
+      "end_date": "2026-06-03",
+      "geography": ["Ukrajina", "vládou kontrolované územie"],
+      "actors": ["Kyiv International Institute of Sociology", "obyvateľstvo Ukrajiny", "európski partneri Ukrajiny"],
+      "significance": 3,
+      "status": "confirmed",
+      "trend_tags": ["verejná mienka", "prímerie", "bezpečnostné záruky", "rokovania"],
+      "evidence": [
+        {
+          "source_name": "KIIS – výsledky reprodukované Interfax-Ukraine",
+          "source_url": "https://en.interfax.com.ua/news/general/1174549.html",
+          "published_at": "2026-06-08T10:25:00+03:00",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "survey",
+          "reliability_tier": "B",
+          "claim_supported": "Uvádza štyri presné scenáre, výsledky, CATI zber 7. mája až 3. júna, celkovú vzorku n=2 007 a štyri náhodné podvzorky po približne 500."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Experimentálna randomizácia umožňuje porovnať scenáre, no každý scenár má iba približne 500 respondentov a uvádzanú chybu do 5,8 %.",
+      "disputed_points": ["Hypotetické scenáre nemerajú správanie pri reálnej dohode a výsledok je citlivý na presné formulácie."],
+      "related_event_ids": ["POL-20260712-002", "POL-20260603-001"],
+      "quantitative_data": [
+        {"metric": "odmietnutie prímeria bez záruk a významnej podpory", "value": 61, "unit": "% podvzorky", "value_type": "estimate", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-06-03"},
+        {"metric": "prijatie prímeria s rozsiahlymi dodávkami peňazí a zbraní", "value": 53, "unit": "% podvzorky", "value_type": "estimate", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-06-03"},
+        {"metric": "prijatie prímeria s európskymi silami pri fronte", "value": 61, "unit": "% podvzorky", "value_type": "estimate", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-06-03"}
+      ]
+    },
+    {
+      "id": "POL-20260601-001",
+      "theme": "politics",
+      "subtheme": "represia a informačná politika v Rusku",
+      "title": "Kremeľ inštitucionalizoval fungovanie základných služieb počas internetových výpadkov",
+      "summary": "Putin nariadil premiérovi a riaditeľovi FSB zabezpečiť kľúčové zdravotnícke, informačné a platobné služby počas obmedzenia mobilného internetu. Príkaz fakticky počíta s pokračovaním výpadkov, ktoré úrady vysvetľujú bezpečnosťou a hrozbou dronov, no ktoré súčasne zapadajú do širšieho blokovania zahraničných komunikačných platforiem a VPN.",
+      "event_date": "2026-06-01",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": ["Rusko"],
+      "actors": ["Vladimir Putin", "Michail Mišustin", "Alexander Bortnikov", "FSB", "Roskomnadzor"],
+      "significance": 3,
+      "status": "confirmed",
+      "trend_tags": ["internetová cenzúra", "represia", "informačná politika", "bezpečnostné zložky"],
+      "evidence": [
+        {
+          "source_name": "Reuters",
+          "source_url": "https://www.internazionale.it/ultime-notizie-reuters/2026/06/01/putin-orders-pm-and-fsb-security-service-to-ensure-key-services-during-mobile-internet-shutdowns",
+          "published_at": "2026-06-01",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Reportuje prezidentský príkaz, jeho adresátov a širší kontext obmedzovania internetu a komunikačných aplikácií."
+        },
+        {
+          "source_name": "Reuters",
+          "source_url": "https://www.marketscreener.com/news/russia-limits-mobile-internet-ahead-of-scaled-back-ww2-victory-parade-ce7f58dfd189ff20",
+          "published_at": "2026-05-05",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Reportéri Reuters priamo zaznamenali výpadky v Moskve a správy o problémoch vo viacerých regiónoch."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Existencia príkazu a výpadkov je potvrdená; ich presný pomer medzi protivzdušnou bezpečnosťou a politickou kontrolou nemožno z verejných údajov oddeliť.",
+      "disputed_points": ["Kremeľ tvrdí, že obmedzenia sú dočasné bezpečnostné opatrenia; kritici ich hodnotia ako nástroj domácej kontroly. Obe funkcie sa môžu prekrývať."],
+      "related_event_ids": ["POL-20260717-001", "POL-20260712-002"],
+      "quantitative_data": []
+    }
+  ],
+  "trends": [
+    {
+      "id": "TREND-POL-001",
+      "theme": "politics",
+      "title": "Spoločenský tlak na Ukrajine zostáva schopný korigovať personálne rozhodnutia",
+      "assessment": "Júlová prestavba vyvolala viacmestské protesty, ktoré sa premietli do merateľného nesúhlasu s odvolaním Fedorova a do výmeny Syrského. Nejde o zmenu režimu, ale o dôkaz, že aj počas vojnového stavu existujú účinné nevolebné spätné väzby medzi spoločnosťou, armádnou komunitou a prezidentským centrom.",
+      "direction": "emerging",
+      "period_start": "2026-06-03",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": ["POL-20260603-001", "POL-20260716-001", "POL-20260721-001"],
+      "counterevidence_event_ids": ["POL-20260712-001"],
+      "indicators_to_watch": ["či Fedorov prijme novú funkciu", "či protesty po výmene veliteľa utíchnu", "vzťah prezidenta s novým vedením armády", "parlamentná kontrola kabinetu"],
+      "confidence": "high"
+    },
+    {
+      "id": "TREND-POL-002",
+      "theme": "politics",
+      "title": "Súčasná vojnová legitimita Ukrajiny koexistuje s dopytom po povojnovej obnove elít",
+      "assessment": "Verejnosť naďalej vykazuje vysokú dôveru k viacerým vojenským a politickým osobnostiam, ale podpora prezidentského zasahovania do iných mocí klesla a väčšina očakáva povojnovú personálnu obnovu. Legitimita je preto funkčná, nie bezpodmienečná.",
+      "direction": "mixed",
+      "period_start": "2026-06-03",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": ["POL-20260603-001", "POL-20260716-001"],
+      "counterevidence_event_ids": [],
+      "indicators_to_watch": ["dôvera prezidentovi po júlovom zlome", "postoj k voľbám počas vojny", "podpora vlády Koreckého", "vývoj dôvery k Zalužnému, Fedorovovi a Drapatému"],
+      "confidence": "medium"
+    },
+    {
+      "id": "TREND-POL-003",
+      "theme": "politics",
+      "title": "Mobilizácia a personálne riadenie zostávajú najsilnejším vnútorným tlakom na Ukrajine",
+      "assessment": "Júnová reforma sľúbila vyššie platy, jasnejšie lehoty služby a jednoduchšie prestupy, no júlová výmena obranného a armádneho vedenia ukázala, že implementácia a dôvera v spôsob velenia zostávajú otvorené. Politický výsledok bude závisieť od toho, či nové vedenie premení oznámenia na financované pravidlá a merateľne zlepší nábor, rotácie a dezercie.",
+      "direction": "emerging",
+      "period_start": "2026-06-12",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": ["POL-20260612-001", "POL-20260716-001", "POL-20260721-001"],
+      "counterevidence_event_ids": [],
+      "indicators_to_watch": ["prijaté zákony a vykonávacie akty", "rozpočtové krytie platov", "počty nových kontraktov", "dezercie a návraty do služby", "nová mobilizačná koncepcia Drapatého"],
+      "confidence": "high"
+    },
+    {
+      "id": "TREND-POL-004",
+      "theme": "politics",
+      "title": "Ruská vojnová legitimita slabne z vysokej úrovne, režim však rozširuje kontrolné mechanizmy",
+      "assessment": "Levada aj VCIOM zaznamenali zhoršenie ukazovateľov podpory Putina alebo smerovania krajiny a Levada zistila väčšinovú preferenciu rokovaní. Súčasne pokračuje internetová kontrola a represia voči aj symbolickým protivojnovým kandidátom. Trend skôr ukazuje rast nákladov na udržiavanie pasivity než bezprostrednú hrozbu pre režim.",
+      "direction": "falling",
+      "period_start": "2026-06-01",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": ["POL-20260601-001", "POL-20260712-002", "POL-20260717-001"],
+      "counterevidence_event_ids": [],
+      "indicators_to_watch": ["ďalšie série Levada a VCIOM", "protestný potenciál a regionálne sťažnosti", "internetové výpadky a VPN blokovanie", "represia počas volebnej kampane", "reakcia na prípadnú mobilizáciu"],
+      "confidence": "medium"
+    },
+    {
+      "id": "TREND-POL-005",
+      "theme": "cross-domain",
+      "title": "V oboch spoločnostiach rastie význam rokovaní, ale obsah prijateľného mieru sa zásadne líši",
+      "assessment": "V Rusku 64 % v prieskume Levada preferovalo prechod k rokovaniam, pričom odpovede vznikajú v prostredí cenzúry. Na Ukrajine sa ochota prijať prímerie pohybovala od menšiny po väčšinu podľa bezpečnostných záruk, zbraní a postavenia európskych síl. Jednoduché porovnávanie percent 'za mier' je preto metodicky zavádzajúce.",
+      "direction": "mixed",
+      "period_start": "2026-06-03",
+      "period_end": "2026-07-12",
+      "supporting_event_ids": ["POL-20260603-002", "POL-20260712-002"],
+      "counterevidence_event_ids": [],
+      "indicators_to_watch": ["presné znenie nových mierových návrhov", "postoj k územným ústupkom", "akceptácia bezpečnostných záruk", "zmeny po vojenských alebo ekonomických šokoch"],
+      "confidence": "high"
+    }
+  ]
+}

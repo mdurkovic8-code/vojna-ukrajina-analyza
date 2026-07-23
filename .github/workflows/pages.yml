@@ -1,0 +1,64 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Kontrola a zostavenie
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Načítať repozitár
+        uses: actions/checkout@v6
+
+      - name: Nastaviť Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Nainštalovať kontrolné závislosti
+        run: npm ci
+
+      - name: Zostaviť a staticky overiť správu
+        run: npm run check
+
+      - name: Nainštalovať Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Overiť stránku v prehliadači
+        run: npm run test:browser
+
+      - name: Nastaviť GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Nahrať overenú stránku
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    name: Zverejnenie
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Zverejniť na GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

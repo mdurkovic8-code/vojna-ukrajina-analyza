@@ -1,0 +1,868 @@
+{
+    "candidate_breakpoint":  {
+                                 "date":  "2026-07-08",
+                                 "title":  "Rusko rozšírilo zákaz vývozu nafty aj na výrobcov a oznámilo dovoz palív",
+                                 "rationale":  "Ide o posledný dostatočne potvrdený ekonomicko-energetický zlom pred cutoffom. Opatrenie zmenilo Rusko z veľkého čistého vývozcu nafty na štát, ktorý súčasne obmedzuje export a pripravuje dovoz, po viac týždňov trvajúcich odstávkach rafinérií, regionálnych nedostatkoch a prepade námorného exportu. Zlom má merateľný domáci aj medzinárodný dopad. Pozastavenie aukcií OFZ z 20. júla je novšia a veľmi významná udalosť, ale pri cut-offe trvala príliš krátko na to, aby sa dalo potvrdiť, že samostatne vytvorila trvalý nový trend."
+                             },
+    "events":  [
+                   {
+                       "id":  "ECO-20260720-001",
+                       "theme":  "economy",
+                       "subtheme":  "verejné financie a zahraničná pomoc Ukrajine",
+                       "title":  "IMF dokončil prvú revíziu nového programu EFF pre Ukrajinu",
+                       "summary":  "Výkonná rada IMF dokončila prvú revíziu štvorročného programu EFF a sprístupnila Ukrajine približne 690 miliónov USD. Po vyplatení má financovanie v rámci nového programu dosiahnuť približne 2,2 miliardy USD. IMF potvrdil splnenie všetkých kvantitatívnych kritérií a indikatívnych cieľov ku koncu marca, zároveň však zaznamenal oneskorenia štrukturálnych reforiem.",
+                       "event_date":  "2026-07-20",
+                       "date_precision":  "exact",
+                       "end_date":  null,
+                       "geography":  [
+                                         "Ukrajina"
+                                     ],
+                       "actors":  [
+                                      "Medzinárodný menový fond",
+                                      "Ministerstvo financií Ukrajiny",
+                                      "Národná banka Ukrajiny"
+                                  ],
+                       "significance":  4,
+                       "status":  "confirmed",
+                       "trend_tags":  [
+                                          "zahraničná pomoc",
+                                          "makrofinančná stabilita",
+                                          "verejné financie",
+                                          "reformy"
+                                      ],
+                       "evidence":  [
+                                        {
+                                            "source_name":  "Ministerstvo financií Ukrajiny",
+                                            "source_url":  "https://mof.gov.ua/en/news/imf_executive_board_completed_first_review_under_eff_arrangement_ukraine_to_receive_about_usd_690_million-5830",
+                                            "published_at":  "2026-07-21",
+                                            "accessed_at_utc":  "2026-07-22T19:09:11Z",
+                                            "source_type":  "official",
+                                            "reliability_tier":  "A",
+                                            "claim_supported":  "IMF dokončil prvú revíziu; Ukrajina získala prístup k približne 690 miliónom USD a splnila kvantitatívne kritériá ku koncu marca."
+                                        },
+                                        {
+                                            "source_name":  "Reuters",
+                                            "source_url":  "https://ca.marketscreener.com/news/imf-approves-690-million-for-ukraine-after-review-ce7f51dbdf88ff22",
+                                            "published_at":  "2026-07-20",
+                                            "accessed_at_utc":  "2026-07-22T19:09:11Z",
+                                            "source_type":  "wire",
+                                            "reliability_tier":  "B",
+                                            "claim_supported":  "Rada IMF dokončila revíziu 20. júla a schválila okamžitý prístup k približne 690 miliónom USD."
+                                        }
+                                    ],
+                       "confidence":  "high",
+                       "confidence_reason":  "Rozhodnutie potvrdzuje príjemca aj nezávislá tlačová agentúra; suma je zaokrúhlená podľa oficiálnej komunikácie.",
+                       "disputed_points":  [
+
+                                           ],
+                       "related_event_ids":  [
+                                                 "ECO-20260630-001"
+                                             ],
+                       "quantitative_data":  [
+                                                 {
+                                                     "metric":  "sprístupnená druhá tranža EFF",
+                                                     "value":  690,
+                                                     "unit":  "miliónov USD",
+                                                     "value_type":  "estimate",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-07-20"
+                                                 },
+                                                 {
+                                                     "metric":  "kumulatívne financovanie v novom EFF po druhej tranži",
+                                                     "value":  2.2,
+                                                     "unit":  "miliardy USD",
+                                                     "value_type":  "estimate",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-07-20"
+                                                 }
+                                             ]
+                   },
+                   {
+                       "id":  "ECO-20260720-002",
+                       "theme":  "economy",
+                       "subtheme":  "ruský štátny dlh",
+                       "title":  "Ruské ministerstvo financií pozastavilo aukcie OFZ na neurčito",
+                       "summary":  "Ministerstvo financií Ruska pozastavilo pravidelné aukcie federálnych dlhopisov OFZ s odôvodnením stabilizácie trhových podmienok. Rozhodnutiu predchádzali štyri plánované aukcie, ktoré boli zrušené alebo priniesli slabý dopyt; dlhé výnosy vzrástli nad 16,5 %. Udalosť zvyšuje krátkodobé náklady financovania rozpočtového deficitu, ale pri cut-offe ešte nepreukazuje neschopnosť štátu financovať sa inými domácimi kanálmi.",
+                       "event_date":  "2026-07-20",
+                       "date_precision":  "exact",
+                       "end_date":  null,
+                       "geography":  [
+                                         "Rusko"
+                                     ],
+                       "actors":  [
+                                      "Ministerstvo financií Ruskej federácie",
+                                      "domáce banky",
+                                      "investori do OFZ"
+                                  ],
+                       "significance":  4,
+                       "status":  "confirmed",
+                       "trend_tags":  [
+                                          "verejné financie",
+                                          "OFZ",
+                                          "náklady financovania",
+                                          "rozpočtový deficit"
+                                      ],
+                       "evidence":  [
+                                        {
+                                            "source_name":  "Ministerstvo financií Ruskej federácie",
+                                            "source_url":  "https://minfin.gov.ru/ru/press-center/?id_4=40510-informatsionnoe_soobshchenie_o_priostanovke_auktsionov_po_razmeshcheniyu_ofz",
+                                            "published_at":  "2026-07-20",
+                                            "accessed_at_utc":  "2026-07-22T19:09:11Z",
+                                            "source_type":  "official",
+                                            "reliability_tier":  "A",
+                                            "claim_supported":  "Ministerstvo oznámilo pozastavenie aukcií OFZ s cieľom stabilizovať trhové podmienky."
+                                        },
+                                        {
+                                            "source_name":  "The Moscow Times",
+                                            "source_url":  "https://www.themoscowtimes.com/2026/07/21/russia-halts-bond-auctions-as-government-debt-selloff-complicates-budget-financing-a93297",
+                                            "published_at":  "2026-07-21",
+                                            "accessed_at_utc":  "2026-07-22T19:09:11Z",
+                                            "source_type":  "media",
+                                            "reliability_tier":  "B",
+                                            "claim_supported":  "Posledné štyri plánované aukcie boli zrušené alebo mali slabý dopyt a výnosy dlhších OFZ prekročili 16,5 %."
+                                        }
+                                    ],
+                       "confidence":  "high",
+                       "confidence_reason":  "Samotné pozastavenie je potvrdené ministerstvom; trhový kontext je potvrdený profesionálnym médiom, no dlhodobý následok ešte nie je známy.",
+                       "disputed_points":  [
+                                               "Nie je potvrdené, ako dlho pozastavenie potrvá ani či povedie k trvalému obmedzeniu rozpočtového financovania."
+                                           ],
+                       "related_event_ids":  [
+                                                 "ECO-20260716-001",
+                                                 "ECO-20260709-001"
+                                             ],
+                       "quantitative_data":  [
+                                                 {
+                                                     "metric":  "plánované hrubé domáce pôžičky cez OFZ v 3. štvrťroku",
+                                                     "value":  1.5,
+                                                     "unit":  "bilióna RUB",
+                                                     "value_type":  "exact",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-07-20"
+                                                 },
+                                                 {
+                                                     "metric":  "výnos dlhopisov OFZ so splatnosťou nad 10 rokov",
+                                                     "value":  16.5,
+                                                     "unit":  "percent p.a. (viac ako)",
+                                                     "value_type":  "estimate",
+                                                     "lower_bound":  16.5,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-07-20"
+                                                 }
+                                             ]
+                   },
+                   {
+                       "id":  "ECO-20260716-001",
+                       "theme":  "economy",
+                       "subtheme":  "ruský federálny rozpočet",
+                       "title":  "Vládny portál zvýšil projekciu ruského deficitu nad zákonný plán",
+                       "summary":  "Údaje z ruského vládneho rozpočtového portálu zvýšili projekciu federálnych výdavkov na rok 2026 na 45,11 bilióna RUB pri nezmenených príjmoch 40,28 bilióna RUB. Implikovaný deficit 4,83 bilióna RUB je o viac než bilión vyšší než platný zákonný plán 3,79 bilióna RUB. Skutočný deficit za prvý polrok už dosiahol 5,73 bilióna RUB, ale polročný cash-flow nemožno mechanicky extrapolovať na celý rok pre sezónnosť príjmov a výdavkov.",
+                       "event_date":  "2026-07-16",
+                       "date_precision":  "exact",
+                       "end_date":  null,
+                       "geography":  [
+                                         "Rusko"
+                                     ],
+                       "actors":  [
+                                      "Ministerstvo financií Ruskej federácie",
+                                      "Federálne pokladníctvo Ruska",
+                                      "Banka Ruska"
+                                  ],
+                       "significance":  4,
+                       "status":  "likely",
+                       "trend_tags":  [
+                                          "rozpočtový deficit",
+                                          "vojnové výdavky",
+                                          "fiškálne riziko",
+                                          "domáce pôžičky"
+                                      ],
+                       "evidence":  [
+                                        {
+                                            "source_name":  "Reuters",
+                                            "source_url":  "https://www.investing.com/news/economy-news/russias-2026-budget-deficit-may-exceed-plans-by-1285-billion-due-to-higher-spending-4794773",
+                                            "published_at":  "2026-07-16",
+                                            "accessed_at_utc":  "2026-07-22T19:09:11Z",
+                                            "source_type":  "wire",
+                                            "reliability_tier":  "B",
+                                            "claim_supported":  "Vládny portál uvádzal výdavky 45,11 bilióna RUB, príjmy 40,28 bilióna RUB a implikovaný deficit 4,83 bilióna RUB; deficit za prvý polrok bol 5,73 bilióna RUB."
+                                        }
+                                    ],
+                       "confidence":  "high",
+                       "confidence_reason":  "Čísla pochádzajú z vládneho portálu a údajov ministerstva, no celoročná hodnota je projekcia, nie výsledok.",
+                       "disputed_points":  [
+                                               "Dôvod zvýšenia výdavkovej projekcie nebol na portáli uvedený; spojenie s rastúcimi vojenskými výdavkami je kontext Reuters, nie rozpis portálu."
+                                           ],
+                       "related_event_ids":  [
+                                                 "ECO-20260720-002",
+                                                 "ECO-20260709-001"
+                                             ],
+                       "quantitative_data":  [
+                                                 {
+                                                     "metric":  "projektované federálne výdavky 2026",
+                                                     "value":  45.11,
+                                                     "unit":  "bilióna RUB",
+                                                     "value_type":  "estimate",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-07-16"
+                                                 },
+                                                 {
+                                                     "metric":  "projektovaný federálny deficit 2026",
+                                                     "value":  4.83,
+                                                     "unit":  "bilióna RUB",
+                                                     "value_type":  "estimate",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-07-16"
+                                                 },
+                                                 {
+                                                     "metric":  "zákonný plán federálneho deficitu 2026",
+                                                     "value":  3.79,
+                                                     "unit":  "bilióna RUB",
+                                                     "value_type":  "exact",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-07-16"
+                                                 },
+                                                 {
+                                                     "metric":  "federálny deficit január až jún 2026",
+                                                     "value":  5.73,
+                                                     "unit":  "bilióna RUB",
+                                                     "value_type":  "exact",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-06-30"
+                                                 },
+                                                 {
+                                                     "metric":  "federálny deficit január až jún 2026 ako podiel HDP",
+                                                     "value":  2.5,
+                                                     "unit":  "percenta HDP",
+                                                     "value_type":  "exact",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-06-30"
+                                                 }
+                                             ]
+                   },
+                   {
+                       "id":  "ECO-20260709-001",
+                       "theme":  "economy",
+                       "subtheme":  "ruské príjmy z ropy a plynu",
+                       "title":  "Ruské ropné a plynárenské rozpočtové príjmy za polrok klesli o 22,7 %",
+                       "summary":  "Federálny rozpočet Ruska získal z ropy a plynu za január až jún 2026 približne 3,66 bilióna RUB, medziročne o 22,7 % menej. Nejde o rovnakú metriku ako hrubé príjmy z exportu fosílnych palív: ide o príjmy federálneho rozpočtu podľa ruskej metodiky, preto sa tieto údaje nekombinujú s obchodnými odhadmi CREA alebo lodnými dátami.",
+                       "event_date":  "2026-07-09",
+                       "date_precision":  "exact",
+                       "end_date":  null,
+                       "geography":  [
+                                         "Rusko"
+                                     ],
+                       "actors":  [
+                                      "Ministerstvo financií Ruskej federácie",
+                                      "ruský ropný a plynárenský sektor"
+                                  ],
+                       "significance":  4,
+                       "status":  "confirmed",
+                       "trend_tags":  [
+                                          "ropa a plyn",
+                                          "rozpočtové príjmy",
+                                          "sankcie",
+                                          "fiškálna kapacita"
+                                      ],
+                       "evidence":  [
+                                        {
+                                            "source_name":  "TASS s odkazom na Ministerstvo financií Ruskej federácie",
+                                            "source_url":  "https://tass.com/economy/2158277",
+                                            "published_at":  "2026-07-09",
+                                            "accessed_at_utc":  "2026-07-22T19:09:11Z",
+                                            "source_type":  "media",
+                                            "reliability_tier":  "B",
+                                            "claim_supported":  "Ropné a plynárenské príjmy federálneho rozpočtu za prvý polrok dosiahli 3,66 bilióna RUB a medziročne klesli o 22,7 %."
+                                        }
+                                    ],
+                       "confidence":  "high",
+                       "confidence_reason":  "Ide o presne atribútovaný údaj ministerstva financií; obmedzením je závislosť od ruského oficiálneho vykazovania.",
+                       "disputed_points":  [
+
+                                           ],
+                       "related_event_ids":  [
+                                                 "ECO-20260716-001",
+                                                 "ECO-20260708-001"
+                                             ],
+                       "quantitative_data":  [
+                                                 {
+                                                     "metric":  "ropné a plynárenské príjmy federálneho rozpočtu január až jún 2026",
+                                                     "value":  3.66,
+                                                     "unit":  "bilióna RUB",
+                                                     "value_type":  "exact",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-06-30"
+                                                 },
+                                                 {
+                                                     "metric":  "medziročná zmena ropných a plynárenských príjmov federálneho rozpočtu",
+                                                     "value":  -22.7,
+                                                     "unit":  "percenta y/y",
+                                                     "value_type":  "exact",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-06-30"
+                                                 }
+                                             ]
+                   },
+                   {
+                       "id":  "ECO-20260709-002",
+                       "theme":  "economy",
+                       "subtheme":  "spotrebiteľské ceny na Ukrajine",
+                       "title":  "Ukrajinské spotrebiteľské ceny v júni medzimesačne mierne klesli, palivá zostali drahšie",
+                       "summary":  "Štátny štatistický úrad uviedol júnový index spotrebiteľských cien 99,9 % oproti máju a 105,7 % oproti decembru 2025. Palivá a mazivá boli oproti decembru drahšie o 26,6 %. Údaje nezahŕňajú dočasne okupované územia ani časť území s bojmi a pozorovanie cien sa nevykonáva vo vidieckych oblastiach, čo obmedzuje reprezentatívnosť počas vojny.",
+                       "event_date":  "2026-07-09",
+                       "date_precision":  "exact",
+                       "end_date":  null,
+                       "geography":  [
+                                         "Ukrajina"
+                                     ],
+                       "actors":  [
+                                      "Štátna štatistická služba Ukrajiny",
+                                      "ukrajinské domácnosti"
+                                  ],
+                       "significance":  3,
+                       "status":  "confirmed",
+                       "trend_tags":  [
+                                          "inflácia",
+                                          "palivá",
+                                          "spotrebitelia",
+                                          "životné náklady"
+                                      ],
+                       "evidence":  [
+                                        {
+                                            "source_name":  "Štátna štatistická služba Ukrajiny",
+                                            "source_url":  "https://stat.gov.ua/uk/publications/indeksy-tsin-u-chervni-2026-roku-ekspres-vypusk",
+                                            "published_at":  "2026-07-09",
+                                            "accessed_at_utc":  "2026-07-22T19:09:11Z",
+                                            "source_type":  "primary",
+                                            "reliability_tier":  "A",
+                                            "claim_supported":  "Oficiálna metodika a geografické obmedzenia júnového CPI; index oproti máju bol 99,9 %."
+                                        },
+                                        {
+                                            "source_name":  "Uryadovyi Kurier s tabuľkou Štátnej štatistickej služby",
+                                            "source_url":  "https://ukurier.gov.ua/uk/news/indeks-spozhivchih-cin-u-chervni-2026-roku1/",
+                                            "published_at":  "2026-07-11",
+                                            "accessed_at_utc":  "2026-07-22T19:09:11Z",
+                                            "source_type":  "official",
+                                            "reliability_tier":  "A",
+                                            "claim_supported":  "CPI dosiahol 105,7 % oproti decembru a index palív a mazív 126,6 %."
+                                        }
+                                    ],
+                       "confidence":  "high",
+                       "confidence_reason":  "Oficiálne mesačné štatistiky s publikovanou metodikou a explicitnými obmedzeniami geografického pokrytia.",
+                       "disputed_points":  [
+
+                                           ],
+                       "related_event_ids":  [
+                                                 "ECO-20260629-001"
+                                             ],
+                       "quantitative_data":  [
+                                                 {
+                                                     "metric":  "index spotrebiteľských cien oproti predchádzajúcemu mesiacu",
+                                                     "value":  99.9,
+                                                     "unit":  "index, máj 2026 = 100",
+                                                     "value_type":  "exact",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-06-30"
+                                                 },
+                                                 {
+                                                     "metric":  "index spotrebiteľských cien od začiatku roka",
+                                                     "value":  105.7,
+                                                     "unit":  "index, december 2025 = 100",
+                                                     "value_type":  "exact",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-06-30"
+                                                 },
+                                                 {
+                                                     "metric":  "index cien palív a mazív od začiatku roka",
+                                                     "value":  126.6,
+                                                     "unit":  "index, december 2025 = 100",
+                                                     "value_type":  "exact",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-06-30"
+                                                 }
+                                             ]
+                   },
+                   {
+                       "id":  "ECO-20260708-001",
+                       "theme":  "economy",
+                       "subtheme":  "ruské rafinérie a palivá",
+                       "title":  "Rusko rozšírilo zákaz vývozu nafty a oznámilo dovoz palív",
+                       "summary":  "Ruská vláda rozšírila dočasný zákaz vývozu nafty aj na producentov a oznámila, že v júli začne palivá dovážať. Námorný export nafty a plynového oleja už v júni klesol na približne 1,8 milióna ton, o 39 % medzimesačne a 46 % medziročne. S\u0026P Global odhadoval odstavenú kapacitu na viac než 2,5 milióna barelov denne ku koncu júna a iný interný odhad na viac než 4 milióny barelov denne v týždni končiacom 10. júla; ide o odlišné dátumy a odhadové tímy, preto sa hodnoty nespájajú do jedného presného čísla.",
+                       "event_date":  "2026-07-08",
+                       "date_precision":  "exact",
+                       "end_date":  "2026-07-31",
+                       "geography":  [
+                                         "Rusko",
+                                         "viaceré regióny",
+                                         "medzinárodný trh s naftou"
+                                     ],
+                       "actors":  [
+                                      "Vláda Ruskej federácie",
+                                      "Alexander Novak",
+                                      "ruské rafinérie",
+                                      "Ukrajina"
+                                  ],
+                       "significance":  5,
+                       "status":  "confirmed",
+                       "trend_tags":  [
+                                          "palivá",
+                                          "rafinérie",
+                                          "dovoz",
+                                          "vývozný zákaz",
+                                          "hlboké údery"
+                                      ],
+                       "evidence":  [
+                                        {
+                                            "source_name":  "Reuters",
+                                            "source_url":  "https://www.marketscreener.com/news/russia-bans-diesel-exports-to-ensure-domestic-supply-after-targetd-ukrainian-drone-strikes-ce7f5ed9da88fe26",
+                                            "published_at":  "2026-07-08",
+                                            "accessed_at_utc":  "2026-07-22T19:09:11Z",
+                                            "source_type":  "wire",
+                                            "reliability_tier":  "B",
+                                            "claim_supported":  "Vláda rozšírila zákaz vývozu nafty na producentov, oznámila dovoz palív a Reuters doložil prepad námorného exportu."
+                                        },
+                                        {
+                                            "source_name":  "S\u0026P Global Energy",
+                                            "source_url":  "https://www.spglobal.com/energy/en/news-research/latest-news/crude-oil/071426-global-diesel-market-tightens-as-russian-export-ban-ukraine-strikes-bite",
+                                            "published_at":  "2026-07-14",
+                                            "accessed_at_utc":  "2026-07-22T19:09:11Z",
+                                            "source_type":  "research",
+                                            "reliability_tier":  "B",
+                                            "claim_supported":  "Odhady odstávok rafinérskej kapacity, pokles exportu nafty a medzinárodný dopad zákazu."
+                                        }
+                                    ],
+                       "confidence":  "high",
+                       "confidence_reason":  "Politické opatrenia a obchodné toky sú potvrdené; rozsah odstavených kapacít zostáva odhadom s metodickou neistotou.",
+                       "disputed_points":  [
+                                               "Odhady odstavených rafinérskych kapacít sa líšia podľa dátumu, zahrnutia údržby a metodiky; takmer 60 % sa nesmie prezentovať ako oficiálne potvrdená strata kapacity."
+                                           ],
+                       "related_event_ids":  [
+                                                 "ECO-20260709-001",
+                                                 "ECO-20260619-001"
+                                             ],
+                       "quantitative_data":  [
+                                                 {
+                                                     "metric":  "námorný export nafty a plynového oleja v júni 2026",
+                                                     "value":  1.8,
+                                                     "unit":  "milióna metrických ton",
+                                                     "value_type":  "estimate",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-06-30"
+                                                 },
+                                                 {
+                                                     "metric":  "medzimesačná zmena námorného exportu nafty a plynového oleja",
+                                                     "value":  -39,
+                                                     "unit":  "percent",
+                                                     "value_type":  "estimate",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-06-30"
+                                                 },
+                                                 {
+                                                     "metric":  "medziročná zmena námorného exportu nafty a plynového oleja",
+                                                     "value":  -46,
+                                                     "unit":  "percent y/y",
+                                                     "value_type":  "estimate",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-06-30"
+                                                 },
+                                                 {
+                                                     "metric":  "odstavená rafinérska kapacita podľa CERA ku koncu júna",
+                                                     "value":  2.5,
+                                                     "unit":  "milióna barelov denne (viac ako)",
+                                                     "value_type":  "estimate",
+                                                     "lower_bound":  2.5,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-06-30"
+                                                 },
+                                                 {
+                                                     "metric":  "odstavená rafinérska kapacita podľa globálneho tímu S\u0026P v týždni do 10. júla",
+                                                     "value":  4,
+                                                     "unit":  "milióna barelov denne (viac ako)",
+                                                     "value_type":  "estimate",
+                                                     "lower_bound":  4,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-07-10"
+                                                 }
+                                             ]
+                   },
+                   {
+                       "id":  "ECO-20260630-001",
+                       "theme":  "economy",
+                       "subtheme":  "financovanie Ukrajiny z EÚ",
+                       "title":  "EÚ vyplatila prvých 7 miliárd EUR z Ukraine Support Loan",
+                       "summary":  "Európska komisia vyplatila 25. júna 3,2 miliardy EUR ako prvú rozpočtovú splátku a 30. júna 3,9 miliardy EUR ako prvú časť obranného čerpania na drony. Spolu tak Ukrajina do konca júna dostala 7,1 miliardy EUR z rámca do 90 miliárd EUR na roky 2026–2027. Ide o veľký krátkodobý stabilizačný vankúš, no zároveň o dôkaz vysokej závislosti rozpočtu a obrany od pokračujúcej vonkajšej podpory.",
+                       "event_date":  "2026-06-30",
+                       "date_precision":  "exact",
+                       "end_date":  null,
+                       "geography":  [
+                                         "Ukrajina",
+                                         "Európska únia"
+                                     ],
+                       "actors":  [
+                                      "Európska komisia",
+                                      "Ukrajina",
+                                      "Ministerstvo financií Ukrajiny"
+                                  ],
+                       "significance":  5,
+                       "status":  "confirmed",
+                       "trend_tags":  [
+                                          "zahraničná pomoc",
+                                          "rozpočtová podpora",
+                                          "obranný priemysel",
+                                          "drony"
+                                      ],
+                       "evidence":  [
+                                        {
+                                            "source_name":  "Európska komisia",
+                                            "source_url":  "https://defence-industry-space.ec.europa.eu/eu-defence-industry/ukraine-support-loan_en",
+                                            "published_at":  "2026-06-30",
+                                            "accessed_at_utc":  "2026-07-22T19:09:11Z",
+                                            "source_type":  "official",
+                                            "reliability_tier":  "A",
+                                            "claim_supported":  "Komisia vyplatila 3,2 miliardy EUR 25. júna a 3,9 miliardy EUR 30. júna; rámec úveru je 90 miliárd EUR na roky 2026–2027."
+                                        },
+                                        {
+                                            "source_name":  "Ministerstvo financií Ukrajiny",
+                                            "source_url":  "https://www.mof.gov.ua/en/news/ukraine_receives_eur_38_billion_from_the_eu__first_defence_tranche_under_the_ukraine_support_loan-5798",
+                                            "published_at":  "2026-06-30",
+                                            "accessed_at_utc":  "2026-07-22T19:09:11Z",
+                                            "source_type":  "official",
+                                            "reliability_tier":  "A",
+                                            "claim_supported":  "Ukrajinské ministerstvo potvrdilo prijatie obranného čerpania a predchádzajúcej rozpočtovej splátky."
+                                        }
+                                    ],
+                       "confidence":  "high",
+                       "confidence_reason":  "Platby potvrdzuje poskytovateľ aj príjemca; súčet 7,1 miliardy EUR je aritmetický súčet dvoch metodicky zhodných čerpaní z jedného rámca.",
+                       "disputed_points":  [
+
+                                           ],
+                       "related_event_ids":  [
+                                                 "ECO-20260720-001"
+                                             ],
+                       "quantitative_data":  [
+                                                 {
+                                                     "metric":  "prvá rozpočtová splátka Ukraine Support Loan",
+                                                     "value":  3.2,
+                                                     "unit":  "miliardy EUR",
+                                                     "value_type":  "exact",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-06-25"
+                                                 },
+                                                 {
+                                                     "metric":  "prvé obranné čerpanie Ukraine Support Loan",
+                                                     "value":  3.9,
+                                                     "unit":  "miliardy EUR",
+                                                     "value_type":  "exact",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-06-30"
+                                                 },
+                                                 {
+                                                     "metric":  "celkový rámec Ukraine Support Loan 2026 až 2027",
+                                                     "value":  90,
+                                                     "unit":  "miliárd EUR (do)",
+                                                     "value_type":  "exact",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  90,
+                                                     "as_of_date":  "2026-06-30"
+                                                 }
+                                             ]
+                   },
+                   {
+                       "id":  "ECO-20260629-001",
+                       "theme":  "economy",
+                       "subtheme":  "ukrajinská energetická infraštruktúra",
+                       "title":  "OHCHR zdokumentoval opakované poškodzovanie ukrajinskej energetiky počas zimy 2025–2026",
+                       "summary":  "OHCHR zdokumentoval najmenej 423 ruských zásahov do výroby, prenosu a distribúcie elektriny od októbra 2025 do marca 2026, vrátane 48 koordinovaných útokov zasahujúcich najmenej tri regióny. Počas zimného maxima vedela Ukrajina podľa citovaných údajov vyrábať približne 11 GW pri dopyte do 18 GW. Ide o spätne overenú kumulatívnu bilanciu, nie o počet udalostí v samotnom 90-dňovom okne.",
+                       "event_date":  "2026-06-29",
+                       "date_precision":  "exact",
+                       "end_date":  null,
+                       "geography":  [
+                                         "Ukrajina",
+                                         "viaceré regióny"
+                                     ],
+                       "actors":  [
+                                      "OHCHR",
+                                      "Ruská federácia",
+                                      "ukrajinskí energetickí prevádzkovatelia",
+                                      "civilné obyvateľstvo"
+                                  ],
+                       "significance":  4,
+                       "status":  "confirmed",
+                       "trend_tags":  [
+                                          "energetika",
+                                          "poškodenie infraštruktúry",
+                                          "elektrický deficit",
+                                          "obnova"
+                                      ],
+                       "evidence":  [
+                                        {
+                                            "source_name":  "Úrad vysokého komisára OSN pre ľudské práva",
+                                            "source_url":  "https://www.ecoi.net/en/file/local/2141896/2026-06-29%20PR44.pdf",
+                                            "published_at":  "2026-06-29",
+                                            "accessed_at_utc":  "2026-07-22T19:09:11Z",
+                                            "source_type":  "research",
+                                            "reliability_tier":  "A",
+                                            "claim_supported":  "OHCHR zdokumentoval rozsah útokov, ich dopad na výrobnú a prenosovú kapacitu a zimný deficit elektriny."
+                                        }
+                                    ],
+                       "confidence":  "high",
+                       "confidence_reason":  "OHCHR použil terénne návštevy, rozhovory a nezávislé overovanie; počet je minimálne zdokumentovaná hodnota, nie úplný súpis.",
+                       "disputed_points":  [
+                                               "Ukrajinské orgány uvádzajú vyšší počet útokov; OHCHR započítal iba prípady, ktoré vedel overiť vlastnou metodikou."
+                                           ],
+                       "related_event_ids":  [
+                                                 "ECO-20260709-002"
+                                             ],
+                       "quantitative_data":  [
+                                                 {
+                                                     "metric":  "zdokumentované zásahy do elektrickej infraštruktúry od októbra 2025 do marca 2026",
+                                                     "value":  423,
+                                                     "unit":  "zásahov (najmenej)",
+                                                     "value_type":  "exact",
+                                                     "lower_bound":  423,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-03-31"
+                                                 },
+                                                 {
+                                                     "metric":  "koordinované útoky zasahujúce najmenej tri regióny",
+                                                     "value":  48,
+                                                     "unit":  "útokov (najmenej)",
+                                                     "value_type":  "exact",
+                                                     "lower_bound":  48,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-03-31"
+                                                 },
+                                                 {
+                                                     "metric":  "domáca výroba elektriny počas zimného maxima",
+                                                     "value":  11,
+                                                     "unit":  "GW približne",
+                                                     "value_type":  "estimate",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-02-28"
+                                                 },
+                                                 {
+                                                     "metric":  "zimný špičkový dopyt po elektrine",
+                                                     "value":  18,
+                                                     "unit":  "GW (do)",
+                                                     "value_type":  "estimate",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  18,
+                                                     "as_of_date":  "2026-02-28"
+                                                 }
+                                             ]
+                   },
+                   {
+                       "id":  "ECO-20260619-001",
+                       "theme":  "economy",
+                       "subtheme":  "ruská menová politika",
+                       "title":  "Banka Ruska znížila kľúčovú sadzbu o 25 bázických bodov na 14,25 %",
+                       "summary":  "Banka Ruska znížila sadzbu na 14,25 %, no súčasne uviedla, že fiškálna politika bude expanzívnejšia než predpokladala a že dočasný pokles výroby motorových palív zvýšil proinflačné riziká. Ročná inflácia bola k 15. júnu 5,6 %. Rozhodnutie preto znamenalo len opatrné uvoľnenie; vysoká reálna cena úveru naďalej brzdí civilné investície a spotrebu.",
+                       "event_date":  "2026-06-19",
+                       "date_precision":  "exact",
+                       "end_date":  null,
+                       "geography":  [
+                                         "Rusko"
+                                     ],
+                       "actors":  [
+                                      "Banka Ruska",
+                                      "ruské podniky",
+                                      "ruské domácnosti"
+                                  ],
+                       "significance":  3,
+                       "status":  "confirmed",
+                       "trend_tags":  [
+                                          "úrokové sadzby",
+                                          "inflácia",
+                                          "palivá",
+                                          "úverové podmienky"
+                                      ],
+                       "evidence":  [
+                                        {
+                                            "source_name":  "Banka Ruska",
+                                            "source_url":  "https://www.cbr.ru/eng/press/keypr/",
+                                            "published_at":  "2026-06-19",
+                                            "accessed_at_utc":  "2026-07-22T19:09:11Z",
+                                            "source_type":  "official",
+                                            "reliability_tier":  "A",
+                                            "claim_supported":  "Kľúčová sadzba bola znížená na 14,25 %, ročná inflácia k 15. júnu bola 5,6 % a palivová výroba aj fiškálna politika zvýšili inflačné riziká."
+                                        },
+                                        {
+                                            "source_name":  "Banka Ruska – Talking Trends",
+                                            "source_url":  "https://www.cbr.ru/eng/press/event/?id=32702",
+                                            "published_at":  "2026-07-15",
+                                            "accessed_at_utc":  "2026-07-22T19:09:11Z",
+                                            "source_type":  "official",
+                                            "reliability_tier":  "A",
+                                            "claim_supported":  "Centrálna banka po rozhodnutí uviedla, že júnové zrýchlenie cien bolo prevažne dočasné, no rast palivových cien môže zhoršiť očakávania."
+                                        }
+                                    ],
+                       "confidence":  "high",
+                       "confidence_reason":  "Oficiálne rozhodnutie a následná analytická komunikácia centrálnej banky.",
+                       "disputed_points":  [
+
+                                           ],
+                       "related_event_ids":  [
+                                                 "ECO-20260708-001"
+                                             ],
+                       "quantitative_data":  [
+                                                 {
+                                                     "metric":  "kľúčová úroková sadzba Banky Ruska",
+                                                     "value":  14.25,
+                                                     "unit":  "percent p.a.",
+                                                     "value_type":  "exact",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-06-19"
+                                                 },
+                                                 {
+                                                     "metric":  "ročná spotrebiteľská inflácia podľa Banky Ruska",
+                                                     "value":  5.6,
+                                                     "unit":  "percent y/y",
+                                                     "value_type":  "exact",
+                                                     "lower_bound":  null,
+                                                     "upper_bound":  null,
+                                                     "as_of_date":  "2026-06-15"
+                                                 }
+                                             ]
+                   }
+               ],
+    "trends":  [
+                   {
+                       "id":  "TREND-ECO-001",
+                       "theme":  "economy",
+                       "title":  "Ruská rafinérska porucha prerástla do makroekonomicky významnej palivovej krízy",
+                       "assessment":  "Kumulatívne odstávky rafinérií, prepad námorného exportu nafty, regionálne nedostatky, rozšírenie exportného zákazu a príprava dovozu dokazujú kvalitatívnu zmenu oproti skorším lokálnym výpadkom. Rusko má stále možnosti presmerovať zásoby, zvýšiť dovoz a administratívne obmedziť dopyt, preto nejde o celoštátny kolaps. Kríza však zvyšuje logistické, rozpočtové a inflačné náklady.",
+                       "direction":  "rising",
+                       "period_start":  "2026-05-01",
+                       "period_end":  "2026-07-22",
+                       "supporting_event_ids":  [
+                                                    "ECO-20260708-001",
+                                                    "ECO-20260619-001"
+                                                ],
+                       "counterevidence_event_ids":  [
+
+                                                     ],
+                       "indicators_to_watch":  [
+                                                   "objem spracovania ropy v miliónoch barelov denne podľa konzistentnej metodiky",
+                                                   "trvanie a geografické pokrytie nedostatku palív",
+                                                   "objem dovozu benzínu a nafty",
+                                                   "predĺženie exportných zákazov po 31. júli"
+                                               ],
+                       "confidence":  "high"
+                   },
+                   {
+                       "id":  "TREND-ECO-002",
+                       "theme":  "economy",
+                       "title":  "Fiškálny priestor Ruska sa zužuje, hoci okamžitá platobná schopnosť pretrváva",
+                       "assessment":  "Deficit prvého polroka prekročil celoročný zákonný plán, ropné a plynárenské príjmy medziročne klesli a trh OFZ vyžaduje vyššie výnosy. Štát naďalej môže používať domáce banky, dane, rezervy a škrty civilných výdavkov. Krátkodobo je preto financovanie vojny odolné; dlhodobo rastú úrokové náklady, vytláčanie civilných investícií a riziko konfliktu medzi fiškálnou a menovou politikou.",
+                       "direction":  "rising",
+                       "period_start":  "2026-01-01",
+                       "period_end":  "2026-07-22",
+                       "supporting_event_ids":  [
+                                                    "ECO-20260720-002",
+                                                    "ECO-20260716-001",
+                                                    "ECO-20260709-001",
+                                                    "ECO-20260619-001"
+                                                ],
+                       "counterevidence_event_ids":  [
+
+                                                     ],
+                       "indicators_to_watch":  [
+                                                   "obnovenie a úspešnosť aukcií OFZ",
+                                                   "celoročná revízia federálneho rozpočtu",
+                                                   "likvidná časť Fondu národného blahobytu",
+                                                   "úrokové náklady ako podiel výdavkov",
+                                                   "ropné a plynárenské príjmy podľa rovnakej metodiky"
+                                               ],
+                       "confidence":  "high"
+                   },
+                   {
+                       "id":  "TREND-ECO-003",
+                       "theme":  "economy",
+                       "title":  "Ruská ekonomika stagnuje pri stále reštriktívnych úverových podmienkach",
+                       "assessment":  "Reálny HDP v prvom štvrťroku mierne klesol, odhad rastu za polrok bol iba približne 0,5 % a kľúčová sadzba zostala 14,25 %. Štátna a vojenská objednávka podporuje vybrané odvetvia, ale zároveň presúva pracovnú silu, úvery a kapitál od civilnej ekonomiky. Ide o stagnáciu a odvetvovú divergenciu, nie o potvrdený plošný hospodársky kolaps.",
+                       "direction":  "mixed",
+                       "period_start":  "2026-01-01",
+                       "period_end":  "2026-07-22",
+                       "supporting_event_ids":  [
+                                                    "ECO-20260619-001",
+                                                    "ECO-20260716-001"
+                                                ],
+                       "counterevidence_event_ids":  [
+
+                                                     ],
+                       "indicators_to_watch":  [
+                                                   "reálny HDP v druhom štvrťroku",
+                                                   "priemyselná výroba rozdelená na civilné a vojensky podporované odvetvia",
+                                                   "podnikové úvery po očistení o štátne programy",
+                                                   "nezamestnanosť a nedostatok pracovníkov"
+                                               ],
+                       "confidence":  "medium"
+                   },
+                   {
+                       "id":  "TREND-ECO-004",
+                       "theme":  "economy",
+                       "title":  "Ukrajinská makrofinančná stabilita je krátkodobo chránená veľkou externou podporou",
+                       "assessment":  "Júnové čerpania z EÚ a júlové dokončenie revízie IMF poskytli rozpočtu a obrane likviditu a politickú kotvu. To znižuje krátkodobé riziko menovej a rozpočtovej destabilizácie. Stabilita však zostáva podmienená včasnosťou ďalších tranží, plnením reforiem a udržaním podpory partnerov.",
+                       "direction":  "stable",
+                       "period_start":  "2026-02-26",
+                       "period_end":  "2026-07-22",
+                       "supporting_event_ids":  [
+                                                    "ECO-20260630-001",
+                                                    "ECO-20260720-001"
+                                                ],
+                       "counterevidence_event_ids":  [
+
+                                                     ],
+                       "indicators_to_watch":  [
+                                                   "kalendár a objem ďalších tranží EÚ a IMF",
+                                                   "plnenie štrukturálnych benchmarkov IMF",
+                                                   "medzinárodné rezervy NBU",
+                                                   "podiel grantov a úverov na rozpočtovom financovaní"
+                                               ],
+                       "confidence":  "high"
+                   },
+                   {
+                       "id":  "TREND-ECO-005",
+                       "theme":  "economy",
+                       "title":  "Reálna ekonomika a energetika Ukrajiny zostávajú slabým miestom",
+                       "assessment":  "Pokles HDP v prvom štvrťroku, znížený celoročný výhľad IMF a nezávisle zdokumentovaný deficit energetickej kapacity ukazujú, že finančná stabilita neznamená samonosný rast. Výroba, logistika a spotreba zostávajú citlivé na nové útoky, výpadky elektriny, pracovné obmedzenia a náklady dovozu energie.",
+                       "direction":  "falling",
+                       "period_start":  "2025-10-01",
+                       "period_end":  "2026-07-22",
+                       "supporting_event_ids":  [
+                                                    "ECO-20260629-001",
+                                                    "ECO-20260709-002"
+                                                ],
+                       "counterevidence_event_ids":  [
+                                                         "ECO-20260630-001",
+                                                         "ECO-20260720-001"
+                                                     ],
+                       "indicators_to_watch":  [
+                                                   "výkon HDP a priemyslu v druhom štvrťroku",
+                                                   "dostupná elektrická kapacita a dĺžka výpadkov",
+                                                   "dovoz a vývoz elektriny",
+                                                   "náklady opráv a financie štátnych energetických podnikov"
+                                               ],
+                       "confidence":  "high"
+                   }
+               ]
+}

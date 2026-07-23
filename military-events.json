@@ -1,0 +1,545 @@
+{
+  "candidate_breakpoint": {
+    "date": "2026-04-30",
+    "title": "Ukrajinské protiútoky zmenili čistú teritoriálnu bilanciu a pribrzdili ruskú jarnú–letnú ofenzívu",
+    "rationale": "Apríl 2026 bol prvým mesiacom po viac než dvoch rokoch, v ktorom Rusko podľa analýzy AFP založenej na mapových údajoch ISW stratilo viac územia, než získalo. Nešlo iba o jednorazový mediálny moment: lokálne ukrajinské protiútoky pokračovali v máji až júli, ruské tempo postupu zostalo výrazne pod úrovňou roku 2025 a ruská jarná–letná ofenzíva do cutoffu nedosiahla operačne významný prielom. Ide o zmenu z dlhodobého takmer výlučného ruského postupu na zmiešanú, miestami obojstranne sa meniacu frontovú bilanciu; celková strategická iniciatíva však neprešla jednoznačne na Ukrajinu."
+  },
+  "events": [
+    {
+      "id": "MIL-20260430-001",
+      "theme": "military",
+      "subtheme": "územná kontrola a protiútoky",
+      "title": "Ukrajinské protiútoky obrátili aprílovú čistú teritoriálnu bilanciu",
+      "summary": "Analýza AFP z mapových údajov ISW dospela k záveru, že Rusko v apríli 2026 prvýkrát od leta 2023 stratilo viac územia, než získalo. Ukrajinské zisky boli rozptýlené v Zaporizhžskej, Charkovskej a Doneckej oblasti; časť územia však zostávala iba spornou alebo infiltračnou zónou. CSIS neskôr vyhodnotil, že protiútoky pokračovali aj v máji a na jar priniesli Rusku čistú stratu približne 400 km² podľa jeho metodiky.",
+      "event_date": "2026-04-30",
+      "date_precision": "range",
+      "end_date": "2026-05-31",
+      "geography": ["Ukrajina", "Zaporizhžská oblasť", "Charkovská oblasť", "Donecká oblasť"],
+      "actors": ["Ozbrojené sily Ukrajiny", "Ozbrojené sily Ruskej federácie"],
+      "significance": 5,
+      "status": "likely",
+      "trend_tags": ["vojenská iniciatíva", "protiútoky", "územná kontrola", "ruská jarná–letná ofenzíva"],
+      "evidence": [
+        {
+          "source_name": "AFP / The Moscow Times",
+          "source_url": "https://www.themoscowtimes.com/2026/05/04/russia-lost-ground-in-ukraine-in-april-a-first-since-mid-2023-afp-analysis-a92679",
+          "published_at": "2026-05-04",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "media",
+          "reliability_tier": "B",
+          "claim_supported": "Výpočet AFP z údajov ISW ukázal prvú mesačnú čistú stratu ruskej územnej kontroly od leta 2023; AFP zároveň upozornila na sivé zóny a vylúčenie nepotvrdených infiltrácií."
+        },
+        {
+          "source_name": "Center for Strategic and International Studies",
+          "source_url": "https://csis-website-prod.s3.amazonaws.com/s3fs-public/2026-07/260701_Jones_Russian_Blood.pdf?VersionId=2ULVLyK7GKhvOEIvSN.IqoHj1Zks9c6Q",
+          "published_at": "2026-07-01",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "research",
+          "reliability_tier": "B",
+          "claim_supported": "CSIS vyhodnotil, že Rusko v apríli a máji stratilo v čistom približne 400 km² a že ukrajinské protiútoky sa rozšírili od Charkovskej po Zaporizhžskú oblasť."
+        },
+        {
+          "source_name": "Reuters / Investing.com",
+          "source_url": "https://www.investing.com/news/world-news/ukraine-touts-recapture-of-eight-settlements-in-rare-battlefield-success-4518668",
+          "published_at": "2026-02-23T08:08:00Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Reuters doložil skorší začiatok južného protiofenzívneho trendu, ale 400 km² a osem sídel boli tvrdením ukrajinského veliteľa a nebolo jasné, koľko z toho bolo pevne kontrolované ruské územie."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Zmenu mesačnej bilancie potvrdzujú dve analytické spracovania, no presná rozloha závisí od metodiky sivých zón a infiltrácií.",
+      "disputed_points": ["Presná rozloha znovuzískaného územia sa líši podľa toho, či sa započítajú infiltračné a sivé zóny.", "Ukrajinské tvrdenie o 400 km² z februára neznamená 400 km² predtým pevne kontrolovaného územia Ruskom."],
+      "related_event_ids": ["MIL-20260630-001"],
+      "quantitative_data": [
+        {
+          "metric": "približná územná zmena medzi marcom a aprílom podľa AFP/ISW",
+          "value": 120,
+          "unit": "km² v prospech Ukrajiny",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-04-30"
+        },
+        {
+          "metric": "čistá ruská územná strata v apríli a máji podľa CSIS",
+          "value": 400,
+          "unit": "km²",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-05-31"
+        }
+      ]
+    },
+    {
+      "id": "MIL-20260526-001",
+      "theme": "military",
+      "subtheme": "materiálne straty",
+      "title": "Vizuálne potvrdené ruské straty techniky prekročili 23-tisíc kusov",
+      "summary": "Oryx evidoval ku koncu mája viac než 23 000 vizuálne potvrdených ruských strát techniky vrátane 4 390 tankov a 6 429 bojových vozidiel pechoty. Porovnateľný zoznam pre Ukrajinu evidoval začiatkom júna približne 11 397 kusov, ale Oryx v máji spätne výrazne revidoval oba súčty nadol bez okamžitého vysvetlenia; čísla preto predstavujú dolnú hranicu a časové porovnanie je neisté.",
+      "event_date": "2026-05-26",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": ["Ukrajina", "Rusko"],
+      "actors": ["Ozbrojené sily Ruskej federácie", "Ozbrojené sily Ukrajiny", "Oryx"],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": ["materiálne straty", "obrnená technika", "vizuálne potvrdené straty", "udržateľnosť zásob"],
+      "evidence": [
+        {
+          "source_name": "The Insider s údajmi Oryx",
+          "source_url": "https://theins.press/en/news/292986",
+          "published_at": "2026-05-26T08:11:00Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "osint",
+          "reliability_tier": "B",
+          "claim_supported": "Oryx vizuálne potvrdil viac než 23 000 ruských strát techniky vrátane 4 390 tankov, 6 429 BVP a 184 lietadiel."
+        },
+        {
+          "source_name": "Russia Matters / Harvard Kennedy School",
+          "source_url": "https://www.russiamatters.org/news/russia-ukraine-war-report-card/russia-ukraine-war-report-card-june-10-2026",
+          "published_at": "2026-06-10",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "research",
+          "reliability_tier": "B",
+          "claim_supported": "Zdroj zaznamenal revízie Oryx, ku 3. júnu 23 556 ruských a 11 397 ukrajinských strát techniky, a výslovne odmietol časové porovnanie bez vysvetlenia revízie."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Každá položka v Oryx má obrazový podklad, takže ide o pevnú dolnú hranicu; úplný rozsah strát je vyšší a revízie sťažujú porovnávanie v čase.",
+      "disputed_points": ["Oryx v máji 2026 spätne znížil agregované súčty bez vysvetlenia na stránke; kumulatívne počty sa preto nesmú používať ako hladká časová séria.", "Vizuálne potvrdené straty podhodnocujú skutočné straty a miera podhodnotenia nemusí byť rovnaká pre obe strany."],
+      "related_event_ids": ["MIL-20260717-001"],
+      "quantitative_data": [
+        {"metric": "ruské vizuálne potvrdené straty techniky", "value": 23000, "unit": "kusov", "value_type": "estimate", "lower_bound": 23000, "upper_bound": null, "as_of_date": "2026-05-26"},
+        {"metric": "ruské vizuálne potvrdené straty tankov", "value": 4390, "unit": "kusov", "value_type": "exact", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-05-26"},
+        {"metric": "ukrajinské vizuálne potvrdené straty techniky", "value": 11397, "unit": "kusov", "value_type": "exact", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-06-03"}
+      ]
+    },
+    {
+      "id": "MIL-20260602-001",
+      "theme": "military",
+      "subtheme": "diaľkové vzdušné útoky a protivzdušná obrana",
+      "title": "Rusko zvýšilo tlak kombinovanými raketovými a dronovými údermi",
+      "summary": "Od začiatku júna do 19. júla Rusko opakovane nasadzovalo veľké kombinované salvy rakiet a bezpilotných prostriedkov proti ukrajinským mestám, infraštruktúre a podľa ruského ministerstva obrany aj vojensko-priemyselným cieľom. Úder 2. júna zahŕňal podľa ukrajinského letectva 73 rakiet a 656 dronov; 19. júla nasledovalo 41 rakiet a 125 dronov. OHCHR zaznamenal v júni najvyšší mesačný počet civilných obetí od apríla 2022 a označil diaľkové zbrane za hlavný zdroj civilných obetí. Nedostatok interceptorov Patriot zostal kritickým obmedzením.",
+      "event_date": "2026-06-02",
+      "date_precision": "range",
+      "end_date": "2026-07-19",
+      "geography": ["Ukrajina", "Kyjev", "Dnipro", "Charkov", "Záporožie"],
+      "actors": ["Ozbrojené sily Ruskej federácie", "Vzdušné sily Ukrajiny", "civilné obyvateľstvo Ukrajiny"],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": ["raketové útoky", "diaľkové drony", "Patriot", "vojensko-priemyselná infraštruktúra", "civilné straty"],
+      "evidence": [
+        {
+          "source_name": "Associated Press",
+          "source_url": "https://apnews.com/article/russia-ukraine-war-kyiv-drones-missiles-938c74b107d9bb8dc16b179d76125e50",
+          "published_at": "2026-06-02T04:40:46Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "AP zdokumentovala veľký útok 2. júna a uviedla ukrajinské počty 73 rakiet a 656 dronov, ako aj ruské tvrdenie o vojensko-priemyselných cieľoch."
+        },
+        {
+          "source_name": "Associated Press",
+          "source_url": "https://apnews.com/article/russia-ukraine-attack-ballistic-missiles-ddea9c0a10367fc84b3cb563896102e3",
+          "published_at": "2026-07-19T04:41:30Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "AP uviedla 41 rakiet a 125 dronov 19. júla a spojila účinok útoku s nedostatkom systémov Patriot; ruský výpočet vojenských cieľov ostal tvrdením bojujúcej strany."
+        },
+        {
+          "source_name": "UN Human Rights Monitoring Mission in Ukraine",
+          "source_url": "https://ukraine.ohchr.org/en/Protection-of-Civilians-in-Armed-Conflict-June-2026",
+          "published_at": "2026-07-14",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "research",
+          "reliability_tier": "A",
+          "claim_supported": "OHCHR potvrdil v júni 293 zabitých a 1 990 zranených civilistov; diaľkové rakety a drony predstavovali 45 % civilných obetí."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Existenciu a rozsah kampane potvrdzujú agentúrne správy a nezávislé monitorovanie OSN; jednotlivé tvrdenia o zasiahnutých vojenských cieľoch nie sú nezávisle potvrdené.",
+      "disputed_points": ["Ruské ministerstvo obrany tvrdilo, že zasiahlo vojensko-priemyselné objekty; Ukrajina potvrdila najmä škody na civilnej a energetickej infraštruktúre a vojenské škody nekomentovala.", "Počty vypustených a zostrelených prostriedkov pochádzajú od ukrajinského letectva a sú oficiálnymi vojnovými údajmi."],
+      "related_event_ids": ["MIL-20260708-001", "MIL-20260610-001"],
+      "quantitative_data": [
+        {"metric": "rakety vypustené Ruskom počas úderu 2. júna", "value": 73, "unit": "rakiet", "value_type": "party_claim", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-06-02"},
+        {"metric": "drony vypustené Ruskom počas úderu 2. júna", "value": 656, "unit": "dronov", "value_type": "party_claim", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-06-02"},
+        {"metric": "civilisti zabití v júni", "value": 293, "unit": "osôb", "value_type": "exact", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-06-30"},
+        {"metric": "civilisti zranení v júni", "value": 1990, "unit": "osôb", "value_type": "exact", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-06-30"}
+      ]
+    },
+    {
+      "id": "MIL-20260610-001",
+      "theme": "military",
+      "subtheme": "údery v operačnom a strategickom tyle",
+      "title": "Ukrajina rozšírila diaľkové údery na ruský vojenský priemysel, palivá a logistiku",
+      "summary": "Ukrajinská kampaň v júni a júli opakovane zasiahla alebo podľa miestnych ruských úradov spôsobila požiare v priemyselných a ropných zariadeniach ďaleko od frontu. Paralelne sa sústredila na logistiku okupovaného Krymu vrátane tankerov, energetických uzlov a vojenských zariadení. Fyzické incidenty a výpadky potvrdili aj ruskí regionálni alebo okupační predstavitelia; presný rozsah škôd a ukrajinské tvrdenia o konkrétnych cieľoch zostávajú čiastočne neoverené.",
+      "event_date": "2026-06-10",
+      "date_precision": "range",
+      "end_date": "2026-07-19",
+      "geography": ["Rusko", "okupovaný Krym", "Čierne more", "Azovské more"],
+      "actors": ["Ozbrojené sily Ukrajiny", "Bezpečnostná služba Ukrajiny", "Ozbrojené sily Ruskej federácie", "ruský ropný a vojenský priemysel"],
+      "significance": 5,
+      "status": "likely",
+      "trend_tags": ["diaľkové údery", "vojenská logistika", "ropná infraštruktúra", "Krym", "protivzdušná obrana"],
+      "evidence": [
+        {
+          "source_name": "Associated Press",
+          "source_url": "https://apnews.com/article/russia-ukraine-war-military-strikes-4a158f6273807683d48692dedb4121b8",
+          "published_at": "2026-06-10T09:43:25Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Ruskí regionálni predstavitelia potvrdili útoky v Čuvašsku a Samarskej oblasti; presnú identitu závodov uviedla Ukrajina a otvorené zdroje."
+        },
+        {
+          "source_name": "Reuters / Investing.com",
+          "source_url": "https://www.investing.com/news/commodities-news/ukraine-strikes-russian-shadow-fleet-tankers-supplying-crimea-4779755",
+          "published_at": "2026-07-07T11:58:00Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Reuters potvrdil ukrajinské tvrdenie o kampani proti tankerom zásobujúcim Krym, ale nedokázal nezávisle overiť zábery zásahov a zistil, že sankčný status časti plavidiel bol nadhodnotený."
+        },
+        {
+          "source_name": "Associated Press",
+          "source_url": "https://apnews.com/article/russia-ukraine-ballistic-missiles-patriot-attacks-kyiv-f38e07c64d4beba79ca145c3b4bb9510",
+          "published_at": "2026-07-14T09:51:43Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Úrady v Krasnodarskom kraji potvrdili požiar v Afipskej rafinérii a baškirský gubernátor útok na priemyselnú zónu v Salavate."
+        },
+        {
+          "source_name": "UN Human Rights Monitoring Mission in Ukraine",
+          "source_url": "https://ukraine.ohchr.org/en/Protection-of-Civilians-in-Armed-Conflict-June-2026",
+          "published_at": "2026-07-14",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "research",
+          "reliability_tier": "A",
+          "claim_supported": "OHCHR zaznamenal v júni najmenej 12 ukrajinských útokov na energetické zariadenia v okupovanom Kryme, ktoré vyvolali výpadky elektriny."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Séria útokov a časť následkov sú potvrdené z oboch strán a nezávislými médiami, no rozsah materiálnych škôd a vojenský efekt nie sú plne verejné.",
+      "disputed_points": ["Ukrajinské tvrdenie o dvanástich zasiahnutých tankeroch nebolo Reuters plne nezávisle potvrdené.", "Presun približne 90 ruských odpaľovacích zariadení PVO k Valdaju bol tvrdením prezidenta Zelenského bez nezávislého potvrdenia a nie je uvádzaný ako fakt.", "Verejné dôkazy nepotvrdzujú presný pokles ruskej bojovej kapacity po každom jednotlivom údere."],
+      "related_event_ids": ["MIL-20260602-001", "MIL-20260708-001"],
+      "quantitative_data": [
+        {"metric": "tankery údajne zasiahnuté 6.–7. júla", "value": 12, "unit": "plavidiel", "value_type": "party_claim", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-07-07"},
+        {"metric": "útoky na energetické zariadenia v okupovanom Kryme zaznamenané OHCHR", "value": 12, "unit": "útokov", "value_type": "estimate", "lower_bound": 12, "upper_bound": null, "as_of_date": "2026-06-30"}
+      ]
+    },
+    {
+      "id": "MIL-20260621-001",
+      "theme": "military",
+      "subtheme": "ľudské straty Ukrajiny",
+      "title": "Otvorený menný register zdokumentoval viac než 103-tisíc padlých ukrajinských vojakov",
+      "summary": "Projekt UALosses uvádzal pre obdobie od 24. februára 2022 do 21. júna 2026 menovite 103 418 padlých, 97 938 nezvestných a 11 618 zajatých ukrajinských vojakov. Kategórie sa nesmú sčítavať ako počet mŕtvych: nezvestní ani zajatí nie sú potvrdené úmrtia a databáza priznáva nerovnomerné regionálne pokrytie, duplicity či oneskorenia. CSIS nezávisle odhadol 125–150-tisíc ukrajinských vojenských úmrtí do júna, čo je širší, nie priamo porovnateľný odhad.",
+      "event_date": "2026-06-21",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": ["Ukrajina"],
+      "actors": ["Ozbrojené sily Ukrajiny", "UALosses", "Center for Strategic and International Studies"],
+      "significance": 4,
+      "status": "likely",
+      "trend_tags": ["ľudské straty", "menovite potvrdené straty", "nezvestní", "personálna udržateľnosť"],
+      "evidence": [
+        {
+          "source_name": "UALosses",
+          "source_url": "https://ualosses.org/en/soldiers/",
+          "published_at": "2026-06-21",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "osint",
+          "reliability_tier": "B",
+          "claim_supported": "Menná databáza uvádza 103 418 padlých, 97 938 nezvestných a 11 618 zajatých pre obdobie do 21. júna 2026."
+        },
+        {
+          "source_name": "UALosses – metodika",
+          "source_url": "https://ualosses.org/en/about/",
+          "published_at": "2025",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "osint",
+          "reliability_tier": "B",
+          "claim_supported": "Projekt používa verejné oznámenia, médiá, príbuzných a pamätníky a výslovne upozorňuje, že pokrytie je neúplné a nerovnomerné."
+        },
+        {
+          "source_name": "Center for Strategic and International Studies",
+          "source_url": "https://csis-website-prod.s3.amazonaws.com/s3fs-public/2026-07/260701_Jones_Russian_Blood.pdf?VersionId=2ULVLyK7GKhvOEIvSN.IqoHj1Zks9c6Q",
+          "published_at": "2026-07-01",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "research",
+          "reliability_tier": "B",
+          "claim_supported": "CSIS odhadol 525–625-tisíc ukrajinských vojenských strát vrátane 125–150-tisíc úmrtí do júna 2026."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Menné položky majú zdroje, ale register je neúplný; celkový odhad CSIS je modelový rozsah založený aj na neverejných rozhovoroch.",
+      "disputed_points": ["Ukrajina v analyzovanom období nezverejnila nový úplný oficiálny súčet vlastných vojenských úmrtí.", "Nezvestní sa nemôžu automaticky považovať za mŕtvych a môžu sa prekrývať s neskôr identifikovanými kategóriami.", "Odhad CSIS a menný register majú odlišnú metodiku a nemožno ich mechanicky zlúčiť."],
+      "related_event_ids": ["MIL-20260717-001", "MIL-20260722-001"],
+      "quantitative_data": [
+        {"metric": "menovite zdokumentovaní padlí ukrajinskí vojaci", "value": 103418, "unit": "osôb", "value_type": "estimate", "lower_bound": 103418, "upper_bound": null, "as_of_date": "2026-06-21"},
+        {"metric": "menovite evidovaní nezvestní ukrajinskí vojaci", "value": 97938, "unit": "osôb", "value_type": "estimate", "lower_bound": 97938, "upper_bound": null, "as_of_date": "2026-06-21"},
+        {"metric": "odhad ukrajinských vojenských úmrtí CSIS", "value": 0, "unit": "osôb", "value_type": "range", "lower_bound": 125000, "upper_bound": 150000, "as_of_date": "2026-06-30"}
+      ]
+    },
+    {
+      "id": "MIL-20260630-001",
+      "theme": "military",
+      "subtheme": "tempo pozemných operácií",
+      "title": "Ruská jarná–letná ofenzíva nedosiahla do konca júna operačne významný prielom",
+      "summary": "ISW odhadol ruské zisky alebo infiltrácie v júni na 30,42 km² oproti 481,25 km² v júni 2025. DeepState pri odlišnej metodike uviedol 84 km² novozískaného územia pred odpočítaním ukrajinských oslobodení a pripustil možný negatívny čistý výsledok. CSIS meral hlavné postupy v prvej polovici roka iba na 50–90 metrov denne. Ruské sily naďalej útočili a mali lokálne úspechy najmä na doneckých smeroch, ale bez operačného prelomenia ukrajinskej obrany.",
+      "event_date": "2026-06-30",
+      "date_precision": "range",
+      "end_date": "2026-07-20",
+      "geography": ["Ukrajina", "Donecká oblasť", "Dnipropetrovská oblasť", "Zaporizhžská oblasť", "Charkovská oblasť", "Sumská oblasť"],
+      "actors": ["Ozbrojené sily Ruskej federácie", "Ozbrojené sily Ukrajiny", "ISW", "DeepState"],
+      "significance": 5,
+      "status": "likely",
+      "trend_tags": ["ruská jarná–letná ofenzíva", "tempo postupu", "opotrebovacia vojna", "sivé zóny"],
+      "evidence": [
+        {
+          "source_name": "Critical Threats Project / ISW",
+          "source_url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-july-1-2026",
+          "published_at": "2026-07-01",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "research",
+          "reliability_tier": "B",
+          "claim_supported": "ISW odhadol 30,42 km² ruských ziskov alebo infiltrácií v júni a označil ofenzívu za bez operačne významných ziskov."
+        },
+        {
+          "source_name": "Interfax-Ukraine s údajmi DeepState",
+          "source_url": "https://en.interfax.com.ua/news/general/1181464.html",
+          "published_at": "2026-07-02T09:15:00+03:00",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "osint",
+          "reliability_tier": "C",
+          "claim_supported": "DeepState uviedol 84 km² ruských ziskov pred odpočítaním ukrajinských úspechov, rast počtu útokov o 4,4 % a väčšie používanie jednotlivcov alebo malých skupín."
+        },
+        {
+          "source_name": "Center for Strategic and International Studies",
+          "source_url": "https://csis-website-prod.s3.amazonaws.com/s3fs-public/2026-07/260701_Jones_Russian_Blood.pdf?VersionId=2ULVLyK7GKhvOEIvSN.IqoHj1Zks9c6Q",
+          "published_at": "2026-07-01",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "research",
+          "reliability_tier": "B",
+          "claim_supported": "CSIS vypočítal pri najvýznamnejších ruských a ukrajinských ofenzívach prvej polovice 2026 priemerné tempo iba 50–90 metrov denne."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Viaceré mapové a analytické zdroje sa zhodujú na veľmi nízkom tempe a absencii prielomu, hoci sa rozchádzajú v presnej ploche zmeny.",
+      "disputed_points": ["ISW, DeepState a CSIS používajú odlišné pravidlá pre kontrolu územia, infiltrácie a sivé zóny; ich km² sa nesmú priamo porovnávať.", "Absencia operačného prielomu neznamená absenciu ruskej iniciatívy alebo lokálnych ziskov."],
+      "related_event_ids": ["MIL-20260430-001"],
+      "quantitative_data": [
+        {"metric": "ruské zisky alebo infiltrácie podľa ISW v júni", "value": 30.42, "unit": "km²", "value_type": "estimate", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-06-30"},
+        {"metric": "ruské hrubé územné zisky podľa DeepState v júni", "value": 84, "unit": "km²", "value_type": "estimate", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-06-30"},
+        {"metric": "typické tempo hlavných postupov v prvej polovici 2026 podľa CSIS", "value": 0, "unit": "metrov za deň", "value_type": "range", "lower_bound": 50, "upper_bound": 90, "as_of_date": "2026-06-30"}
+      ]
+    },
+    {
+      "id": "MIL-20260708-001",
+      "theme": "military",
+      "subtheme": "vojenská pomoc a protivzdušná obrana",
+      "title": "Spojené štáty prisľúbili licenciu na výrobu Patriot a NATO zvýšilo dlhodobý rámec pomoci",
+      "summary": "Prezident USA 8. júla verejne prisľúbil Ukrajine licenciu na výrobu systémov Patriot. NATO uviedlo, že spojenci pre rok 2026 prisľúbili 70 miliárd eur vojenskej pomoci a cez PURL už do júna financovali viac než 6 miliárd dolárov amerického vybavenia s prebiehajúcimi dodávkami. Licencia je strategicky významná, ale nemá okamžitý účinok: výroba je drahá, pomalá a harmonogram nebol zverejnený.",
+      "event_date": "2026-07-08",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": ["Ukrajina", "Spojené štáty", "členské štáty NATO"],
+      "actors": ["Spojené štáty", "NATO", "Ukrajina"],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": ["Patriot", "protivzdušná obrana", "vojenská pomoc", "munícia", "PURL"],
+      "evidence": [
+        {
+          "source_name": "Associated Press",
+          "source_url": "https://apnews.com/article/nato-trump-iran-ukraine-turkey-d393e8ef6103e32c984c4337a82930b1",
+          "published_at": "2026-07-08T02:56:49Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Prezident USA verejne oznámil licenciu na výrobu Patriot; AP upozornila, že výroba trvá dlho a je nákladná."
+        },
+        {
+          "source_name": "NATO",
+          "source_url": "https://nato.int/en/what-we-do/partnerships-and-cooperation/natos-support-for-ukraine",
+          "published_at": "2026-07",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "official",
+          "reliability_tier": "A",
+          "claim_supported": "NATO uvádza vyše 6 miliárd USD financovania amerického vybavenia cez PURL s prebiehajúcimi dodávkami a 70 miliárd EUR prisľúbenej pomoci na rok 2026."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Oznámenia a záväzky sú verejné a primárne potvrdené; operačný účinok a načasovanie budúcej výroby zatiaľ známe nie sú.",
+      "disputed_points": ["Prísľub licencie nie je dodávka hotových systémov ani interceptorov.", "NATO záväzky zahŕňajú vybavenie, pomoc a výcvik; nemožno ich celé považovať za muníciu dostupnú na fronte."],
+      "related_event_ids": ["MIL-20260602-001", "MIL-20260610-001"],
+      "quantitative_data": [
+        {"metric": "financovanie amerického vybavenia cez PURL", "value": 6, "unit": "miliárd USD", "value_type": "estimate", "lower_bound": 6, "upper_bound": null, "as_of_date": "2026-06-30"},
+        {"metric": "prisľúbená pomoc NATO na rok 2026", "value": 70, "unit": "miliárd EUR", "value_type": "exact", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-07-08"}
+      ]
+    },
+    {
+      "id": "MIL-20260717-001",
+      "theme": "military",
+      "subtheme": "menovite potvrdené ruské straty",
+      "title": "Menný register BBC Russian a Mediazona prekročil 233-tisíc ruských vojenských úmrtí",
+      "summary": "BBC Russian, Mediazona a dobrovoľníci mali 10. júla menovite potvrdených 233 033 príslušníkov bojujúcich na ruskej strane; aktualizácia Mediazony zo 17. júla uvádzala 7 406 potvrdených dôstojníkov a známy dátum úmrtia pri 215 420 prípadoch. Samostatný štatistický model Mediazona–Meduza odhadol 352 000 úmrtí mužských ruských občanov vo veku 18–59 rokov do konca 2025. Menný register je dolná hranica a model nezahŕňa rovnaké obdobie ani všetky kategórie.",
+      "event_date": "2026-07-17",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": ["Rusko", "Ukrajina"],
+      "actors": ["Ozbrojené sily Ruskej federácie", "BBC Russian", "Mediazona", "Meduza"],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": ["ľudské straty", "menovite potvrdené straty", "dôstojníci", "nábor"],
+      "evidence": [
+        {
+          "source_name": "Mediazona",
+          "source_url": "https://en.zona.media/article/2026/07/17/casualties_eng-trl",
+          "published_at": "2026-07-17T09:00:00Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "osint",
+          "reliability_tier": "A",
+          "claim_supported": "Mediazona opisuje prísne menné overovanie, poslednú aktualizáciu 17. júla, 7 406 potvrdených dôstojníkov a známy dátum smrti pri 215 420 prípadoch."
+        },
+        {
+          "source_name": "Meduza s výsledkami BBC Russian a Mediazona",
+          "source_url": "https://meduza.io/en/news/2026/07/10/over-3-500-foreign-nationals-killed-fighting-for-russia-in-ukraine-bbc-finds",
+          "published_at": "2026-07-10T07:58:00Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "media",
+          "reliability_tier": "B",
+          "claim_supported": "Menný zoznam dosiahol 233 033 príslušníkov zabitých na ruskej strane."
+        },
+        {
+          "source_name": "Mediazona a Meduza",
+          "source_url": "https://en.zona.media/article/2026/05/09/losses",
+          "published_at": "2026-05-09T10:57:00Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "research",
+          "reliability_tier": "A",
+          "claim_supported": "Model z dedičského registra odhadol 352 000 úmrtí mužských ruských občanov vo veku 18–59 rokov od invázie do konca 2025."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Menné minimum používa transparentné a prísne kritériá; štatistický celkový odhad je metodicky popísaný, ale vzťahuje sa iba do konca 2025.",
+      "disputed_points": ["Menný register nie je úplný a údaje za posledné mesiace majú veľké oneskorenie.", "Štatistický odhad 352-tisíc sa vzťahuje na ruských občanov mužského pohlavia vo veku 18–59 rokov do konca 2025 a nie je priamo porovnateľný s mennou aktualizáciou z júla 2026.", "Register spravidla nezahŕňa pôvodné sily takzvaných DNR/LNR, pokiaľ nešlo o ruských občanov v definovaných kategóriách."],
+      "related_event_ids": ["MIL-20260621-001", "MIL-20260526-001"],
+      "quantitative_data": [
+        {"metric": "menovite potvrdení zabití na ruskej strane", "value": 233033, "unit": "osôb", "value_type": "estimate", "lower_bound": 233033, "upper_bound": null, "as_of_date": "2026-07-10"},
+        {"metric": "menovite potvrdení ruskí dôstojníci", "value": 7406, "unit": "osôb", "value_type": "exact", "lower_bound": null, "upper_bound": null, "as_of_date": "2026-07-17"},
+        {"metric": "štatistický odhad ruských vojenských úmrtí do konca 2025", "value": 352000, "unit": "osôb", "value_type": "estimate", "lower_bound": null, "upper_bound": null, "as_of_date": "2025-12-31"}
+      ]
+    },
+    {
+      "id": "MIL-20260722-001",
+      "theme": "military",
+      "subtheme": "vojenské velenie a reforma",
+      "title": "Mychajlo Drapatyj prevzal velenie Ozbrojených síl Ukrajiny",
+      "summary": "Prezident Volodymyr Zelenskyj po odvolaní Oleksandra Syrského vymenoval za hlavného veliteľa generálmajora Mychajla Drapatého a avizoval Ihora Skybiuka ako nového náčelníka generálneho štábu. Novému vedeniu uložil pripraviť aktualizovanú obrannú stratégiu, pokračovať v reforme zborového systému, zrýchliť dodávky zbraní a dronov, posilniť PVO a spresniť mobilizačný plán. Ide o potvrdenú personálnu zmenu s potenciálne veľkým, ale zatiaľ nepozorovateľným operačným účinkom.",
+      "event_date": "2026-07-22",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": ["Ukrajina"],
+      "actors": ["Volodymyr Zelenskyj", "Mychajlo Drapatyj", "Oleksandr Syrskyj", "Ihor Skybiuk", "Ozbrojené sily Ukrajiny"],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": ["vojenské velenie", "reforma zborov", "mobilizácia", "drony", "protivzdušná obrana"],
+      "evidence": [
+        {
+          "source_name": "Associated Press",
+          "source_url": "https://apnews.com/article/russia-ukraine-war-military-chief-fired-3001163461bb5ed7f790720f13eb3e36",
+          "published_at": "2026-07-22T07:19:59Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "AP potvrdila zmenu velenia a úlohy novej stratégie vrátane zborovej reformy, rýchlejších dodávok, PVO a mobilizácie."
+        },
+        {
+          "source_name": "Interfax-Ukraine",
+          "source_url": "https://en.interfax.com.ua/news/general/1187157.html",
+          "published_at": "2026-07-22T15:14:00+03:00",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Prezidentský dekrét č. 630/2026 formálne vymenoval Drapatého za hlavného veliteľa."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Personálna zmena je potvrdená dekrétom a viacerými agentúrnymi správami; jej budúci vojenský účinok je zatiaľ neistý.",
+      "disputed_points": ["Tvrdenia odchádzajúceho velenia o 743 km² znovuzískaného územia v roku 2026 neboli nezávisle overené a nie sú použité ako potvrdený údaj.", "Vnútorné spory o straty, reformy a štýl velenia sú prevažne založené na verejných obvineniach a vyšetrovaniach; ich operačný dosah nemožno zatiaľ zmerať."],
+      "related_event_ids": ["MIL-20260621-001", "MIL-20260708-001", "MIL-20260610-001"],
+      "quantitative_data": []
+    }
+  ],
+  "trends": [
+    {
+      "id": "TREND-MIL-001",
+      "theme": "military",
+      "title": "Ruská ofenzíva stratila tempo, ale iniciatíva zostáva zmiešaná",
+      "assessment": "Od apríla sa ruské plošné zisky prudko spomalili a ukrajinské protiútoky opakovane znižovali ruskú kontrolu v južných a juhovýchodných sektoroch. Rusko však naďalej vykonáva väčšinu útočných akcií, udržiava tlak na doneckých smeroch a rozširuje infiltračné zóny na severe. Najpresnejšie hodnotenie preto nie je strategický ukrajinský obrat, ale prechod k fragmentovanej iniciatíve bez operačného prielomu.",
+      "direction": "mixed",
+      "period_start": "2026-04-30",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": ["MIL-20260430-001", "MIL-20260630-001"],
+      "counterevidence_event_ids": ["MIL-20260630-001"],
+      "indicators_to_watch": ["mesačné čisté zmeny územnej kontroly podľa viacerých máp", "rozširovanie sivých a infiltračných zón pri Pokrovsku, Kosťantynivke, Sloviansku a na severe", "schopnosť oboch strán konvertovať lokálne zisky na operačný prielom", "zmeny intenzity útočných akcií po výmene ukrajinského velenia"],
+      "confidence": "high"
+    },
+    {
+      "id": "TREND-MIL-002",
+      "theme": "military",
+      "title": "Diaľkové údery sa stali hlavnou ukrajinskou asymetrickou operačnou pákou",
+      "assessment": "Ukrajina rozšírila dosah a frekvenciu útokov na ruské ropné, priemyselné, vojenské a logistické ciele a súčasne zvyšuje tlak na zásobovanie okupovaného Krymu. Verejné dôkazy potvrdzujú viacero zásahov, požiarov a výpadkov, ale presný kumulatívny vplyv na ruskú bojovú kapacitu zostáva iba stredne istý.",
+      "direction": "rising",
+      "period_start": "2026-06-10",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": ["MIL-20260610-001", "MIL-20260708-001"],
+      "counterevidence_event_ids": [],
+      "indicators_to_watch": ["trvanie výpadkov v ruských rafinériách a na okupovanom Kryme", "zmeny ruskej distribúcie PVO", "frekvencia a úspešnosť zásahov logistiky do okupovaných území", "overiteľné zmeny zásobovania palivom a muníciou na fronte"],
+      "confidence": "medium"
+    },
+    {
+      "id": "TREND-MIL-003",
+      "theme": "military",
+      "title": "Vzdušná vojna eskaluje rýchlejšie než kapacita ukrajinskej PVO",
+      "assessment": "Rusko pokračuje vo veľkých kombinovaných salvách a častejšie využíva balistické rakety, zatiaľ čo Ukrajine chýbajú systémy a interceptory Patriot. Nová licencia na výrobu a vysoké záväzky NATO zlepšujú dlhodobý výhľad, ale v analyzovanom období ešte neodstránili krátkodobú medzeru.",
+      "direction": "rising",
+      "period_start": "2026-06-02",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": ["MIL-20260602-001", "MIL-20260708-001"],
+      "counterevidence_event_ids": ["MIL-20260708-001"],
+      "indicators_to_watch": ["mesačný počet ruských balistických rakiet a kombinovaných saliev", "skutočné dodávky interceptorov Patriot a ďalších systémov PVO", "čas do začatia licenčnej výroby", "pomer zachytených balistických rakiet a zásahov vojensko-priemyselnej infraštruktúry"],
+      "confidence": "high"
+    },
+    {
+      "id": "TREND-MIL-004",
+      "theme": "military",
+      "title": "Opotrebovanie zvyšuje personálne a materiálne náklady pre obe strany",
+      "assessment": "Vizuálne potvrdené straty techniky a menné registre padlých vytvárajú pevné dolné hranice pre obe strany. Modely naznačujú, že ruské mesačné straty prevyšujú nábor, zatiaľ čo ukrajinské menné údaje a odhady poukazujú na vážny personálny tlak. Ani jedna množina údajov však nepodporuje bezprostredný kolaps; rozhodujúca je kvalita náhrad, výcvik, rotácia a schopnosť opráv.",
+      "direction": "rising",
+      "period_start": "2026-05-26",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": ["MIL-20260526-001", "MIL-20260621-001", "MIL-20260717-001"],
+      "counterevidence_event_ids": ["MIL-20260708-001"],
+      "indicators_to_watch": ["mesačný ruský kontraktný nábor a regionálne náborové bonusy", "ukrajinské mobilizačné pravidlá, výcvik a rotácie", "dostupnosť opraviteľnej obrnenej techniky v ruských skladoch", "dodávky munície a techniky cez NATO a spoločnú výrobu", "oneskorené revízie menovitých registrov"],
+      "confidence": "medium"
+    },
+    {
+      "id": "TREND-MIL-005",
+      "theme": "military",
+      "title": "Bezpilotné systémy ďalej rozširujú bojovú zónu a bránia sústredeniu síl",
+      "assessment": "Hustota FPV a diaľkových dronov sťažuje pohyb a zhromažďovanie väčších formácií, podporuje malé infiltračné skupiny a presúva časť súťaže do priemyselnej výroby a elektronického boja. Dohoda EÚ–Ukrajina a úlohy nového ukrajinského velenia potvrdzujú, že škálovanie dronov zostáva centrálne, hoci presné výrobné a zásahové štatistiky strán nie sú nezávisle auditované.",
+      "direction": "rising",
+      "period_start": "2026-04-30",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": ["MIL-20260610-001", "MIL-20260708-001", "MIL-20260722-001"],
+      "counterevidence_event_ids": [],
+      "indicators_to_watch": ["overené mesačné dodávky FPV, diaľkových a pozemných dronov", "účinnosť elektronického boja a autonómneho navádzania", "podiel dronov na vizuálne potvrdených stratách", "schopnosť jednotiek obnoviť manéver vo väčších formáciách"],
+      "confidence": "medium"
+    }
+  ]
+}

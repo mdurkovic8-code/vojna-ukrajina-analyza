@@ -1,0 +1,2657 @@
+{
+  "metadata": {
+    "title": "Vojna na Ukrajine – databáza udalostí a trendov",
+    "generated_at_utc": "2026-07-22T19:28:59Z",
+    "research_cutoff_utc": "2026-07-22T19:09:11Z",
+    "language": "sk",
+    "analysis_window": {
+      "start_date": "2026-04-30",
+      "end_date": "2026-07-22",
+      "trigger_event": "Ukrajinské protiútoky zmenili čistú teritoriálnu bilanciu a pribrzdili ruskú jarnú–letnú ofenzívu",
+      "rationale": "Koniec apríla je najstarší z posledných relevantných vojenských, politických a ekonomických zlomov. Apríl bol podľa mapovacej analýzy ISW prvým mesiacom po viac než dvoch rokoch, keď Rusko stratilo viac kontrolovaného územia, než získalo; lokálne ukrajinské protiútoky a absencia ruského operačného prielomu pokračovali aj v máji až júli. Zlom preto presiahol jeden spravodajský cyklus, hoci neznamená jednoznačný prechod celkovej strategickej iniciatívy na Ukrajinu."
+    },
+    "methodology_summary": "Tri oddelené výskumné vetvy postupovali spätne od uzávierky a vyberali iba udalosti meniace alebo potvrdzujúce významný trend. Primárne a metodicky transparentné zdroje majú prednosť; tvrdenia bojujúcich strán sú odlúčené od nezávislého potvrdenia. Významnosť a dôkazná istota sa hodnotia oddelene. Čísla z neporovnateľných metodík sa nesčítavajú a každý trend odkazuje na konkrétne udalosti.",
+    "limitations": [
+      "Veľká časť frontu je pre nezávislých pozorovateľov neprístupná; mapy kontroly územia sa spätne opravujú a odlišne pracujú so sivými a infiltračnými zónami.",
+      "Menné, vizuálne a oficiálne údaje o stratách merajú odlišné kategórie a predstavujú dolné hranice, odhady alebo tvrdenia; nemožno ich zlúčiť do jedného presného súčtu.",
+      "Prieskumy v Rusku ovplyvňuje represívne prostredie a autocenzúra; ukrajinské prieskumy nezahŕňajú okupované územia ani časť ľudí bez dostupného mobilného signálu.",
+      "Ruské ekonomické štatistiky a údaje o rafinérskych odstávkach majú medzery; zasiahnutá kapacita neznamená automaticky rovnako veľký a trvalý pokles produkcie.",
+      "Niektoré udalosti z 20.–22. júla sú potvrdené, ale príliš čerstvé na spoľahlivé vyhodnotenie dlhodobého účinku.",
+      "Výskum zachytáva stav verejne dostupných informácií do 2026-07-22T19:09:11Z; neskoršie opravy a udalosti nie sú zahrnuté."
+    ]
+  },
+  "events": [
+    {
+      "id": "MIL-20260722-001",
+      "theme": "military",
+      "subtheme": "vojenské velenie a reforma",
+      "title": "Mychajlo Drapatyj prevzal velenie Ozbrojených síl Ukrajiny",
+      "summary": "Prezident Volodymyr Zelenskyj po odvolaní Oleksandra Syrského vymenoval za hlavného veliteľa generálmajora Mychajla Drapatého a avizoval Ihora Skybiuka ako nového náčelníka generálneho štábu. Novému vedeniu uložil pripraviť aktualizovanú obrannú stratégiu, pokračovať v reforme zborového systému, zrýchliť dodávky zbraní a dronov, posilniť PVO a spresniť mobilizačný plán. Ide o potvrdenú personálnu zmenu s potenciálne veľkým, ale zatiaľ nepozorovateľným operačným účinkom.",
+      "event_date": "2026-07-22",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Ukrajina"
+      ],
+      "actors": [
+        "Volodymyr Zelenskyj",
+        "Mychajlo Drapatyj",
+        "Oleksandr Syrskyj",
+        "Ihor Skybiuk",
+        "Ozbrojené sily Ukrajiny"
+      ],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": [
+        "vojenské velenie",
+        "reforma zborov",
+        "mobilizácia",
+        "drony",
+        "protivzdušná obrana"
+      ],
+      "evidence": [
+        {
+          "source_name": "Associated Press",
+          "source_url": "https://apnews.com/article/russia-ukraine-war-military-chief-fired-3001163461bb5ed7f790720f13eb3e36",
+          "published_at": "2026-07-22T07:19:59Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "AP potvrdila zmenu velenia a úlohy novej stratégie vrátane zborovej reformy, rýchlejších dodávok, PVO a mobilizácie."
+        },
+        {
+          "source_name": "Interfax-Ukraine",
+          "source_url": "https://en.interfax.com.ua/news/general/1187157.html",
+          "published_at": "2026-07-22T15:14:00+03:00",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Prezidentský dekrét č. 630/2026 formálne vymenoval Drapatého za hlavného veliteľa."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Personálna zmena je potvrdená dekrétom a viacerými agentúrnymi správami; jej budúci vojenský účinok je zatiaľ neistý.",
+      "disputed_points": [
+        "Tvrdenia odchádzajúceho velenia o 743 km² znovuzískaného územia v roku 2026 neboli nezávisle overené a nie sú použité ako potvrdený údaj.",
+        "Vnútorné spory o straty, reformy a štýl velenia sú prevažne založené na verejných obvineniach a vyšetrovaniach; ich operačný dosah nemožno zatiaľ zmerať."
+      ],
+      "related_event_ids": [
+        "MIL-20260621-001",
+        "MIL-20260708-001",
+        "MIL-20260610-001"
+      ],
+      "quantitative_data": []
+    },
+    {
+      "id": "POL-20260721-001",
+      "theme": "politics",
+      "subtheme": "vojenské velenie",
+      "title": "Drapatyi nahradil Syrského na čele Ozbrojených síl Ukrajiny",
+      "summary": "Prezident Volodymyr Zelenskyj 21. júla oznámil vymenovanie Mychajla Drapatého za hlavného veliteľa namiesto Oleksandra Syrského; dekrét č. 630/2026 bol zverejnený 22. júla. Rozhodnutie nasledovalo po niekoľkodňových protestoch a verejnom spore medzi odvolaným ministrom obrany Mychajlom Fedorovom a Syrským. Drapatyi dostal za úlohu pripraviť aktualizovanú obrannú stratégiu, pokračovať v zborovej reforme a predložiť jasnejšiu koncepciu mobilizácie.",
+      "event_date": "2026-07-21",
+      "date_precision": "exact",
+      "end_date": "2026-07-22",
+      "geography": [
+        "Ukrajina",
+        "Kyjev"
+      ],
+      "actors": [
+        "Volodymyr Zelenskyj",
+        "Mychajlo Drapatyi",
+        "Oleksandr Syrskyi",
+        "Ozbrojené sily Ukrajiny"
+      ],
+      "significance": 5,
+      "status": "confirmed",
+      "trend_tags": [
+        "vojenské velenie",
+        "personálna zmena",
+        "mobilizácia",
+        "politická zodpovednosť"
+      ],
+      "evidence": [
+        {
+          "source_name": "Prezident Ukrajiny",
+          "source_url": "https://www.president.gov.ua/en/news/ya-viznachiv-sho-novim-golovnokomanduvachem-zbrojnih-sil-ukr-105541",
+          "published_at": "2026-07-21T22:43:00+03:00",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "official",
+          "reliability_tier": "A",
+          "claim_supported": "Prezident oznámil výmenu hlavného veliteľa, pomenoval úlohy pre Drapatého a opísal odovzdanie funkcie."
+        },
+        {
+          "source_name": "Ministerstvo obrany Ukrajiny",
+          "source_url": "https://mod.gov.ua/en/news/president-of-ukraine-outlines-personnel-changes-and-development-priorities-for-the-defence-forces",
+          "published_at": "2026-07-22T13:39:00+03:00",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "official",
+          "reliability_tier": "A",
+          "claim_supported": "Potvrdzuje Drapatého vo funkcii a priority vrátane mobilizácie, zborovej reformy a zmien v generálnom štábe."
+        },
+        {
+          "source_name": "Associated Press",
+          "source_url": "https://apnews.com/article/ukraine-zelenskyy-syrskyi-army-chief-504513cfcc5cbc55175dc605cc711793",
+          "published_at": "2026-07-21",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Nezávisle potvrdzuje výmenu a zasadzuje ju do kontextu protestov a konfliktu Fedorov–Syrskyi."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Personálna zmena je potvrdená oficiálnymi zdrojmi aj dvoma etablovanými agentúrnymi správami.",
+      "disputed_points": [
+        "Nie je ešte možné vyhodnotiť operačný výsledok zmeny ani to, či stabilizuje politickú situáciu."
+      ],
+      "related_event_ids": [
+        "POL-20260712-001",
+        "POL-20260716-001",
+        "POL-20260612-001"
+      ],
+      "quantitative_data": []
+    },
+    {
+      "id": "ECO-20260720-001",
+      "theme": "economy",
+      "subtheme": "verejné financie a zahraničná pomoc Ukrajine",
+      "title": "IMF dokončil prvú revíziu nového programu EFF pre Ukrajinu",
+      "summary": "Výkonná rada IMF dokončila prvú revíziu štvorročného programu EFF a sprístupnila Ukrajine približne 690 miliónov USD. Po vyplatení má financovanie v rámci nového programu dosiahnuť približne 2,2 miliardy USD. IMF potvrdil splnenie všetkých kvantitatívnych kritérií a indikatívnych cieľov ku koncu marca, zároveň však zaznamenal oneskorenia štrukturálnych reforiem.",
+      "event_date": "2026-07-20",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Ukrajina"
+      ],
+      "actors": [
+        "Medzinárodný menový fond",
+        "Ministerstvo financií Ukrajiny",
+        "Národná banka Ukrajiny"
+      ],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": [
+        "zahraničná pomoc",
+        "makrofinančná stabilita",
+        "verejné financie",
+        "reformy"
+      ],
+      "evidence": [
+        {
+          "source_name": "Ministerstvo financií Ukrajiny",
+          "source_url": "https://mof.gov.ua/en/news/imf_executive_board_completed_first_review_under_eff_arrangement_ukraine_to_receive_about_usd_690_million-5830",
+          "published_at": "2026-07-21",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "official",
+          "reliability_tier": "A",
+          "claim_supported": "IMF dokončil prvú revíziu; Ukrajina získala prístup k približne 690 miliónom USD a splnila kvantitatívne kritériá ku koncu marca."
+        },
+        {
+          "source_name": "Reuters",
+          "source_url": "https://ca.marketscreener.com/news/imf-approves-690-million-for-ukraine-after-review-ce7f51dbdf88ff22",
+          "published_at": "2026-07-20",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Rada IMF dokončila revíziu 20. júla a schválila okamžitý prístup k približne 690 miliónom USD."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Rozhodnutie potvrdzuje príjemca aj nezávislá tlačová agentúra; suma je zaokrúhlená podľa oficiálnej komunikácie.",
+      "disputed_points": [],
+      "related_event_ids": [
+        "ECO-20260630-001"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "sprístupnená druhá tranža EFF",
+          "value": 690,
+          "unit": "miliónov USD",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-07-20"
+        },
+        {
+          "metric": "kumulatívne financovanie v novom EFF po druhej tranži",
+          "value": 2.2,
+          "unit": "miliardy USD",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-07-20"
+        }
+      ]
+    },
+    {
+      "id": "ECO-20260720-002",
+      "theme": "economy",
+      "subtheme": "ruský štátny dlh",
+      "title": "Ruské ministerstvo financií pozastavilo aukcie OFZ na neurčito",
+      "summary": "Ministerstvo financií Ruska pozastavilo pravidelné aukcie federálnych dlhopisov OFZ s odôvodnením stabilizácie trhových podmienok. Rozhodnutiu predchádzali štyri plánované aukcie, ktoré boli zrušené alebo priniesli slabý dopyt; dlhé výnosy vzrástli nad 16,5 %. Udalosť zvyšuje krátkodobé náklady financovania rozpočtového deficitu, ale pri cut-offe ešte nepreukazuje neschopnosť štátu financovať sa inými domácimi kanálmi.",
+      "event_date": "2026-07-20",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Rusko"
+      ],
+      "actors": [
+        "Ministerstvo financií Ruskej federácie",
+        "domáce banky",
+        "investori do OFZ"
+      ],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": [
+        "verejné financie",
+        "OFZ",
+        "náklady financovania",
+        "rozpočtový deficit"
+      ],
+      "evidence": [
+        {
+          "source_name": "Ministerstvo financií Ruskej federácie",
+          "source_url": "https://minfin.gov.ru/ru/press-center/?id_4=40510-informatsionnoe_soobshchenie_o_priostanovke_auktsionov_po_razmeshcheniyu_ofz",
+          "published_at": "2026-07-20",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "official",
+          "reliability_tier": "A",
+          "claim_supported": "Ministerstvo oznámilo pozastavenie aukcií OFZ s cieľom stabilizovať trhové podmienky."
+        },
+        {
+          "source_name": "The Moscow Times",
+          "source_url": "https://www.themoscowtimes.com/2026/07/21/russia-halts-bond-auctions-as-government-debt-selloff-complicates-budget-financing-a93297",
+          "published_at": "2026-07-21",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "media",
+          "reliability_tier": "B",
+          "claim_supported": "Posledné štyri plánované aukcie boli zrušené alebo mali slabý dopyt a výnosy dlhších OFZ prekročili 16,5 %."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Samotné pozastavenie je potvrdené ministerstvom; trhový kontext je potvrdený profesionálnym médiom, no dlhodobý následok ešte nie je známy.",
+      "disputed_points": [
+        "Nie je potvrdené, ako dlho pozastavenie potrvá ani či povedie k trvalému obmedzeniu rozpočtového financovania."
+      ],
+      "related_event_ids": [
+        "ECO-20260716-001",
+        "ECO-20260709-001"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "plánované hrubé domáce pôžičky cez OFZ v 3. štvrťroku",
+          "value": 1.5,
+          "unit": "bilióna RUB",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-07-20"
+        },
+        {
+          "metric": "výnos dlhopisov OFZ so splatnosťou nad 10 rokov",
+          "value": 16.5,
+          "unit": "percent p.a. (viac ako)",
+          "value_type": "estimate",
+          "lower_bound": 16.5,
+          "upper_bound": null,
+          "as_of_date": "2026-07-20"
+        }
+      ]
+    },
+    {
+      "id": "MIL-20260717-001",
+      "theme": "military",
+      "subtheme": "menovite potvrdené ruské straty",
+      "title": "Menný register BBC Russian a Mediazona prekročil 233-tisíc ruských vojenských úmrtí",
+      "summary": "BBC Russian, Mediazona a dobrovoľníci mali 10. júla menovite potvrdených 233 033 príslušníkov bojujúcich na ruskej strane; aktualizácia Mediazony zo 17. júla uvádzala 7 406 potvrdených dôstojníkov a známy dátum úmrtia pri 215 420 prípadoch. Samostatný štatistický model Mediazona–Meduza odhadol 352 000 úmrtí mužských ruských občanov vo veku 18–59 rokov do konca 2025. Menný register je dolná hranica a model nezahŕňa rovnaké obdobie ani všetky kategórie.",
+      "event_date": "2026-07-17",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Rusko",
+        "Ukrajina"
+      ],
+      "actors": [
+        "Ozbrojené sily Ruskej federácie",
+        "BBC Russian",
+        "Mediazona",
+        "Meduza"
+      ],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": [
+        "ľudské straty",
+        "menovite potvrdené straty",
+        "dôstojníci",
+        "nábor"
+      ],
+      "evidence": [
+        {
+          "source_name": "Mediazona",
+          "source_url": "https://en.zona.media/article/2026/07/17/casualties_eng-trl",
+          "published_at": "2026-07-17T09:00:00Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "osint",
+          "reliability_tier": "A",
+          "claim_supported": "Mediazona opisuje prísne menné overovanie, poslednú aktualizáciu 17. júla, 7 406 potvrdených dôstojníkov a známy dátum smrti pri 215 420 prípadoch."
+        },
+        {
+          "source_name": "Meduza s výsledkami BBC Russian a Mediazona",
+          "source_url": "https://meduza.io/en/news/2026/07/10/over-3-500-foreign-nationals-killed-fighting-for-russia-in-ukraine-bbc-finds",
+          "published_at": "2026-07-10T07:58:00Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "media",
+          "reliability_tier": "B",
+          "claim_supported": "Menný zoznam dosiahol 233 033 príslušníkov zabitých na ruskej strane."
+        },
+        {
+          "source_name": "Mediazona a Meduza",
+          "source_url": "https://en.zona.media/article/2026/05/09/losses",
+          "published_at": "2026-05-09T10:57:00Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "research",
+          "reliability_tier": "A",
+          "claim_supported": "Model z dedičského registra odhadol 352 000 úmrtí mužských ruských občanov vo veku 18–59 rokov od invázie do konca 2025."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Menné minimum používa transparentné a prísne kritériá; štatistický celkový odhad je metodicky popísaný, ale vzťahuje sa iba do konca 2025.",
+      "disputed_points": [
+        "Menný register nie je úplný a údaje za posledné mesiace majú veľké oneskorenie.",
+        "Štatistický odhad 352-tisíc sa vzťahuje na ruských občanov mužského pohlavia vo veku 18–59 rokov do konca 2025 a nie je priamo porovnateľný s mennou aktualizáciou z júla 2026.",
+        "Register spravidla nezahŕňa pôvodné sily takzvaných DNR/LNR, pokiaľ nešlo o ruských občanov v definovaných kategóriách."
+      ],
+      "related_event_ids": [
+        "MIL-20260621-001",
+        "MIL-20260526-001"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "menovite potvrdení zabití na ruskej strane",
+          "value": 233033,
+          "unit": "osôb",
+          "value_type": "estimate",
+          "lower_bound": 233033,
+          "upper_bound": null,
+          "as_of_date": "2026-07-10"
+        },
+        {
+          "metric": "menovite potvrdení ruskí dôstojníci",
+          "value": 7406,
+          "unit": "osôb",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-07-17"
+        },
+        {
+          "metric": "štatistický odhad ruských vojenských úmrtí do konca 2025",
+          "value": 352000,
+          "unit": "osôb",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2025-12-31"
+        }
+      ]
+    },
+    {
+      "id": "POL-20260717-001",
+      "theme": "politics",
+      "subtheme": "represia a voľby v Rusku",
+      "title": "Odsúdenie Nadeždina odstránilo najviditeľnejšieho protivojnového kandidáta z volieb",
+      "summary": "Ruský súd 17. júla odsúdil Borisa Nadeždina za zobrazenie 'extrémistických symbolov', čo mu znemožnilo pokračovať v kampani do septembrových volieb do Štátnej dumy. V ten istý deň bol Iľja Remeslo vzatý do väzby pre údajné šírenie nepravdivých informácií o armáde. Udalosti posilňujú trend zužovania aj symbolického opozičného priestoru pred voľbami.",
+      "event_date": "2026-07-17",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Rusko",
+        "Moskovská oblasť",
+        "Petrohrad"
+      ],
+      "actors": [
+        "Boris Nadeždin",
+        "Iľja Remeslo",
+        "ruské súdy",
+        "Ministerstvo spravodlivosti Ruskej federácie"
+      ],
+      "significance": 3,
+      "status": "confirmed",
+      "trend_tags": [
+        "represia",
+        "voľby",
+        "protivojnová opozícia",
+        "legitimita"
+      ],
+      "evidence": [
+        {
+          "source_name": "Associated Press",
+          "source_url": "https://apnews.com/article/russia-crackdown-opposition-putin-nadezhdin-remeslo-9f3d974e1a8afdac319c8b97db019604",
+          "published_at": "2026-07-17",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Reportuje rozsudok, jeho volebný dôsledok a väzbu Remesla."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Súdne rozhodnutie a väzba sú verejne reportované renomovanou agentúrou; hodnotenie politického účelu je analytická interpretácia podporená načasovaním a následkom.",
+      "disputed_points": [
+        "Ruské orgány prezentujú prípady ako aplikáciu zákona; dotknutí ich označujú za politicky motivované."
+      ],
+      "related_event_ids": [
+        "POL-20260712-002",
+        "POL-20260601-001"
+      ],
+      "quantitative_data": []
+    },
+    {
+      "id": "ECO-20260716-001",
+      "theme": "economy",
+      "subtheme": "ruský federálny rozpočet",
+      "title": "Vládny portál zvýšil projekciu ruského deficitu nad zákonný plán",
+      "summary": "Údaje z ruského vládneho rozpočtového portálu zvýšili projekciu federálnych výdavkov na rok 2026 na 45,11 bilióna RUB pri nezmenených príjmoch 40,28 bilióna RUB. Implikovaný deficit 4,83 bilióna RUB je o viac než bilión vyšší než platný zákonný plán 3,79 bilióna RUB. Skutočný deficit za prvý polrok už dosiahol 5,73 bilióna RUB, ale polročný cash-flow nemožno mechanicky extrapolovať na celý rok pre sezónnosť príjmov a výdavkov.",
+      "event_date": "2026-07-16",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Rusko"
+      ],
+      "actors": [
+        "Ministerstvo financií Ruskej federácie",
+        "Federálne pokladníctvo Ruska",
+        "Banka Ruska"
+      ],
+      "significance": 4,
+      "status": "likely",
+      "trend_tags": [
+        "rozpočtový deficit",
+        "vojnové výdavky",
+        "fiškálne riziko",
+        "domáce pôžičky"
+      ],
+      "evidence": [
+        {
+          "source_name": "Reuters",
+          "source_url": "https://www.investing.com/news/economy-news/russias-2026-budget-deficit-may-exceed-plans-by-1285-billion-due-to-higher-spending-4794773",
+          "published_at": "2026-07-16",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Vládny portál uvádzal výdavky 45,11 bilióna RUB, príjmy 40,28 bilióna RUB a implikovaný deficit 4,83 bilióna RUB; deficit za prvý polrok bol 5,73 bilióna RUB."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Čísla pochádzajú z vládneho portálu a údajov ministerstva, no celoročná hodnota je projekcia, nie výsledok.",
+      "disputed_points": [
+        "Dôvod zvýšenia výdavkovej projekcie nebol na portáli uvedený; spojenie s rastúcimi vojenskými výdavkami je kontext Reuters, nie rozpis portálu."
+      ],
+      "related_event_ids": [
+        "ECO-20260720-002",
+        "ECO-20260709-001"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "projektované federálne výdavky 2026",
+          "value": 45.11,
+          "unit": "bilióna RUB",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-07-16"
+        },
+        {
+          "metric": "projektovaný federálny deficit 2026",
+          "value": 4.83,
+          "unit": "bilióna RUB",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-07-16"
+        },
+        {
+          "metric": "zákonný plán federálneho deficitu 2026",
+          "value": 3.79,
+          "unit": "bilióna RUB",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-07-16"
+        },
+        {
+          "metric": "federálny deficit január až jún 2026",
+          "value": 5.73,
+          "unit": "bilióna RUB",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-30"
+        },
+        {
+          "metric": "federálny deficit január až jún 2026 ako podiel HDP",
+          "value": 2.5,
+          "unit": "percenta HDP",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-30"
+        }
+      ]
+    },
+    {
+      "id": "POL-20260716-001",
+      "theme": "politics",
+      "subtheme": "protesty a civilno-vojenské vzťahy",
+      "title": "Odvolanie Fedorova vyvolalo zriedkavé protesty a otvorený spor o vedenie armády",
+      "summary": "Odvolanie ministra obrany Mychajla Fedorova priviedlo 16. júla tisíce ľudí do ulíc Kyjeva a ďalších miest. Fedorov verejne obvinil Syrského z blokovania reforiem; protestujúci žiadali Fedorovov návrat a Syrského odvolanie. Rating Group následne pri zbere 20.–21. júla zistila, že 72 % respondentov nepodporovalo odvolanie Fedorova a 55 % podporovalo odvolanie Syrského. Zber bol ukončený pred mediálnou správou o Syrského odvolaní.",
+      "event_date": "2026-07-16",
+      "date_precision": "exact",
+      "end_date": "2026-07-21",
+      "geography": [
+        "Ukrajina",
+        "Kyjev",
+        "ďalšie ukrajinské mestá"
+      ],
+      "actors": [
+        "Mychajlo Fedorov",
+        "Oleksandr Syrskyi",
+        "Volodymyr Zelenskyj",
+        "ukrajinskí demonštranti",
+        "príslušníci Ozbrojených síl Ukrajiny"
+      ],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": [
+        "protesty",
+        "civilno-vojenské vzťahy",
+        "legitimita",
+        "vojenská reforma"
+      ],
+      "evidence": [
+        {
+          "source_name": "Associated Press",
+          "source_url": "https://apnews.com/article/russia-ukraine-war-defense-minister-reshuffle-fedorov-88083e4381b1690f5048088d75954d3a",
+          "published_at": "2026-07-16",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Reportuje tisíce protestujúcich, rozsah vládnej prestavby a konflikt medzi Fedorovom a Syrským."
+        },
+        {
+          "source_name": "Reuters",
+          "source_url": "https://www.investing.com/news/world-news/dismissal-of-ukraines-defence-chief-sparks-political-crisis-4795513",
+          "published_at": "2026-07-16",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Potvrdzuje viacmestské protesty, verejný spor a rezignáciu vysokého predstaviteľa vzdušných síl."
+        },
+        {
+          "source_name": "Rating Group",
+          "source_url": "https://www.ratinggroup.ua/news/socpol-jul2026",
+          "published_at": "2026-07-22",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "survey",
+          "reliability_tier": "A",
+          "claim_supported": "Primárna metodická stránka uvádza otázky, výsledky, termín zberu, CATI, náhodnú mobilnú vzorku n=1 000 a maximálnu chybu 3,1 %."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Rozsah protestov a jadro sporu nezávisle opisujú AP aj Reuters; bezprostredná verejná odozva je doložená transparentným prieskumom.",
+      "disputed_points": [
+        "Presný počet účastníkov nebol jednotne a systematicky spočítaný.",
+        "Skok v dôvere k Fedorovovi za jediný týždeň môže odrážať krízový mobilizačný efekt a citlivosť na načasovanie; nejde ešte o stabilný trend."
+      ],
+      "related_event_ids": [
+        "POL-20260712-001",
+        "POL-20260721-001",
+        "POL-20260603-001",
+        "POL-20260603-002"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "nesúhlas s odvolaním Fedorova",
+          "value": 72,
+          "unit": "% respondentov",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-07-21"
+        },
+        {
+          "metric": "podpora odvolania Syrského",
+          "value": 55,
+          "unit": "% respondentov",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-07-21"
+        },
+        {
+          "metric": "dôvera Fedorovovi",
+          "value": 65,
+          "unit": "% respondentov",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-07-21"
+        },
+        {
+          "metric": "dôvera Zelenskému",
+          "value": 59,
+          "unit": "% respondentov",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-07-21"
+        },
+        {
+          "metric": "dôvera Syrskému",
+          "value": 23,
+          "unit": "% respondentov",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-07-21"
+        }
+      ]
+    },
+    {
+      "id": "POL-20260712-001",
+      "theme": "politics",
+      "subtheme": "vláda a parlament",
+      "title": "Ukrajina vymenila premiérku a vytvorila nový kabinet",
+      "summary": "Po oznámení prezidenta z 12. júla o zmene politickej stratégie odstúpila premiérka Julija Svyrydenková. Verchovna rada 16. júla vymenovala Serhija Koreckého za premiéra a 264 hlasmi schválila nové zloženie kabinetu. Ministerstvo obrany zostalo v prechodnom režime pod vedením povereného Jevhenija Chmaru.",
+      "event_date": "2026-07-12",
+      "date_precision": "range",
+      "end_date": "2026-07-16",
+      "geography": [
+        "Ukrajina",
+        "Kyjev"
+      ],
+      "actors": [
+        "Volodymyr Zelenskyj",
+        "Julija Svyrydenková",
+        "Serhij Koreckyi",
+        "Verchovna rada Ukrajiny",
+        "Jevhenij Chmara"
+      ],
+      "significance": 5,
+      "status": "confirmed",
+      "trend_tags": [
+        "vládna prestavba",
+        "parlament",
+        "centralizácia",
+        "obranná politika"
+      ],
+      "evidence": [
+        {
+          "source_name": "Verchovna rada Ukrajiny",
+          "source_url": "https://www.rada.gov.ua/news/Novyny/274325.html",
+          "published_at": "2026-07-16T16:25:00+03:00",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "official",
+          "reliability_tier": "A",
+          "claim_supported": "Parlament prijal uznesenie o vytvorení nového kabinetu 264 hlasmi a zverejnil jeho zloženie."
+        },
+        {
+          "source_name": "Reuters",
+          "source_url": "https://www.investing.com/news/world-news/dismissal-of-ukraines-defence-chief-sparks-political-crisis-4795513",
+          "published_at": "2026-07-16",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Potvrdzuje vymenovanie Koreckého, prechodné vedenie rezortu obrany a politický kontext prestavby."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Zloženie kabinetu a hlasovanie sú doložené oficiálnym záznamom; politický kontext potvrdzuje Reuters.",
+      "disputed_points": [
+        "Deklarovaný cieľ 'obnovy' vlády je politické zdôvodnenie, nie nezávisle overený výsledok."
+      ],
+      "related_event_ids": [
+        "POL-20260716-001",
+        "POL-20260721-001"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "hlasy poslancov za nové zloženie kabinetu",
+          "value": 264,
+          "unit": "hlasov",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-07-16"
+        }
+      ]
+    },
+    {
+      "id": "POL-20260712-002",
+      "theme": "politics",
+      "subtheme": "verejná mienka v Rusku",
+      "title": "Viaceré prieskumy zaznamenali oslabenie podpory Putina a väčšiu preferenciu rokovaní",
+      "summary": "Levada Center pri zbere 23.–30. júna zaznamenal pokles schvaľovania Putina z 79 % na 74 %, pokles podielu hodnotiaceho smer krajiny ako správny zo 61 % na 52 %, pokles podpory krokov ruských ozbrojených síl zo 74 % na 67 % a 64 % preferenciu prechodu k mierovým rokovaniam. Štátom prepojený VCIOM zároveň uviedol pokles súhrnnej dôvery Putinovi zo 76,7 % v sedemdňovom priemere k 21. júnu na 71,0 % k 12. júlu. Ide o zreteľné zhoršenie v krátkom období, nie však o dôkaz bezprostrednej nestability režimu.",
+      "event_date": "2026-07-12",
+      "date_precision": "range",
+      "end_date": "2026-07-12",
+      "geography": [
+        "Rusko"
+      ],
+      "actors": [
+        "Levada Center",
+        "VCIOM",
+        "Vladimir Putin",
+        "obyvateľstvo Ruskej federácie"
+      ],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": [
+        "verejná mienka",
+        "podpora vojny",
+        "rokovania",
+        "legitimita",
+        "vojnová únava"
+      ],
+      "evidence": [
+        {
+          "source_name": "Levada Center",
+          "source_url": "https://www.levada.ru/2026/07/07/konflikt-s-ukrainoj-v-iyune-2026-goda-vnimanie-podderzhka-rossijskih-vooruzhennyh-sil-mnenie-o-neobhodimosti-peregovorov-i-primenenii-yadernogo-oruzhiya/",
+          "published_at": "2026-07-07",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "survey",
+          "reliability_tier": "A",
+          "claim_supported": "Uvádza podporu ozbrojených síl, preferenciu rokovaní, presný zber 23.–30. júna, osobné rozhovory a vzorku n=1 607."
+        },
+        {
+          "source_name": "Levada Center",
+          "source_url": "https://www.levada.ru/2026/07/02/reitingi-iyunya-2026-goda/",
+          "published_at": "2026-07-02",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "survey",
+          "reliability_tier": "A",
+          "claim_supported": "Uvádza pokles schvaľovania Putina a hodnotenia smerovania krajiny pri rovnakej vzorke a metodike."
+        },
+        {
+          "source_name": "VCIOM",
+          "source_url": "https://wciom.com/our-news/ratings/trust-in-politicians",
+          "published_at": "2026-07-12",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "survey",
+          "reliability_tier": "B",
+          "claim_supported": "Sedemdňové priemery denného celoštátneho telefonického prieskumu ukazujú pokles dôvery Putinovi a rast nedôvery od 21. júna do 12. júla."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Smer zmeny potvrdzujú nezávislý aj štátom prepojený prieskum, ale absolútne hodnoty nie sú priamo porovnateľné pre rozdielne otázky a metodiky; autoritárske a vojnové prostredie zvyšuje sociálne žiaduce odpovede a neodpovedanie.",
+      "disputed_points": [
+        "Prieskumy nemožno interpretovať ako slobodné volebné preferencie; cenzúra a riziko postihu môžu nadhodnocovať podporu režimu a vojny.",
+        "Levada a VCIOM používajú odlišné otázky, preto sa porovnáva iba smer, nie úroveň."
+      ],
+      "related_event_ids": [
+        "POL-20260717-001",
+        "POL-20260601-001"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "schvaľovanie činnosti Putina podľa Levada",
+          "value": 74,
+          "unit": "% respondentov",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-30"
+        },
+        {
+          "metric": "presvedčenie, že krajina ide správnym smerom podľa Levada",
+          "value": 52,
+          "unit": "% respondentov",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-30"
+        },
+        {
+          "metric": "podpora krokov ruských ozbrojených síl podľa Levada",
+          "value": 67,
+          "unit": "% respondentov",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-30"
+        },
+        {
+          "metric": "preferencia prechodu k mierovým rokovaniam podľa Levada",
+          "value": 64,
+          "unit": "% respondentov",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-30"
+        },
+        {
+          "metric": "dôvera Putinovi podľa VCIOM",
+          "value": 71,
+          "unit": "% respondentov",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-07-12"
+        }
+      ]
+    },
+    {
+      "id": "ECO-20260709-001",
+      "theme": "economy",
+      "subtheme": "ruské príjmy z ropy a plynu",
+      "title": "Ruské ropné a plynárenské rozpočtové príjmy za polrok klesli o 22,7 %",
+      "summary": "Federálny rozpočet Ruska získal z ropy a plynu za január až jún 2026 približne 3,66 bilióna RUB, medziročne o 22,7 % menej. Nejde o rovnakú metriku ako hrubé príjmy z exportu fosílnych palív: ide o príjmy federálneho rozpočtu podľa ruskej metodiky, preto sa tieto údaje nekombinujú s obchodnými odhadmi CREA alebo lodnými dátami.",
+      "event_date": "2026-07-09",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Rusko"
+      ],
+      "actors": [
+        "Ministerstvo financií Ruskej federácie",
+        "ruský ropný a plynárenský sektor"
+      ],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": [
+        "ropa a plyn",
+        "rozpočtové príjmy",
+        "sankcie",
+        "fiškálna kapacita"
+      ],
+      "evidence": [
+        {
+          "source_name": "TASS s odkazom na Ministerstvo financií Ruskej federácie",
+          "source_url": "https://tass.com/economy/2158277",
+          "published_at": "2026-07-09",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "media",
+          "reliability_tier": "B",
+          "claim_supported": "Ropné a plynárenské príjmy federálneho rozpočtu za prvý polrok dosiahli 3,66 bilióna RUB a medziročne klesli o 22,7 %."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Ide o presne atribútovaný údaj ministerstva financií; obmedzením je závislosť od ruského oficiálneho vykazovania.",
+      "disputed_points": [],
+      "related_event_ids": [
+        "ECO-20260716-001",
+        "ECO-20260708-001"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "ropné a plynárenské príjmy federálneho rozpočtu január až jún 2026",
+          "value": 3.66,
+          "unit": "bilióna RUB",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-30"
+        },
+        {
+          "metric": "medziročná zmena ropných a plynárenských príjmov federálneho rozpočtu",
+          "value": -22.7,
+          "unit": "percenta y/y",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-30"
+        }
+      ]
+    },
+    {
+      "id": "ECO-20260709-002",
+      "theme": "economy",
+      "subtheme": "spotrebiteľské ceny na Ukrajine",
+      "title": "Ukrajinské spotrebiteľské ceny v júni medzimesačne mierne klesli, palivá zostali drahšie",
+      "summary": "Štátny štatistický úrad uviedol júnový index spotrebiteľských cien 99,9 % oproti máju a 105,7 % oproti decembru 2025. Palivá a mazivá boli oproti decembru drahšie o 26,6 %. Údaje nezahŕňajú dočasne okupované územia ani časť území s bojmi a pozorovanie cien sa nevykonáva vo vidieckych oblastiach, čo obmedzuje reprezentatívnosť počas vojny.",
+      "event_date": "2026-07-09",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Ukrajina"
+      ],
+      "actors": [
+        "Štátna štatistická služba Ukrajiny",
+        "ukrajinské domácnosti"
+      ],
+      "significance": 3,
+      "status": "confirmed",
+      "trend_tags": [
+        "inflácia",
+        "palivá",
+        "spotrebitelia",
+        "životné náklady"
+      ],
+      "evidence": [
+        {
+          "source_name": "Štátna štatistická služba Ukrajiny",
+          "source_url": "https://stat.gov.ua/uk/publications/indeksy-tsin-u-chervni-2026-roku-ekspres-vypusk",
+          "published_at": "2026-07-09",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "primary",
+          "reliability_tier": "A",
+          "claim_supported": "Oficiálna metodika a geografické obmedzenia júnového CPI; index oproti máju bol 99,9 %."
+        },
+        {
+          "source_name": "Uryadovyi Kurier s tabuľkou Štátnej štatistickej služby",
+          "source_url": "https://ukurier.gov.ua/uk/news/indeks-spozhivchih-cin-u-chervni-2026-roku1/",
+          "published_at": "2026-07-11",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "official",
+          "reliability_tier": "A",
+          "claim_supported": "CPI dosiahol 105,7 % oproti decembru a index palív a mazív 126,6 %."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Oficiálne mesačné štatistiky s publikovanou metodikou a explicitnými obmedzeniami geografického pokrytia.",
+      "disputed_points": [],
+      "related_event_ids": [
+        "ECO-20260629-001"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "index spotrebiteľských cien oproti predchádzajúcemu mesiacu",
+          "value": 99.9,
+          "unit": "index, máj 2026 = 100",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-30"
+        },
+        {
+          "metric": "index spotrebiteľských cien od začiatku roka",
+          "value": 105.7,
+          "unit": "index, december 2025 = 100",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-30"
+        },
+        {
+          "metric": "index cien palív a mazív od začiatku roka",
+          "value": 126.6,
+          "unit": "index, december 2025 = 100",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-30"
+        }
+      ]
+    },
+    {
+      "id": "ECO-20260708-001",
+      "theme": "economy",
+      "subtheme": "ruské rafinérie a palivá",
+      "title": "Rusko rozšírilo zákaz vývozu nafty a oznámilo dovoz palív",
+      "summary": "Ruská vláda rozšírila dočasný zákaz vývozu nafty aj na producentov a oznámila, že v júli začne palivá dovážať. Námorný export nafty a plynového oleja už v júni klesol na približne 1,8 milióna ton, o 39 % medzimesačne a 46 % medziročne. S&P Global odhadoval odstavenú kapacitu na viac než 2,5 milióna barelov denne ku koncu júna a iný interný odhad na viac než 4 milióny barelov denne v týždni končiacom 10. júla; ide o odlišné dátumy a odhadové tímy, preto sa hodnoty nespájajú do jedného presného čísla.",
+      "event_date": "2026-07-08",
+      "date_precision": "exact",
+      "end_date": "2026-07-31",
+      "geography": [
+        "Rusko",
+        "viaceré regióny",
+        "medzinárodný trh s naftou"
+      ],
+      "actors": [
+        "Vláda Ruskej federácie",
+        "Alexander Novak",
+        "ruské rafinérie",
+        "Ukrajina"
+      ],
+      "significance": 5,
+      "status": "confirmed",
+      "trend_tags": [
+        "palivá",
+        "rafinérie",
+        "dovoz",
+        "vývozný zákaz",
+        "hlboké údery"
+      ],
+      "evidence": [
+        {
+          "source_name": "Reuters",
+          "source_url": "https://www.marketscreener.com/news/russia-bans-diesel-exports-to-ensure-domestic-supply-after-targetd-ukrainian-drone-strikes-ce7f5ed9da88fe26",
+          "published_at": "2026-07-08",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Vláda rozšírila zákaz vývozu nafty na producentov, oznámila dovoz palív a Reuters doložil prepad námorného exportu."
+        },
+        {
+          "source_name": "S&P Global Energy",
+          "source_url": "https://www.spglobal.com/energy/en/news-research/latest-news/crude-oil/071426-global-diesel-market-tightens-as-russian-export-ban-ukraine-strikes-bite",
+          "published_at": "2026-07-14",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "research",
+          "reliability_tier": "B",
+          "claim_supported": "Odhady odstávok rafinérskej kapacity, pokles exportu nafty a medzinárodný dopad zákazu."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Politické opatrenia a obchodné toky sú potvrdené; rozsah odstavených kapacít zostáva odhadom s metodickou neistotou.",
+      "disputed_points": [
+        "Odhady odstavených rafinérskych kapacít sa líšia podľa dátumu, zahrnutia údržby a metodiky; takmer 60 % sa nesmie prezentovať ako oficiálne potvrdená strata kapacity."
+      ],
+      "related_event_ids": [
+        "ECO-20260709-001",
+        "ECO-20260619-001"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "námorný export nafty a plynového oleja v júni 2026",
+          "value": 1.8,
+          "unit": "milióna metrických ton",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-30"
+        },
+        {
+          "metric": "medzimesačná zmena námorného exportu nafty a plynového oleja",
+          "value": -39,
+          "unit": "percent",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-30"
+        },
+        {
+          "metric": "medziročná zmena námorného exportu nafty a plynového oleja",
+          "value": -46,
+          "unit": "percent y/y",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-30"
+        },
+        {
+          "metric": "odstavená rafinérska kapacita podľa CERA ku koncu júna",
+          "value": 2.5,
+          "unit": "milióna barelov denne (viac ako)",
+          "value_type": "estimate",
+          "lower_bound": 2.5,
+          "upper_bound": null,
+          "as_of_date": "2026-06-30"
+        },
+        {
+          "metric": "odstavená rafinérska kapacita podľa globálneho tímu S&P v týždni do 10. júla",
+          "value": 4,
+          "unit": "milióna barelov denne (viac ako)",
+          "value_type": "estimate",
+          "lower_bound": 4,
+          "upper_bound": null,
+          "as_of_date": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "MIL-20260708-001",
+      "theme": "military",
+      "subtheme": "vojenská pomoc a protivzdušná obrana",
+      "title": "Spojené štáty prisľúbili licenciu na výrobu Patriot a NATO zvýšilo dlhodobý rámec pomoci",
+      "summary": "Prezident USA 8. júla verejne prisľúbil Ukrajine licenciu na výrobu systémov Patriot. NATO uviedlo, že spojenci pre rok 2026 prisľúbili 70 miliárd eur vojenskej pomoci a cez PURL už do júna financovali viac než 6 miliárd dolárov amerického vybavenia s prebiehajúcimi dodávkami. Licencia je strategicky významná, ale nemá okamžitý účinok: výroba je drahá, pomalá a harmonogram nebol zverejnený.",
+      "event_date": "2026-07-08",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Ukrajina",
+        "Spojené štáty",
+        "členské štáty NATO"
+      ],
+      "actors": [
+        "Spojené štáty",
+        "NATO",
+        "Ukrajina"
+      ],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": [
+        "Patriot",
+        "protivzdušná obrana",
+        "vojenská pomoc",
+        "munícia",
+        "PURL"
+      ],
+      "evidence": [
+        {
+          "source_name": "Associated Press",
+          "source_url": "https://apnews.com/article/nato-trump-iran-ukraine-turkey-d393e8ef6103e32c984c4337a82930b1",
+          "published_at": "2026-07-08T02:56:49Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Prezident USA verejne oznámil licenciu na výrobu Patriot; AP upozornila, že výroba trvá dlho a je nákladná."
+        },
+        {
+          "source_name": "NATO",
+          "source_url": "https://nato.int/en/what-we-do/partnerships-and-cooperation/natos-support-for-ukraine",
+          "published_at": "2026-07",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "official",
+          "reliability_tier": "A",
+          "claim_supported": "NATO uvádza vyše 6 miliárd USD financovania amerického vybavenia cez PURL s prebiehajúcimi dodávkami a 70 miliárd EUR prisľúbenej pomoci na rok 2026."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Oznámenia a záväzky sú verejné a primárne potvrdené; operačný účinok a načasovanie budúcej výroby zatiaľ známe nie sú.",
+      "disputed_points": [
+        "Prísľub licencie nie je dodávka hotových systémov ani interceptorov.",
+        "NATO záväzky zahŕňajú vybavenie, pomoc a výcvik; nemožno ich celé považovať za muníciu dostupnú na fronte."
+      ],
+      "related_event_ids": [
+        "MIL-20260602-001",
+        "MIL-20260610-001"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "financovanie amerického vybavenia cez PURL",
+          "value": 6,
+          "unit": "miliárd USD",
+          "value_type": "estimate",
+          "lower_bound": 6,
+          "upper_bound": null,
+          "as_of_date": "2026-06-30"
+        },
+        {
+          "metric": "prisľúbená pomoc NATO na rok 2026",
+          "value": 70,
+          "unit": "miliárd EUR",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-07-08"
+        }
+      ]
+    },
+    {
+      "id": "ECO-20260630-001",
+      "theme": "economy",
+      "subtheme": "financovanie Ukrajiny z EÚ",
+      "title": "EÚ vyplatila prvých 7 miliárd EUR z Ukraine Support Loan",
+      "summary": "Európska komisia vyplatila 25. júna 3,2 miliardy EUR ako prvú rozpočtovú splátku a 30. júna 3,9 miliardy EUR ako prvú časť obranného čerpania na drony. Spolu tak Ukrajina do konca júna dostala 7,1 miliardy EUR z rámca do 90 miliárd EUR na roky 2026–2027. Ide o veľký krátkodobý stabilizačný vankúš, no zároveň o dôkaz vysokej závislosti rozpočtu a obrany od pokračujúcej vonkajšej podpory.",
+      "event_date": "2026-06-30",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Ukrajina",
+        "Európska únia"
+      ],
+      "actors": [
+        "Európska komisia",
+        "Ukrajina",
+        "Ministerstvo financií Ukrajiny"
+      ],
+      "significance": 5,
+      "status": "confirmed",
+      "trend_tags": [
+        "zahraničná pomoc",
+        "rozpočtová podpora",
+        "obranný priemysel",
+        "drony"
+      ],
+      "evidence": [
+        {
+          "source_name": "Európska komisia",
+          "source_url": "https://defence-industry-space.ec.europa.eu/eu-defence-industry/ukraine-support-loan_en",
+          "published_at": "2026-06-30",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "official",
+          "reliability_tier": "A",
+          "claim_supported": "Komisia vyplatila 3,2 miliardy EUR 25. júna a 3,9 miliardy EUR 30. júna; rámec úveru je 90 miliárd EUR na roky 2026–2027."
+        },
+        {
+          "source_name": "Ministerstvo financií Ukrajiny",
+          "source_url": "https://www.mof.gov.ua/en/news/ukraine_receives_eur_38_billion_from_the_eu__first_defence_tranche_under_the_ukraine_support_loan-5798",
+          "published_at": "2026-06-30",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "official",
+          "reliability_tier": "A",
+          "claim_supported": "Ukrajinské ministerstvo potvrdilo prijatie obranného čerpania a predchádzajúcej rozpočtovej splátky."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Platby potvrdzuje poskytovateľ aj príjemca; súčet 7,1 miliardy EUR je aritmetický súčet dvoch metodicky zhodných čerpaní z jedného rámca.",
+      "disputed_points": [],
+      "related_event_ids": [
+        "ECO-20260720-001"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "prvá rozpočtová splátka Ukraine Support Loan",
+          "value": 3.2,
+          "unit": "miliardy EUR",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-25"
+        },
+        {
+          "metric": "prvé obranné čerpanie Ukraine Support Loan",
+          "value": 3.9,
+          "unit": "miliardy EUR",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-30"
+        },
+        {
+          "metric": "celkový rámec Ukraine Support Loan 2026 až 2027",
+          "value": 90,
+          "unit": "miliárd EUR (do)",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": 90,
+          "as_of_date": "2026-06-30"
+        }
+      ]
+    },
+    {
+      "id": "MIL-20260630-001",
+      "theme": "military",
+      "subtheme": "tempo pozemných operácií",
+      "title": "Ruská jarná–letná ofenzíva nedosiahla do konca júna operačne významný prielom",
+      "summary": "ISW odhadol ruské zisky alebo infiltrácie v júni na 30,42 km² oproti 481,25 km² v júni 2025. DeepState pri odlišnej metodike uviedol 84 km² novozískaného územia pred odpočítaním ukrajinských oslobodení a pripustil možný negatívny čistý výsledok. CSIS meral hlavné postupy v prvej polovici roka iba na 50–90 metrov denne. Ruské sily naďalej útočili a mali lokálne úspechy najmä na doneckých smeroch, ale bez operačného prelomenia ukrajinskej obrany.",
+      "event_date": "2026-06-30",
+      "date_precision": "range",
+      "end_date": "2026-07-20",
+      "geography": [
+        "Ukrajina",
+        "Donecká oblasť",
+        "Dnipropetrovská oblasť",
+        "Zaporizhžská oblasť",
+        "Charkovská oblasť",
+        "Sumská oblasť"
+      ],
+      "actors": [
+        "Ozbrojené sily Ruskej federácie",
+        "Ozbrojené sily Ukrajiny",
+        "ISW",
+        "DeepState"
+      ],
+      "significance": 5,
+      "status": "likely",
+      "trend_tags": [
+        "ruská jarná–letná ofenzíva",
+        "tempo postupu",
+        "opotrebovacia vojna",
+        "sivé zóny"
+      ],
+      "evidence": [
+        {
+          "source_name": "Critical Threats Project / ISW",
+          "source_url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-july-1-2026",
+          "published_at": "2026-07-01",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "research",
+          "reliability_tier": "B",
+          "claim_supported": "ISW odhadol 30,42 km² ruských ziskov alebo infiltrácií v júni a označil ofenzívu za bez operačne významných ziskov."
+        },
+        {
+          "source_name": "Interfax-Ukraine s údajmi DeepState",
+          "source_url": "https://en.interfax.com.ua/news/general/1181464.html",
+          "published_at": "2026-07-02T09:15:00+03:00",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "osint",
+          "reliability_tier": "C",
+          "claim_supported": "DeepState uviedol 84 km² ruských ziskov pred odpočítaním ukrajinských úspechov, rast počtu útokov o 4,4 % a väčšie používanie jednotlivcov alebo malých skupín."
+        },
+        {
+          "source_name": "Center for Strategic and International Studies",
+          "source_url": "https://csis-website-prod.s3.amazonaws.com/s3fs-public/2026-07/260701_Jones_Russian_Blood.pdf?VersionId=2ULVLyK7GKhvOEIvSN.IqoHj1Zks9c6Q",
+          "published_at": "2026-07-01",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "research",
+          "reliability_tier": "B",
+          "claim_supported": "CSIS vypočítal pri najvýznamnejších ruských a ukrajinských ofenzívach prvej polovice 2026 priemerné tempo iba 50–90 metrov denne."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Viaceré mapové a analytické zdroje sa zhodujú na veľmi nízkom tempe a absencii prielomu, hoci sa rozchádzajú v presnej ploche zmeny.",
+      "disputed_points": [
+        "ISW, DeepState a CSIS používajú odlišné pravidlá pre kontrolu územia, infiltrácie a sivé zóny; ich km² sa nesmú priamo porovnávať.",
+        "Absencia operačného prielomu neznamená absenciu ruskej iniciatívy alebo lokálnych ziskov."
+      ],
+      "related_event_ids": [
+        "MIL-20260430-001"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "ruské zisky alebo infiltrácie podľa ISW v júni",
+          "value": 30.42,
+          "unit": "km²",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-30"
+        },
+        {
+          "metric": "ruské hrubé územné zisky podľa DeepState v júni",
+          "value": 84,
+          "unit": "km²",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-30"
+        },
+        {
+          "metric": "typické tempo hlavných postupov v prvej polovici 2026 podľa CSIS",
+          "value": 0,
+          "unit": "metrov za deň",
+          "value_type": "range",
+          "lower_bound": 50,
+          "upper_bound": 90,
+          "as_of_date": "2026-06-30"
+        }
+      ]
+    },
+    {
+      "id": "ECO-20260629-001",
+      "theme": "economy",
+      "subtheme": "ukrajinská energetická infraštruktúra",
+      "title": "OHCHR zdokumentoval opakované poškodzovanie ukrajinskej energetiky počas zimy 2025–2026",
+      "summary": "OHCHR zdokumentoval najmenej 423 ruských zásahov do výroby, prenosu a distribúcie elektriny od októbra 2025 do marca 2026, vrátane 48 koordinovaných útokov zasahujúcich najmenej tri regióny. Počas zimného maxima vedela Ukrajina podľa citovaných údajov vyrábať približne 11 GW pri dopyte do 18 GW. Ide o spätne overenú kumulatívnu bilanciu, nie o počet udalostí v samotnom 90-dňovom okne.",
+      "event_date": "2026-06-29",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Ukrajina",
+        "viaceré regióny"
+      ],
+      "actors": [
+        "OHCHR",
+        "Ruská federácia",
+        "ukrajinskí energetickí prevádzkovatelia",
+        "civilné obyvateľstvo"
+      ],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": [
+        "energetika",
+        "poškodenie infraštruktúry",
+        "elektrický deficit",
+        "obnova"
+      ],
+      "evidence": [
+        {
+          "source_name": "Úrad vysokého komisára OSN pre ľudské práva",
+          "source_url": "https://www.ecoi.net/en/file/local/2141896/2026-06-29%20PR44.pdf",
+          "published_at": "2026-06-29",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "research",
+          "reliability_tier": "A",
+          "claim_supported": "OHCHR zdokumentoval rozsah útokov, ich dopad na výrobnú a prenosovú kapacitu a zimný deficit elektriny."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "OHCHR použil terénne návštevy, rozhovory a nezávislé overovanie; počet je minimálne zdokumentovaná hodnota, nie úplný súpis.",
+      "disputed_points": [
+        "Ukrajinské orgány uvádzajú vyšší počet útokov; OHCHR započítal iba prípady, ktoré vedel overiť vlastnou metodikou."
+      ],
+      "related_event_ids": [
+        "ECO-20260709-002"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "zdokumentované zásahy do elektrickej infraštruktúry od októbra 2025 do marca 2026",
+          "value": 423,
+          "unit": "zásahov (najmenej)",
+          "value_type": "exact",
+          "lower_bound": 423,
+          "upper_bound": null,
+          "as_of_date": "2026-03-31"
+        },
+        {
+          "metric": "koordinované útoky zasahujúce najmenej tri regióny",
+          "value": 48,
+          "unit": "útokov (najmenej)",
+          "value_type": "exact",
+          "lower_bound": 48,
+          "upper_bound": null,
+          "as_of_date": "2026-03-31"
+        },
+        {
+          "metric": "domáca výroba elektriny počas zimného maxima",
+          "value": 11,
+          "unit": "GW približne",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-02-28"
+        },
+        {
+          "metric": "zimný špičkový dopyt po elektrine",
+          "value": 18,
+          "unit": "GW (do)",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": 18,
+          "as_of_date": "2026-02-28"
+        }
+      ]
+    },
+    {
+      "id": "MIL-20260621-001",
+      "theme": "military",
+      "subtheme": "ľudské straty Ukrajiny",
+      "title": "Otvorený menný register zdokumentoval viac než 103-tisíc padlých ukrajinských vojakov",
+      "summary": "Projekt UALosses uvádzal pre obdobie od 24. februára 2022 do 21. júna 2026 menovite 103 418 padlých, 97 938 nezvestných a 11 618 zajatých ukrajinských vojakov. Kategórie sa nesmú sčítavať ako počet mŕtvych: nezvestní ani zajatí nie sú potvrdené úmrtia a databáza priznáva nerovnomerné regionálne pokrytie, duplicity či oneskorenia. CSIS nezávisle odhadol 125–150-tisíc ukrajinských vojenských úmrtí do júna, čo je širší, nie priamo porovnateľný odhad.",
+      "event_date": "2026-06-21",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Ukrajina"
+      ],
+      "actors": [
+        "Ozbrojené sily Ukrajiny",
+        "UALosses",
+        "Center for Strategic and International Studies"
+      ],
+      "significance": 4,
+      "status": "likely",
+      "trend_tags": [
+        "ľudské straty",
+        "menovite potvrdené straty",
+        "nezvestní",
+        "personálna udržateľnosť"
+      ],
+      "evidence": [
+        {
+          "source_name": "UALosses",
+          "source_url": "https://ualosses.org/en/soldiers/",
+          "published_at": "2026-06-21",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "osint",
+          "reliability_tier": "B",
+          "claim_supported": "Menná databáza uvádza 103 418 padlých, 97 938 nezvestných a 11 618 zajatých pre obdobie do 21. júna 2026."
+        },
+        {
+          "source_name": "UALosses – metodika",
+          "source_url": "https://ualosses.org/en/about/",
+          "published_at": "2025",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "osint",
+          "reliability_tier": "B",
+          "claim_supported": "Projekt používa verejné oznámenia, médiá, príbuzných a pamätníky a výslovne upozorňuje, že pokrytie je neúplné a nerovnomerné."
+        },
+        {
+          "source_name": "Center for Strategic and International Studies",
+          "source_url": "https://csis-website-prod.s3.amazonaws.com/s3fs-public/2026-07/260701_Jones_Russian_Blood.pdf?VersionId=2ULVLyK7GKhvOEIvSN.IqoHj1Zks9c6Q",
+          "published_at": "2026-07-01",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "research",
+          "reliability_tier": "B",
+          "claim_supported": "CSIS odhadol 525–625-tisíc ukrajinských vojenských strát vrátane 125–150-tisíc úmrtí do júna 2026."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Menné položky majú zdroje, ale register je neúplný; celkový odhad CSIS je modelový rozsah založený aj na neverejných rozhovoroch.",
+      "disputed_points": [
+        "Ukrajina v analyzovanom období nezverejnila nový úplný oficiálny súčet vlastných vojenských úmrtí.",
+        "Nezvestní sa nemôžu automaticky považovať za mŕtvych a môžu sa prekrývať s neskôr identifikovanými kategóriami.",
+        "Odhad CSIS a menný register majú odlišnú metodiku a nemožno ich mechanicky zlúčiť."
+      ],
+      "related_event_ids": [
+        "MIL-20260717-001",
+        "MIL-20260722-001"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "menovite zdokumentovaní padlí ukrajinskí vojaci",
+          "value": 103418,
+          "unit": "osôb",
+          "value_type": "estimate",
+          "lower_bound": 103418,
+          "upper_bound": null,
+          "as_of_date": "2026-06-21"
+        },
+        {
+          "metric": "menovite evidovaní nezvestní ukrajinskí vojaci",
+          "value": 97938,
+          "unit": "osôb",
+          "value_type": "estimate",
+          "lower_bound": 97938,
+          "upper_bound": null,
+          "as_of_date": "2026-06-21"
+        },
+        {
+          "metric": "odhad ukrajinských vojenských úmrtí CSIS",
+          "value": 0,
+          "unit": "osôb",
+          "value_type": "range",
+          "lower_bound": 125000,
+          "upper_bound": 150000,
+          "as_of_date": "2026-06-30"
+        }
+      ]
+    },
+    {
+      "id": "ECO-20260619-001",
+      "theme": "economy",
+      "subtheme": "ruská menová politika",
+      "title": "Banka Ruska znížila kľúčovú sadzbu o 25 bázických bodov na 14,25 %",
+      "summary": "Banka Ruska znížila sadzbu na 14,25 %, no súčasne uviedla, že fiškálna politika bude expanzívnejšia než predpokladala a že dočasný pokles výroby motorových palív zvýšil proinflačné riziká. Ročná inflácia bola k 15. júnu 5,6 %. Rozhodnutie preto znamenalo len opatrné uvoľnenie; vysoká reálna cena úveru naďalej brzdí civilné investície a spotrebu.",
+      "event_date": "2026-06-19",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Rusko"
+      ],
+      "actors": [
+        "Banka Ruska",
+        "ruské podniky",
+        "ruské domácnosti"
+      ],
+      "significance": 3,
+      "status": "confirmed",
+      "trend_tags": [
+        "úrokové sadzby",
+        "inflácia",
+        "palivá",
+        "úverové podmienky"
+      ],
+      "evidence": [
+        {
+          "source_name": "Banka Ruska",
+          "source_url": "https://www.cbr.ru/eng/press/keypr/",
+          "published_at": "2026-06-19",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "official",
+          "reliability_tier": "A",
+          "claim_supported": "Kľúčová sadzba bola znížená na 14,25 %, ročná inflácia k 15. júnu bola 5,6 % a palivová výroba aj fiškálna politika zvýšili inflačné riziká."
+        },
+        {
+          "source_name": "Banka Ruska – Talking Trends",
+          "source_url": "https://www.cbr.ru/eng/press/event/?id=32702",
+          "published_at": "2026-07-15",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "official",
+          "reliability_tier": "A",
+          "claim_supported": "Centrálna banka po rozhodnutí uviedla, že júnové zrýchlenie cien bolo prevažne dočasné, no rast palivových cien môže zhoršiť očakávania."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Oficiálne rozhodnutie a následná analytická komunikácia centrálnej banky.",
+      "disputed_points": [],
+      "related_event_ids": [
+        "ECO-20260708-001"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "kľúčová úroková sadzba Banky Ruska",
+          "value": 14.25,
+          "unit": "percent p.a.",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-19"
+        },
+        {
+          "metric": "ročná spotrebiteľská inflácia podľa Banky Ruska",
+          "value": 5.6,
+          "unit": "percent y/y",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-15"
+        }
+      ]
+    },
+    {
+      "id": "POL-20260612-001",
+      "theme": "politics",
+      "subtheme": "mobilizačná politika Ukrajiny",
+      "title": "Ukrajinské vedenie predstavilo reformu zameranú na personálnu krízu armády",
+      "summary": "Zelenskyj a vtedajší minister obrany Fedorov predstavili vyššie platy, nové zmluvy s jasnými lehotami služby, jednoduchšie prestupy medzi jednotkami a širší nábor zahraničných dobrovoľníkov. Oznámenie reagovalo na chronický nedostatok personálu, dezercie a spoločenský tlak na predvídateľné podmienky služby; časť opatrení však vyžadovala zákony, vykonávacie rozhodnutia a udržateľné financovanie.",
+      "event_date": "2026-06-12",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Ukrajina"
+      ],
+      "actors": [
+        "Volodymyr Zelenskyj",
+        "Mychajlo Fedorov",
+        "Ministerstvo obrany Ukrajiny",
+        "Verchovna rada Ukrajiny",
+        "Ozbrojené sily Ukrajiny"
+      ],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": [
+        "mobilizácia",
+        "nábor",
+        "podmienky služby",
+        "dezercie"
+      ],
+      "evidence": [
+        {
+          "source_name": "Prezident Ukrajiny",
+          "source_url": "https://www.president.gov.ua/en/news/pogodzheno-shlyah-zbilshiti-finansovu-stijkist-nashoyi-oboro-104885",
+          "published_at": "2026-06-12T14:33:00+03:00",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "official",
+          "reliability_tier": "A",
+          "claim_supported": "Potvrdzuje schválený smer reformy, deklarované platy, dĺžky kontraktov a ďalšie náborové opatrenia."
+        },
+        {
+          "source_name": "Le Monde",
+          "source_url": "https://www.lemonde.fr/en/international/article/2026/06/15/ukraine-announces-new-measures-to-address-army-staffing-crisis_6754497_4.html",
+          "published_at": "2026-06-15",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "media",
+          "reliability_tier": "B",
+          "claim_supported": "Nezávisle opisuje personálny kontext, potrebu legislatívy a neistotu financovania."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Oznámenie a jeho parametre sú potvrdené, ale úplná implementácia a výsledok pri nábore neboli do cutoffu preukázané.",
+      "disputed_points": [
+        "Oficiálne parametre kontraktov a mediálny opis sa v detailoch dĺžok čiastkovo rozchádzajú; rozhodujúce budú prijaté právne texty.",
+        "Nie je doložené, že reforma už materiálne znížila dezercie alebo personálny deficit."
+      ],
+      "related_event_ids": [
+        "POL-20260721-001",
+        "POL-20260716-001"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "minimálna mesačná odmena v tyle podľa oznámenia",
+          "value": 30000,
+          "unit": "UAH mesačne",
+          "value_type": "party_claim",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-12"
+        },
+        {
+          "metric": "priemerná odmena na fronte podľa oznámenia",
+          "value": 300000,
+          "unit": "UAH mesačne",
+          "value_type": "party_claim",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "MIL-20260610-001",
+      "theme": "military",
+      "subtheme": "údery v operačnom a strategickom tyle",
+      "title": "Ukrajina rozšírila diaľkové údery na ruský vojenský priemysel, palivá a logistiku",
+      "summary": "Ukrajinská kampaň v júni a júli opakovane zasiahla alebo podľa miestnych ruských úradov spôsobila požiare v priemyselných a ropných zariadeniach ďaleko od frontu. Paralelne sa sústredila na logistiku okupovaného Krymu vrátane tankerov, energetických uzlov a vojenských zariadení. Fyzické incidenty a výpadky potvrdili aj ruskí regionálni alebo okupační predstavitelia; presný rozsah škôd a ukrajinské tvrdenia o konkrétnych cieľoch zostávajú čiastočne neoverené.",
+      "event_date": "2026-06-10",
+      "date_precision": "range",
+      "end_date": "2026-07-19",
+      "geography": [
+        "Rusko",
+        "okupovaný Krym",
+        "Čierne more",
+        "Azovské more"
+      ],
+      "actors": [
+        "Ozbrojené sily Ukrajiny",
+        "Bezpečnostná služba Ukrajiny",
+        "Ozbrojené sily Ruskej federácie",
+        "ruský ropný a vojenský priemysel"
+      ],
+      "significance": 5,
+      "status": "likely",
+      "trend_tags": [
+        "diaľkové údery",
+        "vojenská logistika",
+        "ropná infraštruktúra",
+        "Krym",
+        "protivzdušná obrana"
+      ],
+      "evidence": [
+        {
+          "source_name": "Associated Press",
+          "source_url": "https://apnews.com/article/russia-ukraine-war-military-strikes-4a158f6273807683d48692dedb4121b8",
+          "published_at": "2026-06-10T09:43:25Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Ruskí regionálni predstavitelia potvrdili útoky v Čuvašsku a Samarskej oblasti; presnú identitu závodov uviedla Ukrajina a otvorené zdroje."
+        },
+        {
+          "source_name": "Reuters / Investing.com",
+          "source_url": "https://www.investing.com/news/commodities-news/ukraine-strikes-russian-shadow-fleet-tankers-supplying-crimea-4779755",
+          "published_at": "2026-07-07T11:58:00Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Reuters potvrdil ukrajinské tvrdenie o kampani proti tankerom zásobujúcim Krym, ale nedokázal nezávisle overiť zábery zásahov a zistil, že sankčný status časti plavidiel bol nadhodnotený."
+        },
+        {
+          "source_name": "Associated Press",
+          "source_url": "https://apnews.com/article/russia-ukraine-ballistic-missiles-patriot-attacks-kyiv-f38e07c64d4beba79ca145c3b4bb9510",
+          "published_at": "2026-07-14T09:51:43Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Úrady v Krasnodarskom kraji potvrdili požiar v Afipskej rafinérii a baškirský gubernátor útok na priemyselnú zónu v Salavate."
+        },
+        {
+          "source_name": "UN Human Rights Monitoring Mission in Ukraine",
+          "source_url": "https://ukraine.ohchr.org/en/Protection-of-Civilians-in-Armed-Conflict-June-2026",
+          "published_at": "2026-07-14",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "research",
+          "reliability_tier": "A",
+          "claim_supported": "OHCHR zaznamenal v júni najmenej 12 ukrajinských útokov na energetické zariadenia v okupovanom Kryme, ktoré vyvolali výpadky elektriny."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Séria útokov a časť následkov sú potvrdené z oboch strán a nezávislými médiami, no rozsah materiálnych škôd a vojenský efekt nie sú plne verejné.",
+      "disputed_points": [
+        "Ukrajinské tvrdenie o dvanástich zasiahnutých tankeroch nebolo Reuters plne nezávisle potvrdené.",
+        "Presun približne 90 ruských odpaľovacích zariadení PVO k Valdaju bol tvrdením prezidenta Zelenského bez nezávislého potvrdenia a nie je uvádzaný ako fakt.",
+        "Verejné dôkazy nepotvrdzujú presný pokles ruskej bojovej kapacity po každom jednotlivom údere."
+      ],
+      "related_event_ids": [
+        "MIL-20260602-001",
+        "MIL-20260708-001"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "tankery údajne zasiahnuté 6.–7. júla",
+          "value": 12,
+          "unit": "plavidiel",
+          "value_type": "party_claim",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-07-07"
+        },
+        {
+          "metric": "útoky na energetické zariadenia v okupovanom Kryme zaznamenané OHCHR",
+          "value": 12,
+          "unit": "útokov",
+          "value_type": "estimate",
+          "lower_bound": 12,
+          "upper_bound": null,
+          "as_of_date": "2026-06-30"
+        }
+      ]
+    },
+    {
+      "id": "POL-20260603-001",
+      "theme": "politics",
+      "subtheme": "legitimita a deľba moci na Ukrajine",
+      "title": "Podpora prezidentského zasahovania klesla, dopyt po povojnovej obnove vedenia vzrástol",
+      "summary": "KIIS zistil, že 52 % respondentov akceptovalo, aby prezident počas vojny zasahoval do činnosti vlády a parlamentu s cieľom posilniť obranu, oproti 79 % v júli 2022; 38 % uprednostnilo dodržiavanie ústavnej deľby moci. Až 88 % očakávalo po vojne výmenu aspoň jednej úrovne centrálnej moci a 67 % očakávalo výmenu prezidenta. Výsledky signalizujú súčasnú legitimitu vojnového vedenia, ale rastúci dopyt po povojnovej politickej obnove.",
+      "event_date": "2026-06-03",
+      "date_precision": "range",
+      "end_date": "2026-06-03",
+      "geography": [
+        "Ukrajina",
+        "vládou kontrolované územie"
+      ],
+      "actors": [
+        "Kyiv International Institute of Sociology",
+        "Volodymyr Zelenskyj",
+        "Verchovna rada Ukrajiny",
+        "Kabinet ministrov Ukrajiny"
+      ],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": [
+        "legitimita",
+        "deľba moci",
+        "verejná mienka",
+        "povojnová obnova"
+      ],
+      "evidence": [
+        {
+          "source_name": "KIIS – výsledky reprodukované Interfax-Ukraine",
+          "source_url": "https://en.interfax.com.ua/news/general/1177240.html",
+          "published_at": "2026-06-17T13:31:00+03:00",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "survey",
+          "reliability_tier": "B",
+          "claim_supported": "Uvádza výsledky, znenie tém otázok, CATI zber 7. mája až 3. júna, náhodnú mobilnú vzorku n=1 000 a vojnové obmedzenia."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Metodika je transparentne zhrnutá, ale primárna stránka KIIS bola pri kontrole technicky nečitateľná; navyše vzorka nezahŕňa okupované územia ani väčšinu občanov v zahraničí.",
+      "disputed_points": [
+        "Očakávanie výmeny po vojne nie je totožné so súčasnou nedôverou ani s požiadavkou na okamžité voľby."
+      ],
+      "related_event_ids": [
+        "POL-20260712-001",
+        "POL-20260716-001"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "akceptácia prezidentského zasahovania do vlády a parlamentu počas vojny",
+          "value": 52,
+          "unit": "% respondentov",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-03"
+        },
+        {
+          "metric": "preferencia ústavnej deľby moci",
+          "value": 38,
+          "unit": "% respondentov",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-03"
+        },
+        {
+          "metric": "očakávanie povojnovej výmeny prezidenta",
+          "value": 67,
+          "unit": "% respondentov",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-03"
+        }
+      ]
+    },
+    {
+      "id": "POL-20260603-002",
+      "theme": "politics",
+      "subtheme": "postoje k prímeriu na Ukrajine",
+      "title": "Prijateľnosť prímeria závisela od konkrétnych bezpečnostných záruk",
+      "summary": "V experimentálnom prieskume KIIS 61 % respondentov odmietlo prímerie na súčasnej línii bez bezpečnostných záruk a významnej finančnej a zbrojnej podpory. Pri scenári rozsiahlej podpory by prímerie prijalo 53 %, pri európskych silách blízko frontu pripravených odraziť nový útok 61 %. Výsledok ukazuje, že jednoduchá otázka 'rokovania alebo boj' zakrýva rozhodujúci vplyv podmienok dohody.",
+      "event_date": "2026-06-03",
+      "date_precision": "range",
+      "end_date": "2026-06-03",
+      "geography": [
+        "Ukrajina",
+        "vládou kontrolované územie"
+      ],
+      "actors": [
+        "Kyiv International Institute of Sociology",
+        "obyvateľstvo Ukrajiny",
+        "európski partneri Ukrajiny"
+      ],
+      "significance": 3,
+      "status": "confirmed",
+      "trend_tags": [
+        "verejná mienka",
+        "prímerie",
+        "bezpečnostné záruky",
+        "rokovania"
+      ],
+      "evidence": [
+        {
+          "source_name": "KIIS – výsledky reprodukované Interfax-Ukraine",
+          "source_url": "https://en.interfax.com.ua/news/general/1174549.html",
+          "published_at": "2026-06-08T10:25:00+03:00",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "survey",
+          "reliability_tier": "B",
+          "claim_supported": "Uvádza štyri presné scenáre, výsledky, CATI zber 7. mája až 3. júna, celkovú vzorku n=2 007 a štyri náhodné podvzorky po približne 500."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Experimentálna randomizácia umožňuje porovnať scenáre, no každý scenár má iba približne 500 respondentov a uvádzanú chybu do 5,8 %.",
+      "disputed_points": [
+        "Hypotetické scenáre nemerajú správanie pri reálnej dohode a výsledok je citlivý na presné formulácie."
+      ],
+      "related_event_ids": [
+        "POL-20260712-002",
+        "POL-20260603-001"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "odmietnutie prímeria bez záruk a významnej podpory",
+          "value": 61,
+          "unit": "% podvzorky",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-03"
+        },
+        {
+          "metric": "prijatie prímeria s rozsiahlymi dodávkami peňazí a zbraní",
+          "value": 53,
+          "unit": "% podvzorky",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-03"
+        },
+        {
+          "metric": "prijatie prímeria s európskymi silami pri fronte",
+          "value": 61,
+          "unit": "% podvzorky",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-03"
+        }
+      ]
+    },
+    {
+      "id": "MIL-20260602-001",
+      "theme": "military",
+      "subtheme": "diaľkové vzdušné útoky a protivzdušná obrana",
+      "title": "Rusko zvýšilo tlak kombinovanými raketovými a dronovými údermi",
+      "summary": "Od začiatku júna do 19. júla Rusko opakovane nasadzovalo veľké kombinované salvy rakiet a bezpilotných prostriedkov proti ukrajinským mestám, infraštruktúre a podľa ruského ministerstva obrany aj vojensko-priemyselným cieľom. Úder 2. júna zahŕňal podľa ukrajinského letectva 73 rakiet a 656 dronov; 19. júla nasledovalo 41 rakiet a 125 dronov. OHCHR zaznamenal v júni najvyšší mesačný počet civilných obetí od apríla 2022 a označil diaľkové zbrane za hlavný zdroj civilných obetí. Nedostatok interceptorov Patriot zostal kritickým obmedzením.",
+      "event_date": "2026-06-02",
+      "date_precision": "range",
+      "end_date": "2026-07-19",
+      "geography": [
+        "Ukrajina",
+        "Kyjev",
+        "Dnipro",
+        "Charkov",
+        "Záporožie"
+      ],
+      "actors": [
+        "Ozbrojené sily Ruskej federácie",
+        "Vzdušné sily Ukrajiny",
+        "civilné obyvateľstvo Ukrajiny"
+      ],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": [
+        "raketové útoky",
+        "diaľkové drony",
+        "Patriot",
+        "vojensko-priemyselná infraštruktúra",
+        "civilné straty"
+      ],
+      "evidence": [
+        {
+          "source_name": "Associated Press",
+          "source_url": "https://apnews.com/article/russia-ukraine-war-kyiv-drones-missiles-938c74b107d9bb8dc16b179d76125e50",
+          "published_at": "2026-06-02T04:40:46Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "AP zdokumentovala veľký útok 2. júna a uviedla ukrajinské počty 73 rakiet a 656 dronov, ako aj ruské tvrdenie o vojensko-priemyselných cieľoch."
+        },
+        {
+          "source_name": "Associated Press",
+          "source_url": "https://apnews.com/article/russia-ukraine-attack-ballistic-missiles-ddea9c0a10367fc84b3cb563896102e3",
+          "published_at": "2026-07-19T04:41:30Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "AP uviedla 41 rakiet a 125 dronov 19. júla a spojila účinok útoku s nedostatkom systémov Patriot; ruský výpočet vojenských cieľov ostal tvrdením bojujúcej strany."
+        },
+        {
+          "source_name": "UN Human Rights Monitoring Mission in Ukraine",
+          "source_url": "https://ukraine.ohchr.org/en/Protection-of-Civilians-in-Armed-Conflict-June-2026",
+          "published_at": "2026-07-14",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "research",
+          "reliability_tier": "A",
+          "claim_supported": "OHCHR potvrdil v júni 293 zabitých a 1 990 zranených civilistov; diaľkové rakety a drony predstavovali 45 % civilných obetí."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Existenciu a rozsah kampane potvrdzujú agentúrne správy a nezávislé monitorovanie OSN; jednotlivé tvrdenia o zasiahnutých vojenských cieľoch nie sú nezávisle potvrdené.",
+      "disputed_points": [
+        "Ruské ministerstvo obrany tvrdilo, že zasiahlo vojensko-priemyselné objekty; Ukrajina potvrdila najmä škody na civilnej a energetickej infraštruktúre a vojenské škody nekomentovala.",
+        "Počty vypustených a zostrelených prostriedkov pochádzajú od ukrajinského letectva a sú oficiálnymi vojnovými údajmi."
+      ],
+      "related_event_ids": [
+        "MIL-20260708-001",
+        "MIL-20260610-001"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "rakety vypustené Ruskom počas úderu 2. júna",
+          "value": 73,
+          "unit": "rakiet",
+          "value_type": "party_claim",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-02"
+        },
+        {
+          "metric": "drony vypustené Ruskom počas úderu 2. júna",
+          "value": 656,
+          "unit": "dronov",
+          "value_type": "party_claim",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-02"
+        },
+        {
+          "metric": "civilisti zabití v júni",
+          "value": 293,
+          "unit": "osôb",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-30"
+        },
+        {
+          "metric": "civilisti zranení v júni",
+          "value": 1990,
+          "unit": "osôb",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-30"
+        }
+      ]
+    },
+    {
+      "id": "POL-20260601-001",
+      "theme": "politics",
+      "subtheme": "represia a informačná politika v Rusku",
+      "title": "Kremeľ inštitucionalizoval fungovanie základných služieb počas internetových výpadkov",
+      "summary": "Putin nariadil premiérovi a riaditeľovi FSB zabezpečiť kľúčové zdravotnícke, informačné a platobné služby počas obmedzenia mobilného internetu. Príkaz fakticky počíta s pokračovaním výpadkov, ktoré úrady vysvetľujú bezpečnosťou a hrozbou dronov, no ktoré súčasne zapadajú do širšieho blokovania zahraničných komunikačných platforiem a VPN.",
+      "event_date": "2026-06-01",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Rusko"
+      ],
+      "actors": [
+        "Vladimir Putin",
+        "Michail Mišustin",
+        "Alexander Bortnikov",
+        "FSB",
+        "Roskomnadzor"
+      ],
+      "significance": 3,
+      "status": "confirmed",
+      "trend_tags": [
+        "internetová cenzúra",
+        "represia",
+        "informačná politika",
+        "bezpečnostné zložky"
+      ],
+      "evidence": [
+        {
+          "source_name": "Reuters",
+          "source_url": "https://www.internazionale.it/ultime-notizie-reuters/2026/06/01/putin-orders-pm-and-fsb-security-service-to-ensure-key-services-during-mobile-internet-shutdowns",
+          "published_at": "2026-06-01",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Reportuje prezidentský príkaz, jeho adresátov a širší kontext obmedzovania internetu a komunikačných aplikácií."
+        },
+        {
+          "source_name": "Reuters",
+          "source_url": "https://www.marketscreener.com/news/russia-limits-mobile-internet-ahead-of-scaled-back-ww2-victory-parade-ce7f58dfd189ff20",
+          "published_at": "2026-05-05",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Reportéri Reuters priamo zaznamenali výpadky v Moskve a správy o problémoch vo viacerých regiónoch."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Existencia príkazu a výpadkov je potvrdená; ich presný pomer medzi protivzdušnou bezpečnosťou a politickou kontrolou nemožno z verejných údajov oddeliť.",
+      "disputed_points": [
+        "Kremeľ tvrdí, že obmedzenia sú dočasné bezpečnostné opatrenia; kritici ich hodnotia ako nástroj domácej kontroly. Obe funkcie sa môžu prekrývať."
+      ],
+      "related_event_ids": [
+        "POL-20260717-001",
+        "POL-20260712-002"
+      ],
+      "quantitative_data": []
+    },
+    {
+      "id": "MIL-20260526-001",
+      "theme": "military",
+      "subtheme": "materiálne straty",
+      "title": "Vizuálne potvrdené ruské straty techniky prekročili 23-tisíc kusov",
+      "summary": "Oryx evidoval ku koncu mája viac než 23 000 vizuálne potvrdených ruských strát techniky vrátane 4 390 tankov a 6 429 bojových vozidiel pechoty. Porovnateľný zoznam pre Ukrajinu evidoval začiatkom júna približne 11 397 kusov, ale Oryx v máji spätne výrazne revidoval oba súčty nadol bez okamžitého vysvetlenia; čísla preto predstavujú dolnú hranicu a časové porovnanie je neisté.",
+      "event_date": "2026-05-26",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Ukrajina",
+        "Rusko"
+      ],
+      "actors": [
+        "Ozbrojené sily Ruskej federácie",
+        "Ozbrojené sily Ukrajiny",
+        "Oryx"
+      ],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": [
+        "materiálne straty",
+        "obrnená technika",
+        "vizuálne potvrdené straty",
+        "udržateľnosť zásob"
+      ],
+      "evidence": [
+        {
+          "source_name": "The Insider s údajmi Oryx",
+          "source_url": "https://theins.press/en/news/292986",
+          "published_at": "2026-05-26T08:11:00Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "osint",
+          "reliability_tier": "B",
+          "claim_supported": "Oryx vizuálne potvrdil viac než 23 000 ruských strát techniky vrátane 4 390 tankov, 6 429 BVP a 184 lietadiel."
+        },
+        {
+          "source_name": "Russia Matters / Harvard Kennedy School",
+          "source_url": "https://www.russiamatters.org/news/russia-ukraine-war-report-card/russia-ukraine-war-report-card-june-10-2026",
+          "published_at": "2026-06-10",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "research",
+          "reliability_tier": "B",
+          "claim_supported": "Zdroj zaznamenal revízie Oryx, ku 3. júnu 23 556 ruských a 11 397 ukrajinských strát techniky, a výslovne odmietol časové porovnanie bez vysvetlenia revízie."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Každá položka v Oryx má obrazový podklad, takže ide o pevnú dolnú hranicu; úplný rozsah strát je vyšší a revízie sťažujú porovnávanie v čase.",
+      "disputed_points": [
+        "Oryx v máji 2026 spätne znížil agregované súčty bez vysvetlenia na stránke; kumulatívne počty sa preto nesmú používať ako hladká časová séria.",
+        "Vizuálne potvrdené straty podhodnocujú skutočné straty a miera podhodnotenia nemusí byť rovnaká pre obe strany."
+      ],
+      "related_event_ids": [
+        "MIL-20260717-001"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "ruské vizuálne potvrdené straty techniky",
+          "value": 23000,
+          "unit": "kusov",
+          "value_type": "estimate",
+          "lower_bound": 23000,
+          "upper_bound": null,
+          "as_of_date": "2026-05-26"
+        },
+        {
+          "metric": "ruské vizuálne potvrdené straty tankov",
+          "value": 4390,
+          "unit": "kusov",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-05-26"
+        },
+        {
+          "metric": "ukrajinské vizuálne potvrdené straty techniky",
+          "value": 11397,
+          "unit": "kusov",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-06-03"
+        }
+      ]
+    },
+    {
+      "id": "MIL-20260430-001",
+      "theme": "military",
+      "subtheme": "územná kontrola a protiútoky",
+      "title": "Ukrajinské protiútoky obrátili aprílovú čistú teritoriálnu bilanciu",
+      "summary": "Analýza AFP z mapových údajov ISW dospela k záveru, že Rusko v apríli 2026 prvýkrát od leta 2023 stratilo viac územia, než získalo. Ukrajinské zisky boli rozptýlené v Zaporizhžskej, Charkovskej a Doneckej oblasti; časť územia však zostávala iba spornou alebo infiltračnou zónou. CSIS neskôr vyhodnotil, že protiútoky pokračovali aj v máji a na jar priniesli Rusku čistú stratu približne 400 km² podľa jeho metodiky.",
+      "event_date": "2026-04-30",
+      "date_precision": "range",
+      "end_date": "2026-05-31",
+      "geography": [
+        "Ukrajina",
+        "Zaporizhžská oblasť",
+        "Charkovská oblasť",
+        "Donecká oblasť"
+      ],
+      "actors": [
+        "Ozbrojené sily Ukrajiny",
+        "Ozbrojené sily Ruskej federácie"
+      ],
+      "significance": 5,
+      "status": "likely",
+      "trend_tags": [
+        "vojenská iniciatíva",
+        "protiútoky",
+        "územná kontrola",
+        "ruská jarná–letná ofenzíva"
+      ],
+      "evidence": [
+        {
+          "source_name": "AFP / The Moscow Times",
+          "source_url": "https://www.themoscowtimes.com/2026/05/04/russia-lost-ground-in-ukraine-in-april-a-first-since-mid-2023-afp-analysis-a92679",
+          "published_at": "2026-05-04",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "media",
+          "reliability_tier": "B",
+          "claim_supported": "Výpočet AFP z údajov ISW ukázal prvú mesačnú čistú stratu ruskej územnej kontroly od leta 2023; AFP zároveň upozornila na sivé zóny a vylúčenie nepotvrdených infiltrácií."
+        },
+        {
+          "source_name": "Center for Strategic and International Studies",
+          "source_url": "https://csis-website-prod.s3.amazonaws.com/s3fs-public/2026-07/260701_Jones_Russian_Blood.pdf?VersionId=2ULVLyK7GKhvOEIvSN.IqoHj1Zks9c6Q",
+          "published_at": "2026-07-01",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "research",
+          "reliability_tier": "B",
+          "claim_supported": "CSIS vyhodnotil, že Rusko v apríli a máji stratilo v čistom približne 400 km² a že ukrajinské protiútoky sa rozšírili od Charkovskej po Zaporizhžskú oblasť."
+        },
+        {
+          "source_name": "Reuters / Investing.com",
+          "source_url": "https://www.investing.com/news/world-news/ukraine-touts-recapture-of-eight-settlements-in-rare-battlefield-success-4518668",
+          "published_at": "2026-02-23T08:08:00Z",
+          "accessed_at_utc": "2026-07-22T19:09:11Z",
+          "source_type": "wire",
+          "reliability_tier": "B",
+          "claim_supported": "Reuters doložil skorší začiatok južného protiofenzívneho trendu, ale 400 km² a osem sídel boli tvrdením ukrajinského veliteľa a nebolo jasné, koľko z toho bolo pevne kontrolované ruské územie."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Zmenu mesačnej bilancie potvrdzujú dve analytické spracovania, no presná rozloha závisí od metodiky sivých zón a infiltrácií.",
+      "disputed_points": [
+        "Presná rozloha znovuzískaného územia sa líši podľa toho, či sa započítajú infiltračné a sivé zóny.",
+        "Ukrajinské tvrdenie o 400 km² z februára neznamená 400 km² predtým pevne kontrolovaného územia Ruskom."
+      ],
+      "related_event_ids": [
+        "MIL-20260630-001"
+      ],
+      "quantitative_data": [
+        {
+          "metric": "približná územná zmena medzi marcom a aprílom podľa AFP/ISW",
+          "value": 120,
+          "unit": "km² v prospech Ukrajiny",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-04-30"
+        },
+        {
+          "metric": "čistá ruská územná strata v apríli a máji podľa CSIS",
+          "value": 400,
+          "unit": "km²",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-05-31"
+        }
+      ]
+    }
+  ],
+  "trends": [
+    {
+      "id": "TREND-CROSS-001",
+      "theme": "cross-domain",
+      "title": "Diaľkové údery prepájajú operačný tlak s ruským palivovým a fiškálnym zaťažením",
+      "assessment": "Ukrajinská kampaň diaľkových úderov sa od júna rozšírila z vojenských a logistických cieľov na rafinérie, palivové uzly a námornú prepravu. Júlový zákaz vývozu nafty a oznámený dovoz palív dokazujú makroekonomický účinok, no presný podiel úderov na jednotlivých odstávkach a ich trvanie zostávajú neisté.",
+      "direction": "rising",
+      "period_start": "2026-06-10",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": [
+        "MIL-20260610-001",
+        "ECO-20260708-001",
+        "ECO-20260709-001"
+      ],
+      "counterevidence_event_ids": [
+        "ECO-20260619-001"
+      ],
+      "indicators_to_watch": [
+        "obnovenie spracovania v zasiahnutých rafinériách",
+        "regionálne zásoby a ceny benzínu a nafty",
+        "trvanie exportných zákazov a objem dovozu palív",
+        "tempo ukrajinských diaľkových úderov"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "TREND-CROSS-002",
+      "theme": "cross-domain",
+      "title": "Ukrajinská politická kríza urýchlila výmenu obranného vedenia",
+      "assessment": "Júlová obmena vlády, odvolanie ministra obrany a protesty prerástli do výmeny hlavného veliteľa. Politický tlak tak zmenil najvyššie vojenské velenie, ale k dátumu uzávierky ešte nemožno merať operačný účinok nového mandátu.",
+      "direction": "emerging",
+      "period_start": "2026-07-12",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": [
+        "POL-20260712-001",
+        "POL-20260716-001",
+        "POL-20260721-001",
+        "MIL-20260722-001"
+      ],
+      "counterevidence_event_ids": [],
+      "indicators_to_watch": [
+        "formálne obsadenie rezortu obrany",
+        "zmeny zborovej reformy a mobilizačnej politiky",
+        "pokračovanie alebo útlm protestov",
+        "prvé merateľné personálne a operačné rozhodnutia nového velenia"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "TREND-POL-005",
+      "theme": "cross-domain",
+      "title": "V oboch spoločnostiach rastie význam rokovaní, ale obsah prijateľného mieru sa zásadne líši",
+      "assessment": "V Rusku 64 % v prieskume Levada preferovalo prechod k rokovaniam, pričom odpovede vznikajú v prostredí cenzúry. Na Ukrajine sa ochota prijať prímerie pohybovala od menšiny po väčšinu podľa bezpečnostných záruk, zbraní a postavenia európskych síl. Jednoduché porovnávanie percent 'za mier' je preto metodicky zavádzajúce.",
+      "direction": "mixed",
+      "period_start": "2026-06-03",
+      "period_end": "2026-07-12",
+      "supporting_event_ids": [
+        "POL-20260603-002",
+        "POL-20260712-002"
+      ],
+      "counterevidence_event_ids": [],
+      "indicators_to_watch": [
+        "presné znenie nových mierových návrhov",
+        "postoj k územným ústupkom",
+        "akceptácia bezpečnostných záruk",
+        "zmeny po vojenských alebo ekonomických šokoch"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "TREND-ECO-001",
+      "theme": "economy",
+      "title": "Ruská rafinérska porucha prerástla do makroekonomicky významnej palivovej krízy",
+      "assessment": "Kumulatívne odstávky rafinérií, prepad námorného exportu nafty, regionálne nedostatky, rozšírenie exportného zákazu a príprava dovozu dokazujú kvalitatívnu zmenu oproti skorším lokálnym výpadkom. Rusko má stále možnosti presmerovať zásoby, zvýšiť dovoz a administratívne obmedziť dopyt, preto nejde o celoštátny kolaps. Kríza však zvyšuje logistické, rozpočtové a inflačné náklady.",
+      "direction": "rising",
+      "period_start": "2026-05-01",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": [
+        "ECO-20260708-001",
+        "ECO-20260619-001"
+      ],
+      "counterevidence_event_ids": [],
+      "indicators_to_watch": [
+        "objem spracovania ropy v miliónoch barelov denne podľa konzistentnej metodiky",
+        "trvanie a geografické pokrytie nedostatku palív",
+        "objem dovozu benzínu a nafty",
+        "predĺženie exportných zákazov po 31. júli"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "TREND-ECO-002",
+      "theme": "economy",
+      "title": "Fiškálny priestor Ruska sa zužuje, hoci okamžitá platobná schopnosť pretrváva",
+      "assessment": "Deficit prvého polroka prekročil celoročný zákonný plán, ropné a plynárenské príjmy medziročne klesli a trh OFZ vyžaduje vyššie výnosy. Štát naďalej môže používať domáce banky, dane, rezervy a škrty civilných výdavkov. Krátkodobo je preto financovanie vojny odolné; dlhodobo rastú úrokové náklady, vytláčanie civilných investícií a riziko konfliktu medzi fiškálnou a menovou politikou.",
+      "direction": "rising",
+      "period_start": "2026-01-01",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": [
+        "ECO-20260720-002",
+        "ECO-20260716-001",
+        "ECO-20260709-001",
+        "ECO-20260619-001"
+      ],
+      "counterevidence_event_ids": [],
+      "indicators_to_watch": [
+        "obnovenie a úspešnosť aukcií OFZ",
+        "celoročná revízia federálneho rozpočtu",
+        "likvidná časť Fondu národného blahobytu",
+        "úrokové náklady ako podiel výdavkov",
+        "ropné a plynárenské príjmy podľa rovnakej metodiky"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "TREND-ECO-003",
+      "theme": "economy",
+      "title": "Ruská ekonomika stagnuje pri stále reštriktívnych úverových podmienkach",
+      "assessment": "Reálny HDP v prvom štvrťroku mierne klesol, odhad rastu za polrok bol iba približne 0,5 % a kľúčová sadzba zostala 14,25 %. Štátna a vojenská objednávka podporuje vybrané odvetvia, ale zároveň presúva pracovnú silu, úvery a kapitál od civilnej ekonomiky. Ide o stagnáciu a odvetvovú divergenciu, nie o potvrdený plošný hospodársky kolaps.",
+      "direction": "mixed",
+      "period_start": "2026-01-01",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": [
+        "ECO-20260619-001",
+        "ECO-20260716-001"
+      ],
+      "counterevidence_event_ids": [],
+      "indicators_to_watch": [
+        "reálny HDP v druhom štvrťroku",
+        "priemyselná výroba rozdelená na civilné a vojensky podporované odvetvia",
+        "podnikové úvery po očistení o štátne programy",
+        "nezamestnanosť a nedostatok pracovníkov"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "TREND-ECO-004",
+      "theme": "economy",
+      "title": "Ukrajinská makrofinančná stabilita je krátkodobo chránená veľkou externou podporou",
+      "assessment": "Júnové čerpania z EÚ a júlové dokončenie revízie IMF poskytli rozpočtu a obrane likviditu a politickú kotvu. To znižuje krátkodobé riziko menovej a rozpočtovej destabilizácie. Stabilita však zostáva podmienená včasnosťou ďalších tranží, plnením reforiem a udržaním podpory partnerov.",
+      "direction": "stable",
+      "period_start": "2026-02-26",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": [
+        "ECO-20260630-001",
+        "ECO-20260720-001"
+      ],
+      "counterevidence_event_ids": [],
+      "indicators_to_watch": [
+        "kalendár a objem ďalších tranží EÚ a IMF",
+        "plnenie štrukturálnych benchmarkov IMF",
+        "medzinárodné rezervy NBU",
+        "podiel grantov a úverov na rozpočtovom financovaní"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "TREND-ECO-005",
+      "theme": "economy",
+      "title": "Reálna ekonomika a energetika Ukrajiny zostávajú slabým miestom",
+      "assessment": "Pokles HDP v prvom štvrťroku, znížený celoročný výhľad IMF a nezávisle zdokumentovaný deficit energetickej kapacity ukazujú, že finančná stabilita neznamená samonosný rast. Výroba, logistika a spotreba zostávajú citlivé na nové útoky, výpadky elektriny, pracovné obmedzenia a náklady dovozu energie.",
+      "direction": "falling",
+      "period_start": "2025-10-01",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": [
+        "ECO-20260629-001",
+        "ECO-20260709-002"
+      ],
+      "counterevidence_event_ids": [
+        "ECO-20260630-001",
+        "ECO-20260720-001"
+      ],
+      "indicators_to_watch": [
+        "výkon HDP a priemyslu v druhom štvrťroku",
+        "dostupná elektrická kapacita a dĺžka výpadkov",
+        "dovoz a vývoz elektriny",
+        "náklady opráv a financie štátnych energetických podnikov"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "TREND-MIL-001",
+      "theme": "military",
+      "title": "Ruská ofenzíva stratila tempo, ale iniciatíva zostáva zmiešaná",
+      "assessment": "Od apríla sa ruské plošné zisky prudko spomalili a ukrajinské protiútoky opakovane znižovali ruskú kontrolu v južných a juhovýchodných sektoroch. Rusko však naďalej vykonáva väčšinu útočných akcií, udržiava tlak na doneckých smeroch a rozširuje infiltračné zóny na severe. Najpresnejšie hodnotenie preto nie je strategický ukrajinský obrat, ale prechod k fragmentovanej iniciatíve bez operačného prielomu.",
+      "direction": "mixed",
+      "period_start": "2026-04-30",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": [
+        "MIL-20260430-001",
+        "MIL-20260630-001"
+      ],
+      "counterevidence_event_ids": [
+        "MIL-20260630-001"
+      ],
+      "indicators_to_watch": [
+        "mesačné čisté zmeny územnej kontroly podľa viacerých máp",
+        "rozširovanie sivých a infiltračných zón pri Pokrovsku, Kosťantynivke, Sloviansku a na severe",
+        "schopnosť oboch strán konvertovať lokálne zisky na operačný prielom",
+        "zmeny intenzity útočných akcií po výmene ukrajinského velenia"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "TREND-MIL-002",
+      "theme": "military",
+      "title": "Diaľkové údery sa stali hlavnou ukrajinskou asymetrickou operačnou pákou",
+      "assessment": "Ukrajina rozšírila dosah a frekvenciu útokov na ruské ropné, priemyselné, vojenské a logistické ciele a súčasne zvyšuje tlak na zásobovanie okupovaného Krymu. Verejné dôkazy potvrdzujú viacero zásahov, požiarov a výpadkov, ale presný kumulatívny vplyv na ruskú bojovú kapacitu zostáva iba stredne istý.",
+      "direction": "rising",
+      "period_start": "2026-06-10",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": [
+        "MIL-20260610-001",
+        "MIL-20260708-001"
+      ],
+      "counterevidence_event_ids": [],
+      "indicators_to_watch": [
+        "trvanie výpadkov v ruských rafinériách a na okupovanom Kryme",
+        "zmeny ruskej distribúcie PVO",
+        "frekvencia a úspešnosť zásahov logistiky do okupovaných území",
+        "overiteľné zmeny zásobovania palivom a muníciou na fronte"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "TREND-MIL-003",
+      "theme": "military",
+      "title": "Vzdušná vojna eskaluje rýchlejšie než kapacita ukrajinskej PVO",
+      "assessment": "Rusko pokračuje vo veľkých kombinovaných salvách a častejšie využíva balistické rakety, zatiaľ čo Ukrajine chýbajú systémy a interceptory Patriot. Nová licencia na výrobu a vysoké záväzky NATO zlepšujú dlhodobý výhľad, ale v analyzovanom období ešte neodstránili krátkodobú medzeru.",
+      "direction": "rising",
+      "period_start": "2026-06-02",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": [
+        "MIL-20260602-001",
+        "MIL-20260708-001"
+      ],
+      "counterevidence_event_ids": [
+        "MIL-20260708-001"
+      ],
+      "indicators_to_watch": [
+        "mesačný počet ruských balistických rakiet a kombinovaných saliev",
+        "skutočné dodávky interceptorov Patriot a ďalších systémov PVO",
+        "čas do začatia licenčnej výroby",
+        "pomer zachytených balistických rakiet a zásahov vojensko-priemyselnej infraštruktúry"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "TREND-MIL-004",
+      "theme": "military",
+      "title": "Opotrebovanie zvyšuje personálne a materiálne náklady pre obe strany",
+      "assessment": "Vizuálne potvrdené straty techniky a menné registre padlých vytvárajú pevné dolné hranice pre obe strany. Modely naznačujú, že ruské mesačné straty prevyšujú nábor, zatiaľ čo ukrajinské menné údaje a odhady poukazujú na vážny personálny tlak. Ani jedna množina údajov však nepodporuje bezprostredný kolaps; rozhodujúca je kvalita náhrad, výcvik, rotácia a schopnosť opráv.",
+      "direction": "rising",
+      "period_start": "2026-05-26",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": [
+        "MIL-20260526-001",
+        "MIL-20260621-001",
+        "MIL-20260717-001"
+      ],
+      "counterevidence_event_ids": [
+        "MIL-20260708-001"
+      ],
+      "indicators_to_watch": [
+        "mesačný ruský kontraktný nábor a regionálne náborové bonusy",
+        "ukrajinské mobilizačné pravidlá, výcvik a rotácie",
+        "dostupnosť opraviteľnej obrnenej techniky v ruských skladoch",
+        "dodávky munície a techniky cez NATO a spoločnú výrobu",
+        "oneskorené revízie menovitých registrov"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "TREND-MIL-005",
+      "theme": "military",
+      "title": "Bezpilotné systémy ďalej rozširujú bojovú zónu a bránia sústredeniu síl",
+      "assessment": "Hustota FPV a diaľkových dronov sťažuje pohyb a zhromažďovanie väčších formácií, podporuje malé infiltračné skupiny a presúva časť súťaže do priemyselnej výroby a elektronického boja. Dohoda EÚ–Ukrajina a úlohy nového ukrajinského velenia potvrdzujú, že škálovanie dronov zostáva centrálne, hoci presné výrobné a zásahové štatistiky strán nie sú nezávisle auditované.",
+      "direction": "rising",
+      "period_start": "2026-04-30",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": [
+        "MIL-20260610-001",
+        "MIL-20260708-001",
+        "MIL-20260722-001"
+      ],
+      "counterevidence_event_ids": [],
+      "indicators_to_watch": [
+        "overené mesačné dodávky FPV, diaľkových a pozemných dronov",
+        "účinnosť elektronického boja a autonómneho navádzania",
+        "podiel dronov na vizuálne potvrdených stratách",
+        "schopnosť jednotiek obnoviť manéver vo väčších formáciách"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "TREND-POL-001",
+      "theme": "politics",
+      "title": "Spoločenský tlak na Ukrajine zostáva schopný korigovať personálne rozhodnutia",
+      "assessment": "Júlová prestavba vyvolala viacmestské protesty, ktoré sa premietli do merateľného nesúhlasu s odvolaním Fedorova a do výmeny Syrského. Nejde o zmenu režimu, ale o dôkaz, že aj počas vojnového stavu existujú účinné nevolebné spätné väzby medzi spoločnosťou, armádnou komunitou a prezidentským centrom.",
+      "direction": "emerging",
+      "period_start": "2026-06-03",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": [
+        "POL-20260603-001",
+        "POL-20260716-001",
+        "POL-20260721-001"
+      ],
+      "counterevidence_event_ids": [
+        "POL-20260712-001"
+      ],
+      "indicators_to_watch": [
+        "či Fedorov prijme novú funkciu",
+        "či protesty po výmene veliteľa utíchnu",
+        "vzťah prezidenta s novým vedením armády",
+        "parlamentná kontrola kabinetu"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "TREND-POL-002",
+      "theme": "politics",
+      "title": "Súčasná vojnová legitimita Ukrajiny koexistuje s dopytom po povojnovej obnove elít",
+      "assessment": "Verejnosť naďalej vykazuje vysokú dôveru k viacerým vojenským a politickým osobnostiam, ale podpora prezidentského zasahovania do iných mocí klesla a väčšina očakáva povojnovú personálnu obnovu. Legitimita je preto funkčná, nie bezpodmienečná.",
+      "direction": "mixed",
+      "period_start": "2026-06-03",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": [
+        "POL-20260603-001",
+        "POL-20260716-001"
+      ],
+      "counterevidence_event_ids": [],
+      "indicators_to_watch": [
+        "dôvera prezidentovi po júlovom zlome",
+        "postoj k voľbám počas vojny",
+        "podpora vlády Koreckého",
+        "vývoj dôvery k Zalužnému, Fedorovovi a Drapatému"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "TREND-POL-003",
+      "theme": "politics",
+      "title": "Mobilizácia a personálne riadenie zostávajú najsilnejším vnútorným tlakom na Ukrajine",
+      "assessment": "Júnová reforma sľúbila vyššie platy, jasnejšie lehoty služby a jednoduchšie prestupy, no júlová výmena obranného a armádneho vedenia ukázala, že implementácia a dôvera v spôsob velenia zostávajú otvorené. Politický výsledok bude závisieť od toho, či nové vedenie premení oznámenia na financované pravidlá a merateľne zlepší nábor, rotácie a dezercie.",
+      "direction": "emerging",
+      "period_start": "2026-06-12",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": [
+        "POL-20260612-001",
+        "POL-20260716-001",
+        "POL-20260721-001"
+      ],
+      "counterevidence_event_ids": [],
+      "indicators_to_watch": [
+        "prijaté zákony a vykonávacie akty",
+        "rozpočtové krytie platov",
+        "počty nových kontraktov",
+        "dezercie a návraty do služby",
+        "nová mobilizačná koncepcia Drapatého"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "TREND-POL-004",
+      "theme": "politics",
+      "title": "Ruská vojnová legitimita slabne z vysokej úrovne, režim však rozširuje kontrolné mechanizmy",
+      "assessment": "Levada aj VCIOM zaznamenali zhoršenie ukazovateľov podpory Putina alebo smerovania krajiny a Levada zistila väčšinovú preferenciu rokovaní. Súčasne pokračuje internetová kontrola a represia voči aj symbolickým protivojnovým kandidátom. Trend skôr ukazuje rast nákladov na udržiavanie pasivity než bezprostrednú hrozbu pre režim.",
+      "direction": "falling",
+      "period_start": "2026-06-01",
+      "period_end": "2026-07-22",
+      "supporting_event_ids": [
+        "POL-20260601-001",
+        "POL-20260712-002",
+        "POL-20260717-001"
+      ],
+      "counterevidence_event_ids": [],
+      "indicators_to_watch": [
+        "ďalšie série Levada a VCIOM",
+        "protestný potenciál a regionálne sťažnosti",
+        "internetové výpadky a VPN blokovanie",
+        "represia počas volebnej kampane",
+        "reakcia na prípadnú mobilizáciu"
+      ],
+      "confidence": "medium"
+    }
+  ]
+}

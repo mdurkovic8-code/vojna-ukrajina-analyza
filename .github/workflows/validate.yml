@@ -1,0 +1,54 @@
+name: Kontrola vydania
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Dáta, HTML a prehliadač
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Načítať repozitár
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Nastaviť Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Nainštalovať kontrolné závislosti
+        run: npm ci
+
+      - name: Overiť nemennosť starších vydaní
+        if: github.event_name == 'pull_request'
+        run: npm run verify:archive -- "origin/${{ github.base_ref }}"
+
+      - name: Zostaviť a staticky overiť správu
+        run: npm run check
+
+      - name: Nainštalovať Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Overiť stránku v prehliadači
+        run: npm run test:browser
+
+      - name: Uložiť diagnostiku pri zlyhaní
+        if: failure()
+        uses: actions/upload-artifact@v5
+        with:
+          name: playwright-diagnostika
+          path: |
+            playwright-report/
+            test-results/
+          if-no-files-found: ignore
+          retention-days: 14
