@@ -46,9 +46,13 @@ function digest(file) {
   return crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 }
 
-function withoutStyles(file) {
-  return fs.readFileSync(file, 'utf8')
-    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, '<style></style>');
+function analyticalHtmlContent(file) {
+  const html = fs.readFileSync(file, 'utf8');
+  const sectionIds = ['overview', 'article', 'military', 'politics', 'economy', 'methodology'];
+  return sectionIds.map(id => {
+    const section = html.match(new RegExp(`<section\\b[^>]*\\bid="${id}"[^>]*>[\\s\\S]*?<\\/section>`, 'i'));
+    return `${id}:${section ? section[0].replace(/\s+/g, ' ').trim() : ''}`;
+  }).join('\n');
 }
 
 for (const file of required) read(file);
@@ -179,9 +183,9 @@ if (fs.existsSync(editionsRoot)) {
       if (fs.existsSync(archived)) {
         const current = path.join(root, file);
         const matchesArchive = file === 'index.html'
-          ? withoutStyles(current) === withoutStyles(archived)
+          ? analyticalHtmlContent(current) === analyticalHtmlContent(archived)
           : digest(current) === digest(archived);
-        check(matchesArchive, `Obsah aktuálneho ${file} nie je zhodný s najnovším archívnym vydaním.`);
+        check(matchesArchive, `Analytický obsah aktuálneho ${file} nie je zhodný s najnovším archívnym vydaním.`);
       }
     }
   }

@@ -57,6 +57,30 @@ test('hlavička databázy neprekrýva prvý riadok udalostí', async ({ page }) 
   expect(firstRow.y).toBeGreaterThanOrEqual(header.y + header.height - 1);
 });
 
+test('ovládanie podrobností je pri databáze a mení iba udalosti', async ({ page }) => {
+  await page.goto('/');
+  await page.waitForSelector('#event-rows tr');
+
+  const toggle = page.locator('#toggle-details');
+  await expect(toggle).toHaveText('Rozbaliť podrobnosti udalostí');
+  await expect(page.locator('.database-shell #toggle-details')).toHaveCount(1);
+  await expect(page.locator('.masthead #toggle-details')).toHaveCount(0);
+
+  const methodologyBefore = await page.locator('#methodology details').evaluateAll(items => items.map(item => item.open));
+  const eventDetails = page.locator('#event-rows details.source-details');
+  expect(await eventDetails.count()).toBeGreaterThan(0);
+
+  await toggle.click();
+  expect(await eventDetails.evaluateAll(items => items.every(item => item.open))).toBeTruthy();
+  await expect(toggle).toHaveText('Zbaliť podrobnosti udalostí');
+  await expect(toggle).toHaveAttribute('aria-expanded', 'true');
+  expect(await page.locator('#methodology details').evaluateAll(items => items.map(item => item.open))).toEqual(methodologyBefore);
+
+  await toggle.click();
+  expect(await eventDetails.evaluateAll(items => items.every(item => !item.open))).toBeTruthy();
+  await expect(toggle).toHaveAttribute('aria-expanded', 'false');
+});
+
 test('tlač rozbalí podrobnosti a obnoví pôvodný stav', async ({ page }) => {
   await page.goto('/');
   await page.waitForSelector('#event-rows tr');
