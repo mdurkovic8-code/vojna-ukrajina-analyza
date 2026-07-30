@@ -178,6 +178,9 @@
     .reset:hover { background: var(--navy-2); }
     .results-bar { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .8rem; padding: .8rem 1rem; color: #4c5863; background: var(--surface); border-bottom: 1px solid var(--line); font-size: .84rem; }
     .results-bar strong { color: var(--navy); }
+    .results-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: .8rem; }
+    .details-toggle { padding: .45rem .7rem; color: #fff; border: 0; border-radius: 7px; background: var(--navy); font-size: .78rem; font-weight: 800; }
+    .details-toggle:hover { background: var(--navy-2); }
     .table-wrap { overflow-x: auto; background: var(--surface); }
     table { width: 100%; min-width: 1080px; border-collapse: collapse; font-size: .84rem; }
     th { padding: .65rem .7rem; color: #fff; background: var(--navy); text-align: left; }
@@ -282,7 +285,6 @@
       </div>
       <div class="header-actions">
         <button type="button" id="print-button">Vytlačiť / uložiť ako PDF</button>
-        <button type="button" id="toggle-details">Rozbaliť podrobnosti</button>
       </div>
     </div>
   </header>
@@ -580,7 +582,10 @@
         </form>
         <div class="results-bar" aria-live="polite">
           <span>Zobrazené: <strong id="result-count">36</strong> z 36 udalostí</span>
-          <span>Tip: kliknutím na hlavičku zmeníte triedenie.</span>
+          <div class="results-actions">
+            <span>Tip: kliknutím na hlavičku zmeníte triedenie.</span>
+            <button class="details-toggle" type="button" id="toggle-details" aria-controls="event-rows" aria-expanded="false">Rozbaliť podrobnosti udalostí</button>
+          </div>
         </div>
         <div class="table-wrap">
           <table aria-label="Udalosti vojny na Ukrajine">
@@ -4149,6 +4154,8 @@
         $('result-count').textContent = filtered.length;
         $('empty-state').classList.toggle('visible', filtered.length === 0);
         document.querySelector('.table-wrap').style.display = filtered.length ? 'block' : 'none';
+        $('toggle-details').textContent = 'Rozbaliť podrobnosti udalostí';
+        $('toggle-details').setAttribute('aria-expanded', 'false');
       }
 
       Object.values(controls).forEach(control => control.addEventListener(control.type === 'search' ? 'input' : 'change', renderRows));
@@ -4176,10 +4183,11 @@
 
       $('print-button').addEventListener('click', () => window.print());
       $('toggle-details').addEventListener('click', event => {
-        const details = [...document.querySelectorAll('details')];
+        const details = [...document.querySelectorAll('#event-rows details.source-details')];
         const shouldOpen = details.some(item => !item.open);
         details.forEach(item => { item.open = shouldOpen; });
-        event.currentTarget.textContent = shouldOpen ? 'Zbaliť podrobnosti' : 'Rozbaliť podrobnosti';
+        event.currentTarget.textContent = shouldOpen ? 'Zbaliť podrobnosti udalostí' : 'Rozbaliť podrobnosti udalostí';
+        event.currentTarget.setAttribute('aria-expanded', String(shouldOpen));
       });
       let printState = [];
       window.addEventListener('beforeprint', () => {
