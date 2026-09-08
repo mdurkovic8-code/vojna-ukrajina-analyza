@@ -1,3 +1,566 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Hlavná analytická štúdia a overiteľná databáza udalostí a trendov vojny na Ukrajine za obdobie 4. augusta až 8. septembra 2026.">
+  <title>Vojna na Ukrajine – databáza udalostí a trendov</title>
+  <style>
+    :root {
+      --paper: #f4f0e6;
+      --paper-deep: #e8e1d2;
+      --surface: #fffdf7;
+      --ink: #15202b;
+      --muted: #5e6872;
+      --navy: #17324d;
+      --navy-2: #244c6f;
+      --red: #a3382d;
+      --amber: #b77817;
+      --green: #27624d;
+      --blue-soft: #dce9f3;
+      --line: #cfc6b6;
+      --shadow: 0 12px 35px rgba(23, 50, 77, .09);
+      --radius: 16px;
+      --content: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, rgba(23,50,77,.035) 1px, transparent 1px) 0 0 / 24px 24px,
+        var(--paper);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    a { color: var(--navy-2); text-underline-offset: 3px; }
+    a:hover { color: var(--red); }
+    button, input, select { font: inherit; }
+    button, select { cursor: pointer; }
+    :focus-visible { outline: 3px solid #e0a13e; outline-offset: 2px; }
+    .skip-link { position: fixed; left: 1rem; top: -5rem; z-index: 100; padding: .65rem 1rem; background: var(--surface); border: 2px solid var(--navy); }
+    .skip-link:focus { top: 1rem; }
+    .wrap { width: min(calc(100% - 2rem), var(--content)); margin-inline: auto; }
+
+    .masthead {
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+      background: var(--navy);
+      border-bottom: 6px solid var(--red);
+    }
+    .masthead::after {
+      content: "";
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      right: -150px;
+      top: -220px;
+      border: 70px solid rgba(255,255,255,.055);
+      border-radius: 50%;
+    }
+    .masthead-inner { position: relative; z-index: 1; padding: 4.5rem 0 3.2rem; }
+    .kicker { margin: 0 0 .8rem; color: #c8d9e7; font-size: .78rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+    h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; line-height: 1.12; }
+    h1 { max-width: 950px; margin: 0; font-size: clamp(2.5rem, 7vw, 5.4rem); font-weight: 600; letter-spacing: -.035em; }
+    .dek { max-width: 790px; margin: 1.4rem 0 0; color: #dce7ef; font-size: clamp(1.05rem, 2vw, 1.32rem); }
+    .meta-row { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 2rem; }
+    .meta-chip { display: inline-flex; gap: .45rem; align-items: center; padding: .48rem .72rem; color: #eef5fa; border: 1px solid rgba(255,255,255,.28); border-radius: 999px; background: rgba(255,255,255,.07); font-size: .84rem; }
+    .meta-chip strong { color: #fff; }
+    .header-actions { display: flex; gap: .7rem; margin-top: 1.4rem; }
+    .header-actions button { padding: .65rem .9rem; color: #fff; border: 1px solid rgba(255,255,255,.35); border-radius: 8px; background: transparent; }
+    .header-actions button:hover { background: rgba(255,255,255,.1); }
+
+    .section-nav { position: sticky; top: 0; z-index: 50; background: rgba(255,253,247,.96); border-bottom: 1px solid var(--line); box-shadow: 0 3px 14px rgba(23,50,77,.07); backdrop-filter: blur(10px); }
+    .section-nav .wrap { display: flex; overflow-x: auto; gap: 0; scrollbar-width: thin; }
+    .section-nav a { flex: 0 0 auto; padding: .92rem .85rem; color: var(--ink); font-size: .84rem; font-weight: 750; text-decoration: none; border-bottom: 3px solid transparent; }
+    .section-nav a:hover { color: var(--red); border-bottom-color: var(--red); }
+
+    main { padding: 2.5rem 0 5rem; }
+    section { scroll-margin-top: 5rem; }
+    .section-block { margin-top: 4.8rem; }
+    .section-eyebrow { display: flex; align-items: center; gap: .7rem; margin: 0 0 .55rem; color: var(--red); font-size: .76rem; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }
+    .section-eyebrow::before { content: ""; width: 2.2rem; height: 3px; background: currentColor; }
+    h2 { margin: 0 0 1.2rem; color: var(--navy); font-size: clamp(2rem, 4vw, 3.25rem); font-weight: 600; letter-spacing: -.025em; }
+    h3 { margin: 0 0 .65rem; color: var(--navy); font-size: 1.45rem; }
+    .lead { max-width: 820px; color: #354452; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.16rem, 2.2vw, 1.48rem); line-height: 1.55; }
+    .event-ref { display: inline-block; margin-left: .25rem; padding: .06rem .35rem; border: 1px solid #9db2c4; border-radius: 4px; background: #edf4f8; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: .72em; font-weight: 700; text-decoration: none; white-space: nowrap; }
+
+    .executive {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(250px, .75fr);
+      gap: 1.2rem;
+      margin-top: 2.2rem;
+    }
+    .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+    .summary-panel { padding: clamp(1.25rem, 3vw, 2.1rem); }
+    .summary-panel ol { display: grid; gap: .8rem; margin: 1.1rem 0 0; padding: 0; counter-reset: finding; list-style: none; }
+    .summary-panel li { position: relative; min-height: 2.3rem; padding-left: 3rem; }
+    .summary-panel li::before { counter-increment: finding; content: counter(finding, decimal-leading-zero); position: absolute; left: 0; top: -.15rem; color: var(--red); font-family: Georgia, serif; font-size: 1.45rem; font-weight: 700; }
+    .stat-panel { display: grid; align-content: start; padding: 1.4rem; background: var(--navy); color: #fff; }
+    .stat-panel h3 { color: #fff; }
+    .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: .7rem; margin-top: .8rem; }
+    .stat { padding: .9rem; border: 1px solid rgba(255,255,255,.2); border-radius: 10px; background: rgba(255,255,255,.06); }
+    .stat strong { display: block; font-family: Georgia, serif; font-size: 2rem; line-height: 1; }
+    .stat span { display: block; margin-top: .35rem; color: #cad9e4; font-size: .76rem; }
+
+    .limitations { margin-top: 1.25rem; padding: 1.3rem 1.45rem; border-left: 6px solid var(--amber); background: #fff6df; }
+    .limitations h3 { color: #68440e; }
+    .limitations ul { margin: .7rem 0 0; padding-left: 1.2rem; }
+    .limitations li + li { margin-top: .45rem; }
+
+    .turning-point { display: grid; grid-template-columns: minmax(0, 1fr) minmax(270px, .55fr); gap: 1.3rem; margin-top: 2rem; }
+    .turning-copy { padding: 1.6rem; }
+    .turning-date { display: inline-block; margin-bottom: .6rem; color: var(--red); font-family: Georgia, serif; font-size: 1.75rem; font-weight: 700; }
+    .branch-points { display: grid; gap: .7rem; }
+    .branch-point { padding: 1rem; border-left: 4px solid var(--navy-2); background: #e8f0f5; }
+    .branch-point strong { display: block; color: var(--navy); }
+
+    .analysis-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 1.6rem; }
+    .analysis-card { position: relative; padding: 1.35rem; overflow: hidden; }
+    .analysis-card::before { content: attr(data-number); position: absolute; right: .8rem; top: -.45rem; color: rgba(23,50,77,.06); font-family: Georgia, serif; font-size: 5rem; font-weight: 700; }
+    .analysis-card p { position: relative; margin-bottom: 0; }
+    .status-note { margin-top: 1rem; padding: .8rem 1rem; color: #384958; border-left: 3px solid var(--navy-2); background: var(--blue-soft); font-size: .9rem; }
+
+    .longread-shell {
+      margin-top: 1.7rem;
+      padding: clamp(1.35rem, 4vw, 3.6rem);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-top: 7px solid var(--navy);
+      box-shadow: var(--shadow);
+    }
+    .longread-header { max-width: 900px; margin: 0 auto 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--line); }
+    .longread-header h2 { margin-bottom: 1rem; font-size: clamp(2.025rem, 4.5vw, 3.6rem); }
+    .longread-standfirst { margin: 0; color: #344554; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.08rem, 2.07vw, 1.395rem); line-height: 1.55; }
+    .longread-meta { display: flex; flex-wrap: wrap; gap: .55rem 1.2rem; margin: 1.25rem 0 0; color: var(--muted); font-size: .72rem; font-weight: 750; }
+    .longread-body { max-width: 76ch; margin-inline: auto; font-family: Georgia, "Times New Roman", serif; font-size: clamp(.936rem, 1.35vw, 1.044rem); line-height: 1.82; }
+    .longread-body h3 { margin: 3.4rem 0 1.15rem; padding-top: .8rem; color: var(--navy); font-size: clamp(1.575rem, 2.7vw, 2.205rem); border-top: 1px solid var(--line); }
+    .longread-body p { margin: 0 0 1.35rem; }
+    .longread-body .event-ref { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+    .longread-note { margin: 2rem -1.2rem; padding: 1.25rem 1.35rem; color: #2d4050; background: var(--blue-soft); border-left: 5px solid var(--navy-2); font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: .837rem; line-height: 1.65; }
+    .longread-note strong { color: var(--navy); }
+    .longread-conclusion { margin-top: 2.2rem; padding: 1.5rem; background: #f2ead9; border: 1px solid var(--line); }
+    .longread-conclusion p:last-child { margin-bottom: 0; }
+
+    .top-events { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 1.3rem; }
+    .event-card { display: flex; flex-direction: column; padding: 1.2rem; }
+    .event-card-head { display: flex; justify-content: space-between; gap: .8rem; align-items: center; color: var(--muted); font-size: .76rem; font-weight: 750; text-transform: uppercase; }
+    .event-card h3 { margin-top: .8rem; font-family: inherit; font-size: 1.06rem; line-height: 1.35; }
+    .event-card p { margin: 0; color: #45525d; font-size: .9rem; }
+    .event-card .card-link { margin-top: auto; padding-top: 1rem; font-size: .82rem; font-weight: 800; }
+
+    .trend-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1.3rem; }
+    .trend-card { padding: 1.25rem; }
+    .trend-meta { display: flex; flex-wrap: wrap; gap: .45rem; margin-bottom: .7rem; }
+    .pill { display: inline-flex; align-items: center; padding: .22rem .5rem; border-radius: 999px; background: #e7edf1; color: #344b5d; font-size: .7rem; font-weight: 800; letter-spacing: .035em; text-transform: uppercase; }
+    .pill.military { background: #e1eaf1; color: #244b6a; }
+    .pill.politics { background: #eee5dc; color: #75422d; }
+    .pill.economy { background: #e0eee6; color: #2c6249; }
+    .pill.cross-domain { background: #eee3f0; color: #6a3f72; }
+    .pill.high, .pill.confirmed { background: #dceee5; color: #205a42; }
+    .pill.medium, .pill.likely { background: #fff0cf; color: #79530f; }
+    .pill.low, .pill.disputed, .pill.claim_only { background: #f5dcd8; color: #8b2d25; }
+    .trend-card h3 { font-family: inherit; font-size: 1.05rem; line-height: 1.35; }
+    .trend-card p { margin-bottom: .7rem; color: #45525d; font-size: .9rem; }
+    .trend-refs { font-size: .75rem; }
+
+    .database-shell { margin-top: 1.4rem; overflow: hidden; }
+    .filters { display: grid; grid-template-columns: 1.4fr repeat(5, minmax(120px, .7fr)); gap: .7rem; padding: 1rem; background: #e8e1d2; border-bottom: 1px solid var(--line); }
+    .filter { display: grid; gap: .28rem; }
+    .filter label { color: #4b5660; font-size: .7rem; font-weight: 850; letter-spacing: .05em; text-transform: uppercase; }
+    .filter input, .filter select { width: 100%; min-height: 2.55rem; padding: .48rem .58rem; color: var(--ink); border: 1px solid #aaa08f; border-radius: 7px; background: var(--surface); }
+    .filter-actions { display: flex; align-items: end; }
+    .reset { width: 100%; min-height: 2.55rem; padding: .48rem .7rem; color: #fff; border: 0; border-radius: 7px; background: var(--navy); font-weight: 800; }
+    .reset:hover { background: var(--navy-2); }
+    .results-bar { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .8rem; padding: .8rem 1rem; color: #4c5863; background: var(--surface); border-bottom: 1px solid var(--line); font-size: .84rem; }
+    .results-bar strong { color: var(--navy); }
+    .results-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: .8rem; }
+    .details-toggle { padding: .45rem .7rem; color: #fff; border: 0; border-radius: 7px; background: var(--navy); font-size: .78rem; font-weight: 800; }
+    .details-toggle:hover { background: var(--navy-2); }
+    .table-wrap { overflow-x: auto; background: var(--surface); }
+    table { width: 100%; min-width: 1080px; border-collapse: collapse; font-size: .84rem; }
+    th { padding: .65rem .7rem; color: #fff; background: var(--navy); text-align: left; }
+    th button { width: 100%; padding: 0; color: inherit; border: 0; background: none; font-size: .72rem; font-weight: 850; letter-spacing: .04em; text-align: left; text-transform: uppercase; }
+    th button::after { content: " ↕"; opacity: .55; }
+    th button[aria-sort="ascending"]::after { content: " ↑"; opacity: 1; }
+    th button[aria-sort="descending"]::after { content: " ↓"; opacity: 1; }
+    td { padding: .78rem .7rem; vertical-align: top; border-bottom: 1px solid #e3ddd1; }
+    tbody tr:nth-child(even) { background: #faf7ef; }
+    tbody tr:target { outline: 4px solid #e0a13e; outline-offset: -4px; background: #fff4d8; }
+    .event-title { max-width: 430px; }
+    .event-title strong { display: block; color: var(--navy); font-size: .92rem; }
+    .event-title p { margin: .3rem 0 0; color: #52606c; font-size: .8rem; }
+    .event-id { display: inline-block; margin-top: .4rem; font-family: ui-monospace, Consolas, monospace; font-size: .7rem; }
+    .source-details { margin-top: .55rem; }
+    .source-details summary { color: var(--navy-2); font-size: .74rem; font-weight: 800; cursor: pointer; }
+    .source-details ul { margin: .45rem 0 0; padding-left: 1.1rem; }
+    .source-details li + li { margin-top: .3rem; }
+    .source-details a { overflow-wrap: anywhere; }
+    .sig { display: inline-grid; place-items: center; width: 2rem; height: 2rem; color: #fff; border-radius: 50%; background: var(--red); font-weight: 900; }
+    .actor-list { max-width: 180px; color: #45525d; }
+    .empty { display: none; padding: 2.5rem 1rem; text-align: center; color: var(--muted); }
+    .empty.visible { display: block; }
+
+    .method-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 1rem; }
+    .method-card { padding: 1.35rem; }
+    .method-card ol, .method-card ul { padding-left: 1.2rem; }
+    .tier { display: grid; grid-template-columns: 2.2rem 1fr; gap: .7rem; align-items: start; padding: .7rem 0; border-bottom: 1px solid #e4ddd0; }
+    .tier:last-child { border-bottom: 0; }
+    .tier-mark { display: grid; place-items: center; width: 2.1rem; height: 2.1rem; color: #fff; border-radius: 50%; background: var(--navy); font-weight: 900; }
+    details.method-card summary { color: var(--navy); font-weight: 850; cursor: pointer; }
+    details.method-card[open] summary { margin-bottom: .8rem; }
+
+    footer { color: #d8e4ec; background: var(--navy); border-top: 5px solid var(--red); }
+    .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; padding: 2rem 0; font-size: .82rem; }
+    .footer-inner a { color: #fff; }
+
+    @media (max-width: 980px) {
+      .executive, .turning-point, .method-grid { grid-template-columns: 1fr; }
+      .analysis-grid, .top-events { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .filters { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    @media (max-width: 680px) {
+      .wrap { width: min(calc(100% - 1.1rem), var(--content)); }
+      .masthead-inner { padding: 3.2rem 0 2.4rem; }
+      .section-nav a { padding-inline: .7rem; }
+      main { padding-top: 1.5rem; }
+      .section-block { margin-top: 3.6rem; }
+      .analysis-grid, .top-events, .trend-grid { grid-template-columns: 1fr; }
+      .filters { grid-template-columns: 1fr 1fr; }
+      .filter.search-filter, .filter-actions { grid-column: 1 / -1; }
+      .stats { grid-template-columns: 1fr 1fr; }
+      h1 { font-size: 2.7rem; }
+      .longread-shell { padding-inline: 1rem; }
+      .longread-body { font-size: .918rem; line-height: 1.72; }
+      .longread-body h3 { margin-top: 2.7rem; }
+      .longread-note { margin-inline: 0; }
+    }
+    @media (max-width: 430px) {
+      .filters { grid-template-columns: 1fr; }
+      .filter.search-filter, .filter-actions { grid-column: auto; }
+      .meta-row { display: grid; }
+      .header-actions { flex-direction: column; align-items: stretch; }
+    }
+    @media print {
+      body { background: #fff; color: #000; font-size: 10pt; }
+      .masthead { color: #000; background: #fff; border-bottom: 3px solid #000; }
+      .masthead .dek, .masthead .kicker, .meta-chip { color: #000; }
+      .meta-chip { border-color: #777; background: #fff; }
+      .section-nav, .header-actions, .filters, .reset { display: none !important; }
+      .wrap { width: 100%; }
+      .panel, .database-shell { box-shadow: none; break-inside: avoid; }
+      .longread-shell { padding: 0; border: 0; box-shadow: none; }
+      .longread-body { max-width: none; font-size: 9pt; line-height: 1.55; }
+      .longread-body h3 { break-after: avoid; }
+      .longread-body p { orphans: 3; widows: 3; }
+      .longread-note, .longread-conclusion { break-inside: avoid; }
+      .stat-panel { color: #000; background: #fff; }
+      .stat-panel h3, .stat-panel .stat span { color: #000; }
+      th { position: static; color: #000; background: #ddd; }
+      .table-wrap { overflow: visible; }
+      table { min-width: 0; font-size: 7pt; }
+      a { color: #000; text-decoration: none; }
+      .section-block { break-before: page; }
+      details > * { display: block !important; }
+      footer { color: #000; background: #fff; border-top-color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Preskočiť na obsah</a>
+  <header class="masthead">
+    <div class="wrap masthead-inner">
+      <p class="kicker">Verejné zdroje · analytická databáza · slovenčina</p>
+      <h1>Vojna na Ukrajine</h1>
+      <p class="dek">Udalosti a trendy, ktoré menia vojenskú iniciatívu, politickú stabilitu alebo ekonomickú schopnosť pokračovať vo vojne.</p>
+      <div class="meta-row" aria-label="Metadáta správy">
+        <span class="meta-chip"><strong>Obdobie</strong> 4. 8. – 8. 9. 2026</span>
+        <span class="meta-chip"><strong>Cut-off</strong> 8. 9. 2026, 14:19:28 UTC</span>
+        <span class="meta-chip"><strong>Aktualizované</strong> 8. 9. 2026</span>
+        <span class="meta-chip"><strong>Režim</strong> offline</span>
+      </div>
+      <div class="header-actions">
+        <button type="button" id="print-button">Vytlačiť / uložiť ako PDF</button>
+      </div>
+    </div>
+  </header>
+
+    <nav class="section-nav" aria-label="Hlavná navigácia">
+    <div class="wrap">
+      <a href="#overview">Prehľad</a>
+      <a href="#article">Hlavný článok</a>
+      <a href="#military">Vojenská situácia</a>
+      <a href="#politics">Politická situácia</a>
+      <a href="#economy">Ekonomická situácia</a>
+      <a href="#database">Databáza udalostí</a>
+      <a href="#methodology">Metodika a zdroje</a>
+      <a id="archive-link" href="archive/">Archív vydaní</a>
+    </div>
+  </nav>
+
+  <main id="main" class="wrap">
+    <section id="overview" aria-labelledby="overview-title">
+      <p class="section-eyebrow">Výkonný súhrn</p>
+      <h2 id="overview-title">Lokálne protiútoky, tlak na zázemie a obnovená diplomacia</h2>
+      <p class="lead">Nové vydanie prináša 17 udalostí od 4. augusta. Vlastná syntéza: lokálna ukrajinská iniciatíva pokračuje popri ruskom tlaku; rokovania obnovili diplomatický kanál, ich trvalý účinok zostáva otvorený. <a class="event-ref" href="#event-MIL-20260901-002">MIL-20260901-002</a> <a class="event-ref" href="#event-POL-20260906-001">POL-20260906-001</a> <a class="event-ref" href="#event-ECO-20260903-002">ECO-20260903-002</a></p>
+
+      <div class="executive">
+        <article class="panel summary-panel">
+          <h3>Šesť najdôležitejších zistení</h3>
+          <ol><li>Protiútoky majú lokálny význam; územná kontrola a infiltrácia sa nesčítavajú. <a class="event-ref" href="#event-MIL-20260901-001">MIL-20260901-001</a></li>
+<li>Útoky na zázemie pokračujú a verejné údaje neumožňujú audit zásob PVO. <a class="event-ref" href="#event-MIL-20260827-001">MIL-20260827-001</a></li>
+<li>Ukrajinská Rada obsadila ministerstvá obrany a zahraničia; výkon rezortov sa musí ešte preukázať. <a class="event-ref" href="#event-POL-20260819-001">POL-20260819-001</a></li>
+<li>Augustová Levada koriguje obraz nepretržitého oslabovania: zachytila čiastočné zotavenie. <a class="event-ref" href="#event-POL-20260828-001">POL-20260828-001</a></li>
+<li>Správy o palivových obmedzeniach podporujú záver o tlaku, presná celoštátna bilancia je neistá. <a class="event-ref" href="#event-ECO-20260828-001">ECO-20260828-001</a></li>
+<li>Septembrový návrh Komisie je krokom k financovaniu, nie dokladom už prijatej hotovosti. <a class="event-ref" href="#event-ECO-20260903-002">ECO-20260903-002</a></li></ol>
+        </article>
+        <aside class="panel stat-panel" aria-labelledby="stats-title">
+          <h3 id="stats-title">Rozsah databázy</h3>
+          <div class="stats">
+            <div class="stat"><strong id="stat-events">60</strong><span>vybraných udalostí</span></div>
+            <div class="stat"><strong id="stat-trends">7</strong><span>sledovaných trendov</span></div>
+            <div class="stat"><strong id="stat-sources">–</strong><span>unikátnych URL</span></div>
+            <div class="stat"><strong id="stat-high">–</strong><span>udalostí s vysokou istotou</span></div>
+          </div>
+        </aside>
+      </div>
+
+      <aside class="limitations" aria-labelledby="limits-title">
+        <h3 id="limits-title">Najdôležitejšie obmedzenia</h3>
+        <ul><li>Nová rešerš pokrýva 4. august až uzávierku. Staršie udalosti v databáze zostávajú historickým kontextom s pôvodným dátumom prístupu; nie sú plošne znovu overené.</li>
+<li>Obsadenie, konsolidácia, infiltrácia a sivá zóna nie sú rovnaké kategórie; rôzne územné odhady netvoria presné čisté skóre.</li>
+<li>V novom období chýba porovnateľná nezávislá bilancia personálnych strát, náboru, techniky a munície. Chýbanie údajov nepreukazuje vyčerpanie ani dostatok rezerv.</li>
+<li>Údaje o PVO a počtoch rakiet sú neúplné a metodicky premenlivé; nemožno z nich spoľahlivo určiť zásoby alebo čas do vyčerpania.</li>
+<li>Levada meria schvaľovanie konkrétnou otázkou v represívnom prostredí; nie je priamo porovnateľná s ukrajinskými otázkami dôvery. Otvorený KIIS mal starší zber a vnútorný číselný nesúlad, preto nebol použitý ako nový presný údaj.</li></ul>
+      </aside>
+
+      <div class="turning-point">
+        <article class="panel turning-copy">
+          <span class="turning-date">30. apríl 2026</span>
+          <h3>Historický kontext zlomu</h3><p>Aprílový obrat zostáva kontextom prevzatým z predchádzajúceho vydania. Nový výskum začína 4. augusta. Augustové údaje podporujú zmiešaný obraz; trvalý spoločný zlom zo septembrových rokovaní ešte nie je doložený. <a class="event-ref" href="#event-MIL-20260430-001">MIL-20260430-001</a> <a class="event-ref" href="#event-MIL-20260901-001">MIL-20260901-001</a> <a class="event-ref" href="#event-POL-20260906-001">POL-20260906-001</a></p>
+        </article>
+        <div class="branch-points" aria-label="Posuny tematických vetiev"><div class="branch-point"><strong>Vojenský · august</strong> Lokálne protiútoky popri tlaku na zázemie.</div><div class="branch-point"><strong>Politický · 19. 8. a 6. 9.</strong> Menovania a obnovenie rozhovorov.</div><div class="branch-point"><strong>Ekonomický · august – september</strong> Nové údaje a návrh financovania.</div></div>
+      </div>
+
+      <div class="section-block">
+        <p class="section-eyebrow">Prioritné udalosti</p>
+        <h2>Udalosti s najväčším dopadom</h2>
+        <div id="top-events" class="top-events"></div>
+      </div>
+    </section>
+
+    <section id="article" class="section-block" aria-labelledby="article-title">
+      <p class="section-eyebrow">Hlavný analytický článok</p>
+      <article class="longread-shell"><header class="longread-header"><h2 id="article-title">Front sa hýbe pomaly, náklady rastú a diplomacia znovu skúša priestor na dohodu</h2><p class="longread-meta"><span>Obdobie: 4. 8. – 8. 9. 2026</span><span>Uzávierka: 8. 9. 2026, 14:19:28 UTC</span><span>Fakty, tvrdenia a vlastná interpretácia sú odlíšené.</span></p></header><div class="longread-body"><h3>Čo sa od začiatku augusta zmenilo</h3>
+
+<p>Nové vydanie sleduje obdobie od 4. augusta do 8. septembra 2026 s výskumnou uzávierkou o 14:19:28 UTC. Jeho hlavný záver je analytický: vojenské, politické a ekonomické tlaky sa navzájom zosilňujú, ale zatiaľ nevytvárajú dôkaz rozhodnutia vojny. Ukrajina preukazuje schopnosť lokálnych protiútokov, Rusko pokračuje v tlaku na front aj zázemie a americká diplomatická iniciatíva obnovila rozhovory. Každá z týchto skutočností má inú dôkaznú váhu. Konanie rokovania je overiteľný fakt; jeho schopnosť priniesť trvalé obmedzenie bojov je otvorená otázka. Podobne miestny vojenský úspech ešte neurčuje výsledok celej kampane. <a class="event-ref" href="#event-MIL-20260901-002">MIL-20260901-002</a> <a class="event-ref" href="#event-MIL-20260827-001">MIL-20260827-001</a> <a class="event-ref" href="#event-POL-20260906-001">POL-20260906-001</a></p>
+
+<p>Aprílový obrat v mapovanej územnej bilancii zostáva historickým kontextom predchádzajúceho vydania, nie začiatkom nového výskumného obdobia. Augustové údaje ho pomáhajú preverovať: pomalé ruské zisky a ukrajinské protiútoky sú zlučiteľné s dlhším oslabením jednostranného postupu, nie však s predstavou pokojného alebo stabilného frontu. Za nový spoločný zlom zatiaľ nemožno označiť ani septembrové rokovania, pretože ich trvalý účinok ešte nebol pozorovaný. Toto rozlíšenie chráni analýzu pred tým, aby každú výraznú správu vyhlásila za začiatok novej etapy. Zlom musí zmeniť trend a pretrvať dlhšie než pozornosť jednej tlačovej konferencie. <a class="event-ref" href="#event-MIL-20260430-001">MIL-20260430-001</a> <a class="event-ref" href="#event-MIL-20260901-001">MIL-20260901-001</a> <a class="event-ref" href="#event-POL-20260906-001">POL-20260906-001</a></p>
+
+<p>Pri čítaní nových čísel treba oddeľovať dátum zverejnenia od obdobia, ktoré merajú. Augustové správy o dlhu a rozpočte sa sčasti týkajú júla; augustové oznámenie územného úspechu zahŕňa aj predchádzajúce mesiace. Databáza ich zaraďuje podľa nového zverejnenia, no nepremieňa celý kumulatívny výsledok na prírastok od 4. augusta. Takýto postup umožňuje aktualizovať poznanie bez dvojitého započítania. Je podstatný najmä pri porovnávaní výkonu oboch strán: podobne vyzerajúce dátumy v titulkoch môžu označovať odlišné merané intervaly, rozdielne definície aj úplne iné druhy neistoty. <a class="event-ref" href="#event-MIL-20260812-001">MIL-20260812-001</a> <a class="event-ref" href="#event-ECO-20260811-001">ECO-20260811-001</a> <a class="event-ref" href="#event-ECO-20260827-001">ECO-20260827-001</a></p>
+
+<h3>Lokálna iniciatíva nie je celkový strategický obrat</h3>
+
+<p>Zelenskyj 12. augusta oznámil výsledky operácie v smere Oleksandrivka, pričom uvádzaný súčet zahŕňal obdobie od januára. Presný rozsah zostáva tvrdením ukrajinskej strany. Nezávislá analytická stopa podporuje existenciu protiútokov, ale nepotvrdzuje automaticky každý kilometer oficiálneho súčtu. Pri Lymane opisuje OSW obnovenú ukrajinskú aktivitu a ústup časti ruských síl; zároveň upozorňuje na sivé zóny. Vlastná interpretácia znie, že ukrajinská obrana si zachováva schopnosť miestnej reakcie. Silnejší výrok o prevzatí strategickej iniciatívy by vyžadoval širší, dlhší a jednoznačnejší súbor dôkazov naprieč viacerými smermi. <a class="event-ref" href="#event-MIL-20260812-001">MIL-20260812-001</a> <a class="event-ref" href="#event-MIL-20260901-002">MIL-20260901-002</a></p>
+
+<p>ISW pri augustovej bilancii odlišuje ruské obsadenie alebo konsolidáciu od infiltrácie a osobitne vykazuje ukrajinské obnovenie kontroly. Tieto kategórie nemožno mechanicky odčítať do jediného čistého skóre. Aj rovnaká plocha môže zahŕňať rozdielnu mieru kontroly, čas overenia a vojenskú hodnotu. Analyticky preto dávame prednosť záveru o obmedzenom tempe pred grafom s predstieranou presnosťou. Budúce doplnenie dôkazov môže meniť mapu spätne bez toho, aby to znamenalo nový pohyb vojakov v deň opravy. Rozhodujúce bude, či sa miestne úspechy udržia a či sa rovnaký obraz objaví aj v ďalšom mesačnom porovnaní. <a class="event-ref" href="#event-MIL-20260901-001">MIL-20260901-001</a></p>
+
+<p>Pokračujúce boje o Kosťantynivku sú protiváhou príliš optimistického čítania protiútokov. ISW k 7. septembru nepovažuje úplné ruské ovládnutie mesta za doložené; to však samo osebe neznamená bezpečnú situáciu obrancov. Medzi neúspechom úplného dobytia a stratou útočnej schopnosti existuje veľký priestor. V našej interpretácii je dôležitejšia súčasná existencia miestneho ukrajinského úspechu a pretrvávajúceho ruského tlaku než hľadanie jediného víťaza mesiaca. Čitateľ by mal sledovať trvácnosť kontroly a širšiu obrannú súdržnosť, pričom toto vydanie zámerne neuvádza aktuálne pozície jednotiek, zásobovacie trasy ani údaje využiteľné na plánovanie útoku. <a class="event-ref" href="#event-MIL-20260907-001">MIL-20260907-001</a> <a class="event-ref" href="#event-MIL-20260901-002">MIL-20260901-002</a></p>
+
+<h3>Zázemie sa stáva podmienkou udržania frontu</h3>
+
+<p>Správy z konca augusta opisujú opakované ruské raketové a dronové útoky a záťaž ukrajinskej protivzdušnej obrany. AP upozorňuje aj na rýchlejšie prúdové drony a potrebu rakiet Patriot. Verejné podklady však neposkytujú audit zásob ani jednotnú sériu zachytených prostriedkov. Z toho odvodzujeme opatrný záver: význam ochrany zázemia rastie, ale konkrétny dátum vyčerpania obrany nemožno určiť. Počet vypustených dronov sám nevyjadruje náročnosť obrany, pretože druh prostriedku a kombinácia útoku menia podmienky zachytenia. Jednoduché porovnanie dvoch celkových súčtov by tieto rozdiely skrylo. <a class="event-ref" href="#event-MIL-20260827-001">MIL-20260827-001</a></p>
+
+<p>Úder na Kyjev 8. septembra nasledoval po návšteve amerických vyslancov. Reuters v rannej aktualizácii uvádzal požiare, poškodenie budov a obete podľa miestnych úradov. Priebežná bilancia obetí môže byť neskôr revidovaná; článok preto nestavia širší záver na jej poslednej jednotlivej hodnote. Časová následnosť útoku a rokovaní takisto nedokazuje motív útoku. Doložené je užšie zistenie: diplomatický kontakt neznamenal trvalé zastavenie násilia. Pre hodnotenie prípadných ďalších rozhovorov je to praktické východisko, pretože politické vyhlásenia treba porovnávať so skutočným správaním a so zreteľne definovaným rozsahom prípadnej dohody. <a class="event-ref" href="#event-MIL-20260908-001">MIL-20260908-001</a> <a class="event-ref" href="#event-POL-20260906-001">POL-20260906-001</a></p>
+
+<p>Prepojenie frontu a zázemia chápeme ako otázku obnovy kapacít v čase. Obranný systém môže zastaviť veľkú časť útokov a napriek tomu čeliť vážnym následkom zvyšných zásahov. Podnik môže obnoviť výrobu, no opakované prerušenia mu môžu sťažovať plánovanie. Nejde o vyčíslený účinok konkrétneho zásahu, ale o analytický rámec na čítanie opakovaných útokov. Na jeho overenie treba sledovať dĺžku opráv, dostupnosť energie a doložené dodávky obranných prostriedkov. Samotná fotografia požiaru nedokáže určiť ani trvanie škody, ani jej význam pre vojenské zásobovanie. <a class="event-ref" href="#event-MIL-20260827-001">MIL-20260827-001</a> <a class="event-ref" href="#event-MIL-20260908-001">MIL-20260908-001</a></p>
+
+<h3>Straty a dopĺňanie síl zostávajú medzerou poznania</h3>
+
+<p>Nový výskum neposkytol metodicky porovnateľnú bilanciu personálnych strát, náboru a doplnenia techniky oboch strán. Preto nepreberáme oficiálne kumulatívne straty protivníka ako overený počet padlých a nevypočítavame pomer ľudí na získaný kilometer. Takýto pomer by kombinoval neistý čitateľ s inak definovaným menovateľom. Ani menný register nie je automaticky úplným súčtom a ani vizuálna dokumentácia nepokrýva každý incident. Zdržanlivosť pri číslach neznamená zanedbanie opotrebovania. Znamená, že jeho aktuálnu intenzitu nevieme z dostupného súboru vyjadriť jednou dôveryhodnou hodnotou. <a class="event-ref" href="#event-MIL-20260901-001">MIL-20260901-001</a> <a class="event-ref" href="#event-MIL-20260827-001">MIL-20260827-001</a></p>
+
+<p>Vlastný analytický dôsledok tejto medzery je jednoduchý: z pomalého postupu nemožno samostatne odvodiť dostatok ani nedostatok rezerv. Výsledok môže ovplyvňovať obrana, terén, organizácia, zásobovanie aj rozhodnutia velenia. Rovnako lokálny protiútok ešte nepotvrdzuje schopnosť uskutočniť rozsiahlu ofenzívu. V ďalšom vydaní bude preto dôležitejšie dopĺňať nezávislé časové série a overovať udržanie výsledkov než opakovať pôsobivé kumulatívne údaje. Tento prístup umožňuje zachovať vojenskú interpretáciu aj v podmienkach neúplnosti: opisujeme pozorovaný výsledok, pomenúvame možné mechanizmy a otvorene oddeľujeme to, čo zatiaľ nemožno medzi nimi rozlíšiť. <a class="event-ref" href="#event-MIL-20260901-002">MIL-20260901-002</a> <a class="event-ref" href="#event-MIL-20260907-001">MIL-20260907-001</a></p>
+
+<h3>Ukrajinské inštitúcie dostali jasnejšie obsadenie</h3>
+
+<p>Verchovna rada 19. augusta schválila Jevhenija Chmaru za ministra obrany a Andrija Sybihu za ministra zahraničia. Parlamentný záznam potvrdzuje personálne rozhodnutia; vládne oznámenie označuje formovanie kabinetu za dokončené. Ide o nový krok po júlových zmenách, nie o opakované datovanie výmeny premiéra alebo hlavného veliteľa. V našej interpretácii sa tým znižuje neistota o tom, kto nesie zodpovednosť za kľúčové rezorty. Samotné obsadenie funkcií však nedokazuje, že sa skončili politické spory alebo že sa zlepšil výkon obrany. Medzi mandátom a výsledkom zostáva implementácia, ktorú treba samostatne overovať. <a class="event-ref" href="#event-POL-20260819-001">POL-20260819-001</a></p>
+
+<p>Najbližším testom konsolidácie bude schopnosť premieňať personálne rozhodnutia na fungujúce pravidlá a doložené plnenie úloh. Tento hodnotiaci rámec je našou interpretáciou, nie potvrdením, že nové vedenie už dosiahlo konkrétny výsledok. Pri mobilizácii, rotáciách a obstarávaní by bolo potrebné odlíšiť oznámenie, vykonávací akt, rozpočtové krytie a merateľný účinok. Bez takého reťazca sa politická analýza ľahko mení na hodnotenie osobností podľa očakávaní. Nové vydanie preto nepovažuje parlamentnú väčšinu pri menovaní za náhradu aktuálneho prieskumu verejnej dôvery a nepovažuje ani chýbajúcu správu o proteste za dôkaz spoločenského zmierenia. <a class="event-ref" href="#event-POL-20260819-001">POL-20260819-001</a></p>
+
+<h3>Ruská stabilita má zmiešané signály</h3>
+
+<p>Augustový prieskum Levada uvádza 76 percent schvaľovania Putinovej činnosti. Zber prebiehal 18.–28. augusta na vzorke 1 600 dospelých formou osobných rozhovorov doma. Otázka merala schvaľovanie prezidentovej činnosti, nie súhlas s konkrétnou mobilizáciou. Výsledok zároveň ukazuje čiastočné zotavenie nálad po skoršom oslabení, a preto koriguje starší príbeh nepretržitého poklesu. Represívne prostredie, sociálna žiaducnosť a ochota odpovedať obmedzujú zovšeobecnenie. Je to užitočný signál z konkrétnej metodiky, nie priame meranie súkromného presvedčenia každého obyvateľa a už vôbec nie predpoveď správania v prípadnej kríze. <a class="event-ref" href="#event-POL-20260828-001">POL-20260828-001</a></p>
+
+<p>Reportáž Meduzy o tlaku na volebnú účasť opisuje inú vrstvu vzťahu štátu a spoločnosti. Tvrdenia o práci s manažérmi a zamestnávateľmi nemajú v našom súbore druhé nezávislé potvrdenie celého programu, preto zostávajú pripísané médiu. Volebná mobilizácia tu znamená zabezpečovanie účasti, nie povolávanie vojakov. Analyticky môžu vysoké deklarované schvaľovanie a administratívny tlak existovať súčasne; jedno automaticky nevyvracia druhé. Nemožno však z tejto kombinácie vypočítať skutočnú mieru podpory režimu. Dôležitejšie je zachovať rozdiel medzi verejnou odpoveďou v prieskume, konkrétnym administratívnym správaním a našou interpretáciou ich vzťahu. <a class="event-ref" href="#event-POL-20260825-001">POL-20260825-001</a> <a class="event-ref" href="#event-POL-20260828-001">POL-20260828-001</a></p>
+
+<p>Putinovo vyjadrenie z 3. septembra, podľa ktorého aktuálne neexistuje potreba ďalšej mobilizácie, treba čítať ako časovo obmedzený verejný výrok. Nepotvrdzuje, že budúce rozhodnutie nemôže byť iné. Ani opačné varovania pred mobilizáciou po voľbách samy nepreukazujú vydaný rozkaz. Vlastný záver zostáva podmienený: otázka dopĺňania síl je politicky citlivá, no z dostupných vyjadrení nemožno vyhlásiť novú mobilizáciu za uskutočnenú. Pre ďalšiu kontrolu budú mať väčšiu váhu právne akty a doložená realizácia než interpretácia tónu prejavu. Táto hranica je obzvlášť dôležitá pri spájaní vnútropolitických udalostí s odhadmi vojenských rezerv. <a class="event-ref" href="#event-POL-20260903-001">POL-20260903-001</a></p>
+
+<h3>Rozhovory otvorili kanál, ich výsledok zostáva otvorený</h3>
+
+<p>Stretnutie Zelenského so Stevom Witkoffom a Jaredom Kushnerom 6. septembra obnovilo priamy diplomatický kontakt po ich rokovaniach v Rusku. Ukrajinské oficiálne stanovisko opisuje diskusiu o bezpečnostných a ekonomických zárukách; to potvrdzuje obsah verejnej komunikácie, nie dohodnutý záväzok všetkých strán. Zatiaľ nie je doložený prielom, ktorý by uzatváral územné otázky alebo vytváral trvalé prímerie. Naša interpretácia preto hovorí o obnovenom kanáli a možnosti ďalšej práce. Je to materiálna politická udalosť, ale ešte nespĺňa prísnejšie kritérium zmeny vojnového trendu s merateľným a trvajúcim účinkom. <a class="event-ref" href="#event-POL-20260906-001">POL-20260906-001</a></p>
+
+<p>Pri prípadnom pokračovaní diplomacie navrhujeme hodnotiť päť oddelených vecí: zhodu verejných stanovísk, existenciu spoločného textu, jasný rozsah záväzkov, mechanizmus kontroly a následné dodržiavanie. Ide o analytické kritériá, nie o správu, že takýto mechanizmus už bol vytvorený. Aj obmedzená dohoda by mohla mať význam, ak by mala zreteľné pravidlá a pozorovateľný účinok. Naopak, všeobecné pozitívne hodnotenie rozhovoru môže pretrvať popri pokračujúcich útokoch. Preto ekonomický tlak ani diplomatickú aktivitu nepovažujeme automaticky za dôkaz, že sa strany priblížili k politicky prijateľnému kompromisu. Motivácia rokovať a ochota prijať rovnaké podmienky sú rozdielne otázky. <a class="event-ref" href="#event-POL-20260906-001">POL-20260906-001</a> <a class="event-ref" href="#event-MIL-20260908-001">MIL-20260908-001</a></p>
+
+<h3>Ruské financie absorbujú náklady, no zaťaženie trvá</h3>
+
+<p>Predbežná rozpočtová správa publikovaná 11. augusta uvádza ruský federálny deficit za január až júl vo výške 6,455 bilióna rubľov. Ide o ministerský údaj sprostredkovaný Interfaxom; vysvetlenie predstihovým financovaním je vysvetlením ministerstva, nie nezávislým auditom. Sedemmesačný schodok nemožno lineárne prepočítať na koncoročný výsledok. Naša interpretácia je užšia: nové údaje potvrdzujú potrebu financovať rozdiel medzi príjmami a výdavkami, ale samy nedokazujú blížiacu sa platobnú neschopnosť. Na posúdenie trvania záťaže by bolo potrebné sledovať ďalšie plnenie rozpočtu, cenu financovania a zmeny v skladbe príjmov. <a class="event-ref" href="#event-ECO-20260811-001">ECO-20260811-001</a></p>
+
+<p>Samostatný septembrový údaj o palivovom kompenzačnom mechanizme ukazuje, že augustová platba dosiahla 197,3 miliardy rubľov. Platba sa pritom vzťahuje na júl. Nemožno ju celú označiť za škodu spôsobenú ukrajinskými útokmi, pretože mechanizmus má vlastné pravidlá a reaguje na viac cenových premenných. Analyticky ukazuje ďalší rozpočtový záväzok spojený s palivovým trhom. Je potrebné rozlišovať fyzický výpadok výroby, cenový rozdiel, kompenzáciu výrobcom a konečný dopad na verejné financie. Zlúčenie týchto položiek do jedného nákladu vojny by mohlo tú istú ekonomickú zmenu započítať opakovane. <a class="event-ref" href="#event-ECO-20260903-001">ECO-20260903-001</a></p>
+
+<h3>Palivový tlak má fyzickú aj rozpočtovú podobu</h3>
+
+<p>Augustové správy o obmedzeniach predaja benzínu a o nižšej produkcii poskytujú konkrétnejší obraz energetického tlaku než samotné zábery zásahov rafinérií. Reuters opisuje obmedzenia pri čerpacích staniciach a oddelene prináša odhad priemyselných zdrojov o produkcii voči spotrebe. Presný odhad nie je verejne auditovanou výrobnou bilanciou. Dôležitý je rozdiel medzi pozorovaným problémom distribúcie a odhadom celonárodnej ponuky. Obe informácie podporujú záver o palivovej záťaži, ale neumožňujú vyhlásiť rovnaký nedostatok v každom regióne alebo určiť, aký podiel pripadá výlučne na údery namiesto sezónneho dopytu a ďalších príčin. <a class="event-ref" href="#event-ECO-20260828-001">ECO-20260828-001</a></p>
+
+<p>Vlastná ekonomická interpretácia rozlišuje schopnosť problém dočasne tlmiť od schopnosti odstrániť jeho príčinu. Dovoz, zásoby alebo obmedzenie predaja môžu preklenúť časť výpadku, pričom náklady sa môžu presunúť na rozpočet, podniky alebo spotrebiteľov. Toto nie je výpočet konkrétnej ruskej bilancie, ale rámec, podľa ktorého budeme čítať ďalšie údaje. Pre vojnu je dôležité trvanie a opakovanie problému, nie iba jeho najhorší deň. Bez porovnateľnej série výroby, spotreby a zásob by presný graf nedostatku vyvolával neodôvodnenú istotu. Ani doložený civilný palivový problém automaticky nepreukazuje rovnaký rozsah obmedzenia vojenských dodávok. <a class="event-ref" href="#event-ECO-20260828-001">ECO-20260828-001</a> <a class="event-ref" href="#event-ECO-20260903-001">ECO-20260903-001</a></p>
+
+<h3>Ukrajinská odolnosť závisí od podmienok aj načasovania peňazí</h3>
+
+<p>Ukrajinské ministerstvo financií v auguste publikovalo júlový stav štátneho a garantovaného dlhu a parametre štátneho dlhu. Uvádzaná priemerná sadzba 4,40 percenta a priemerná splatnosť 13,06 roka pomáhajú vysvetliť význam zvýhodneného financovania, ale nepredstavujú cenu každého nového úveru. Rozličné rozsahy ukazovateľov sa nesmú miešať. Podobne oznámených 850 miliónov dolárov japonskej podpory predstavuje kumulatívnu pomoc v roku 2026, nie novú platbu v deň zverejnenia. Analyticky je dôležité, že objem podpory, okamih prijatia a podmienky splácania odpovedajú na odlišné otázky o finančnej odolnosti krajiny. <a class="event-ref" href="#event-ECO-20260827-001">ECO-20260827-001</a> <a class="event-ref" href="#event-ECO-20260807-001">ECO-20260807-001</a></p>
+
+<p>Návrh Európskej komisie z 3. septembra posudzuje ďalšiu čiastočnú platbu v rámci Ukraine Facility. Približne 3,047 miliardy eur pred zúčtovaním predfinancovania sú sumou navrhovaného kroku, nie dôkazom už prijatej hotovosti. Táto hranica má praktický význam pre akékoľvek hodnotenie rozpočtového priestoru: medzi žiadosťou, posúdením podmienok, rozhodnutím a prevodom peňazí existujú samostatné etapy. V našej interpretácii návrh podporuje pokračovanie finančného kanála, pričom jeho konečný účinok treba overiť podľa ďalšieho rozhodnutia a čerpania. Nemá sa pripočítať k už vyplatenej podpore spôsobom, ktorý by vytvoril väčší zdanlivý finančný balík. <a class="event-ref" href="#event-ECO-20260903-002">ECO-20260903-002</a></p>
+
+<p>Zvýhodnené financovanie môže znižovať tlak na obsluhu dlhu, no nemôže samo odstrániť fyzické škody ani nahradiť fungujúce inštitúcie. Tento záver je našou syntézou vojenskej, politickej a ekonomickej vetvy. Oprava infraštruktúry vyžaduje peniaze, materiál a čas; predvídateľné financovanie zlepšuje plánovanie, zatiaľ čo opakovaný zásah môže jeho výsledok zmeniť. Podobne personálne konsolidovaná vláda môže niesť jasnejšiu zodpovednosť za plnenie podmienok, ale jej výkon sa musí ešte preukázať. Krátkodobú odolnosť preto hodnotíme podľa schopnosti priebežne fungovať a dlhodobú udržateľnosť podľa podmienok, za ktorých by sa takáto schopnosť dala opakovať. <a class="event-ref" href="#event-ECO-20260827-001">ECO-20260827-001</a> <a class="event-ref" href="#event-POL-20260819-001">POL-20260819-001</a> <a class="event-ref" href="#event-MIL-20260827-001">MIL-20260827-001</a></p>
+
+<h3>Čo bude rozhodovať pri ďalšej uzávierke</h3>
+
+<p>Osobitnou otázkou zostáva, ako rozpoznať účinok sankcií a hospodárskych obmedzení bez toho, aby sme im pripísali všetky nepriaznivé údaje. Toto vydanie neponúka nový kauzálny odhad ich príspevku. Pre taký odhad by bolo potrebné oddeliť právnu zmenu od jej vykonávania, následne doložiť konkrétnu zmenu obchodného toku a až potom skúmať príjmy alebo výrobu. Palivový nedostatok môže byť priamym problémom pre spotrebiteľa aj vtedy, keď nepoznáme presné rozdelenie jeho príčin. Rovnako rozpočtový deficit môže rásť bez toho, aby jediným vysvetlením boli sankcie. Naša syntéza preto používa viacero pozorovaní ako obraz tlaku, nie ako náhradu chýbajúceho merania príčin a účinkov. <a class="event-ref" href="#event-ECO-20260828-001">ECO-20260828-001</a> <a class="event-ref" href="#event-ECO-20260811-001">ECO-20260811-001</a></p>
+
+<p>Pri porovnávaní odolnosti Ruska a Ukrajiny nemožno zameniť podobný názov problému za rovnaký mechanizmus. Ruská palivová kompenzácia je domáci rozpočtový nástroj, zatiaľ čo európsky návrh platby Ukrajine patrí k vonkajšiemu financovaniu s podmienkami. Tieto sumy nie sú porovnateľnými skóre úspechu. Naša analýza ich prepája otázkou, kto náklad dočasne absorbuje a ako dlho sa dá takýto postup opakovať. Vyjadriť odpoveď by vyžadovalo širšie údaje o príjmoch, záväzkoch, dostupnom financovaní a časovaní platieb. Bez nich možno pomenovať rozdielne zdroje zraniteľnosti, ale nemožno dôveryhodne zoradiť obe krajiny podľa jediného čísla finančnej výdrže ani určiť dátum, keď sa jedna z nich musí rozhodnúť vojnu ukončiť. <a class="event-ref" href="#event-ECO-20260903-001">ECO-20260903-001</a> <a class="event-ref" href="#event-ECO-20260903-002">ECO-20260903-002</a></p>
+
+<p>Základný analytický scenár počíta s pokračovaním nerovnomerného opotrebovania, nie s automatickým vojenským alebo ekonomickým kolapsom. Nie je to predpoveď s pridelenou pravdepodobnosťou. Je to pracovná hypotéza založená na súbehu lokálnych protiútokov, pokračujúcich úderov a obnovenej diplomacie bez doloženého prímeria. Zmeniť ju môžu trvalejšia zmena územnej kontroly, overiteľné obmedzenie útokov alebo zásadný posun vo financovaní. Každý z týchto signálov treba posudzovať podľa vlastnej metodiky. Jediný úspešný deň na fronte ani jedno pozitívne diplomatické vyhlásenie nemajú rovnakú váhu ako súvislá a nezávisle podložená séria výsledkov. <a class="event-ref" href="#event-MIL-20260901-002">MIL-20260901-002</a> <a class="event-ref" href="#event-MIL-20260908-001">MIL-20260908-001</a> <a class="event-ref" href="#event-POL-20260906-001">POL-20260906-001</a></p>
+
+<p>Ďalšie vydanie preto preverí najmä trvácnosť miestnych vojenských výsledkov, doložené dodávky a opravy, implementáciu vládnych rozhodnutí a skutočné čerpanie pomoci. Súčasne bude hľadať protidôkazy: zotavenie prieskumu nesmie zmiznúť z príbehu oslabovania režimu a pokračujúci ruský tlak nesmie zmiznúť z príbehu ukrajinských úspechov. Celkový obraz k uzávierke zostáva zmiešaný. Materiálna zmena spočíva v nových udalostiach a spresnení trendov, nie v oprávnení vyhlásiť konečný výsledok vojny. Hodnota analýzy je v rozlíšení toho, čo sa stalo, čo zdroje iba tvrdia a čo z dostupných dôkazov zatiaľ môžeme opatrne odvodiť. <a class="event-ref" href="#event-MIL-20260907-001">MIL-20260907-001</a> <a class="event-ref" href="#event-POL-20260828-001">POL-20260828-001</a> <a class="event-ref" href="#event-ECO-20260903-002">ECO-20260903-002</a></p></div></article>
+    </section>
+
+    <section id="military" class="section-block" aria-labelledby="military-title"><p class="section-eyebrow">Vojenská situácia</p><h2 id="military-title">Lokálna iniciatíva pri pokračujúcich útokoch</h2><p class="lead">Smerovanie je zmiešané. Nové údaje nepreukazujú rozhodnutie vojny ani presnú bilanciu personálnych rezerv. <a class="event-ref" href="#event-MIL-20260901-001">MIL-20260901-001</a></p><div class="analysis-grid"><article class="panel analysis-card" data-number="01"><h3>Front</h3><p>Protiútoky pri Lymane neznamenajú automatickú kontrolu každej opustenej oblasti. <a class="event-ref" href="#event-MIL-20260901-002">MIL-20260901-002</a></p></article>
+<article class="panel analysis-card" data-number="02"><h3>PVO</h3><p>Ochrana zázemia zostáva významným obmedzením; počty a zásoby nie sú verejne auditované. <a class="event-ref" href="#event-MIL-20260827-001">MIL-20260827-001</a></p></article>
+<article class="panel analysis-card" data-number="03"><h3>Údery a diplomacia</h3><p>Kyjev čelil ďalšiemu útoku po návšteve vyslancov; časová následnosť nepreukazuje motív. <a class="event-ref" href="#event-MIL-20260908-001">MIL-20260908-001</a></p></article></div></section>
+
+    <section id="politics" class="section-block" aria-labelledby="politics-title"><p class="section-eyebrow">Politická situácia</p><h2 id="politics-title">Obsadené rezorty a diplomatický kanál bez doloženého prímeria</h2><p class="lead">Personálne rozhodnutia a rozhovory sú potvrdené; ich dlhodobejší účinok zostáva predmetom ďalšej kontroly. <a class="event-ref" href="#event-POL-20260819-001">POL-20260819-001</a></p><div class="analysis-grid"><article class="panel analysis-card" data-number="01"><h3>Ukrajina</h3><p>Rada schválila ministrov obrany a zahraničia. Menovanie nie je samo dôkazom reformného výsledku. <a class="event-ref" href="#event-POL-20260819-001">POL-20260819-001</a></p></article>
+<article class="panel analysis-card" data-number="02"><h3>Rusko</h3><p>Levada ukazuje krátkodobé zotavenie hodnotení. Schvaľovanie prezidenta nie je otázkou podpory ďalšej mobilizácie. <a class="event-ref" href="#event-POL-20260828-001">POL-20260828-001</a></p></article>
+<article class="panel analysis-card" data-number="03"><h3>Diplomacia</h3><p>Stretnutie s americkými vyslancami obnovilo rozhovory; dohoda o zárukách nie je potvrdená. <a class="event-ref" href="#event-POL-20260906-001">POL-20260906-001</a></p></article></div></section>
+
+    <section id="economy" class="section-block" aria-labelledby="economy-title"><p class="section-eyebrow">Ekonomická situácia</p><h2 id="economy-title">Palivový a rozpočtový tlak, podmienená zahraničná podpora</h2><p class="lead">Nové údaje ukazujú finančné nároky a ďalší navrhovaný krok financovania. Nesčítavajú sa sľuby a prijatá hotovosť. <a class="event-ref" href="#event-ECO-20260903-002">ECO-20260903-002</a></p><div class="analysis-grid"><article class="panel analysis-card" data-number="01"><h3>Rusko: palivá</h3><p>Pozorované obmedzenia predaja a anonymný odhad produkcie majú rozdielnu dôkaznú váhu. <a class="event-ref" href="#event-ECO-20260828-001">ECO-20260828-001</a></p></article>
+<article class="panel analysis-card" data-number="02"><h3>Rusko: rozpočet</h3><p>Predbežný sedemmesačný schodok nie je predpoveď celoročného výsledku ani dôkaz platobnej neschopnosti. <a class="event-ref" href="#event-ECO-20260811-001">ECO-20260811-001</a></p></article>
+<article class="panel analysis-card" data-number="03"><h3>Ukrajina</h3><p>Zvýhodnené dlhové podmienky pomáhajú obsluhe záväzkov; samotný stav dlhu nedokazuje dlhodobú udržateľnosť. <a class="event-ref" href="#event-ECO-20260827-001">ECO-20260827-001</a></p></article></div></section>
+
+    <section class="section-block" aria-labelledby="trends-title">
+      <p class="section-eyebrow">Prehľad trendov</p>
+      <h2 id="trends-title">Čo sa mení a čo zostáva otvorené</h2>
+      <div id="trend-grid" class="trend-grid"></div>
+    </section>
+
+    <section id="database" class="section-block" aria-labelledby="database-title">
+      <p class="section-eyebrow">Databáza udalostí</p>
+      <h2 id="database-title">Filtrovať, hľadať a kontrolovať dôkazy</h2>
+      <p class="lead">Významnosť vyjadruje dopad udalosti. Miera istoty vyjadruje kvalitu dôkazov. Vysoký dopad preto nemusí znamenať vysokú istotu.</p>
+      <div class="panel database-shell">
+        <form id="filters" class="filters" role="search">
+          <div class="filter search-filter">
+            <label for="search">Fulltext</label>
+            <input id="search" type="search" placeholder="Názov, súhrn, aktér, lokalita…">
+          </div>
+          <div class="filter">
+            <label for="theme">Téma</label>
+            <select id="theme"><option value="">Všetky témy</option><option value="military">Vojenská</option><option value="politics">Politická</option><option value="economy">Ekonomická</option></select>
+          </div>
+          <div class="filter">
+            <label for="date-from">Od dátumu</label>
+            <input id="date-from" type="date" min="2026-04-30" max="2026-09-08" value="2026-04-30">
+          </div>
+          <div class="filter">
+            <label for="date-to">Do dátumu</label>
+            <input id="date-to" type="date" min="2026-04-30" max="2026-09-08" value="2026-09-08">
+          </div>
+          <div class="filter">
+            <label for="significance">Min. významnosť</label>
+            <select id="significance"><option value="1">1 – všetky</option><option value="2">2</option><option value="3">3 – významné</option><option value="4">4 – veľký dopad</option><option value="5">5 – strategický zlom</option></select>
+          </div>
+          <div class="filter">
+            <label for="confidence">Miera istoty</label>
+            <select id="confidence"><option value="">Všetky</option><option value="high">Vysoká</option><option value="medium">Stredná</option><option value="low">Nízka</option></select>
+          </div>
+          <div class="filter">
+            <label for="actor">Aktér</label>
+            <select id="actor"><option value="">Všetci aktéri</option></select>
+          </div>
+          <div class="filter-actions"><button class="reset" id="reset" type="reset">Zrušiť filtre</button></div>
+        </form>
+        <div class="results-bar" aria-live="polite">
+          <span>Zobrazené: <strong id="result-count">43</strong> z 43 udalostí</span>
+          <div class="results-actions">
+            <span>Tip: kliknutím na hlavičku zmeníte triedenie.</span>
+            <button class="details-toggle" type="button" id="toggle-details" aria-controls="event-rows" aria-expanded="false">Rozbaliť podrobnosti udalostí</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table aria-label="Udalosti vojny na Ukrajine">
+            <thead>
+              <tr>
+                <th><button type="button" data-sort="event_date" aria-sort="descending">Dátum</button></th>
+                <th><button type="button" data-sort="theme">Téma</button></th>
+                <th><button type="button" data-sort="title">Udalosť a zdroje</button></th>
+                <th><button type="button" data-sort="significance">Význam</button></th>
+                <th><button type="button" data-sort="confidence">Istota / stav</button></th>
+                <th><button type="button" data-sort="actors">Aktéri</button></th>
+              </tr>
+            </thead>
+            <tbody id="event-rows"></tbody>
+          </table>
+        </div>
+        <div id="empty-state" class="empty">Žiadna udalosť nezodpovedá zvoleným filtrom. Skúste filtre zmeniť alebo zrušiť.</div>
+      </div>
+    </section>
+
+    <section id="methodology" class="section-block" aria-labelledby="methodology-title">
+      <p class="section-eyebrow">Metodika a zdroje</p>
+      <h2 id="methodology-title">Rovnaké pravidlá dôkazov, nie mechanické vyvažovanie</h2>
+      <div class="method-grid">
+        <article class="panel method-card">
+          <h3>Pracovný postup</h3>
+          <ol>
+            <li>Tri oddelené vetvy skúmali vojenskú, politickú a ekonomickú situáciu spätne od cut-offu.</li>
+            <li>Každá vetva navrhla vlastný posledný zlom; spoločný začiatok tvorí najstarší z nich.</li>
+            <li>Do databázy vstúpili iba udalosti meniace trend, potvrdzujúce významný trend alebo vyvracajúce predpoklad.</li>
+            <li>Hlavná kontrola porovnala ID, dátumy, zdroje, rozpory, metodiky čísel a prepojenia trendov.</li>
+          </ol>
+          <p><strong>Grafy neboli vytvorené.</strong> Dostupné územné, stratové, prieskumné a rafinérske rady používajú rozdielne metodiky alebo majú málo porovnateľných bodov. Tabuľka zachováva kontext a nevytvára falošný dojem presnosti.</p>
+        </article>
+        <article class="panel method-card">
+          <h3>Hierarchia dôveryhodnosti</h3>
+          <div class="tier"><span class="tier-mark">A</span><div><strong>Veľmi vysoká</strong><br>Primárny zdroj alebo transparentná metodika v oblasti jeho kompetencie. Pri bojujúcej strane dokazuje najmä vydanie tvrdenia, nie automaticky jeho pravdivosť.</div></div>
+          <div class="tier"><span class="tier-mark">B</span><div><strong>Všeobecne dôveryhodná</strong><br>Profesionálna agentúra, etablované médium alebo odborná inštitúcia s redakčnými štandardmi.</div></div>
+          <div class="tier"><span class="tier-mark">C</span><div><strong>Vyžaduje kontext</strong><br>Použiteľný zdroj pre čiastkové tvrdenie, ktoré potrebuje ďalšie potvrdenie alebo má obmedzený prístup k dôkazom.</div></div>
+          <div class="tier"><span class="tier-mark">D</span><div><strong>Nepoužité ako dôkaz</strong><br>Anonymné agregátory, neoverené vizuály, propagandistické kanály a reposty bez pôvodu.</div></div>
+        </article>
+        <details class="panel method-card" open>
+          <summary>Stav, istota a významnosť</summary>
+          <p><strong>Stav</strong> rozlišuje potvrdenú udalosť, pravdepodobné hodnotenie, spornú informáciu a samotné tvrdenie jednej strany. <strong>Istota</strong> hodnotí dôkaznú stopu. <strong>Významnosť 1–5</strong> hodnotí dopad od lokálneho po strategický. Tri osi sa nesmú zamieňať.</p>
+        </details>
+        <details class="panel method-card" open>
+          <summary>Obmedzenia dát</summary>
+          <ul id="method-limitations"></ul>
+        </details>
+        <details class="panel method-card">
+          <summary>Dátová dostupnosť a reprodukovateľnosť</summary>
+          <p>Úplná databáza je vložená priamo v tomto HTML a obsahovo sa zhoduje so samostatným súborom <code>events.json</code>. Stránka nepotrebuje server, zostavovací proces ani externú knižnicu. Pôvodné zdroje sa otvoria iba po kliknutí na URL a vyžadujú internetové pripojenie.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>Vygenerované 8. septembra 2026 · výskumná uzávierka 8. septembra 14:19:28 UTC</span>
+      <span><a href="#overview">Späť na začiatok</a></span>
+    </div>
+  </footer>
+
+  <script type="application/json" id="events-data">
 {
   "metadata": {
     "title": "Vojna na Ukrajine – databáza udalostí a trendov",
@@ -4460,3 +5023,154 @@
     }
   ]
 }
+  </script>
+  <script>
+    (() => {
+      'use strict';
+      const data = JSON.parse(document.getElementById('events-data').textContent);
+      const events = data.events;
+      const trends = data.trends;
+      const themeLabels = { military: 'Vojenská', politics: 'Politická', economy: 'Ekonomická', 'cross-domain': 'Medzidoménová' };
+      const confidenceLabels = { high: 'Vysoká', medium: 'Stredná', low: 'Nízka' };
+      const statusLabels = { confirmed: 'Potvrdené', likely: 'Pravdepodobné', disputed: 'Sporné', claim_only: 'Tvrdenie strany' };
+      const directionLabels = { rising: 'Rastúci', falling: 'Klesajúci', stable: 'Stabilný', mixed: 'Zmiešaný', emerging: 'Vznikajúci' };
+      const $ = id => document.getElementById(id);
+      const archiveLink = $('archive-link');
+      if (archiveLink && window.location.pathname.split('/').includes('archive')) archiveLink.href = '../';
+      const escapeHtml = value => String(value ?? '').replace(/[&<>'"]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[ch]);
+      const dateSk = value => new Intl.DateTimeFormat('sk-SK', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(value + 'T00:00:00Z'));
+
+      const uniqueSources = new Set(events.flatMap(event => event.evidence.map(item => item.source_url)));
+      $('stat-events').textContent = events.length;
+      $('stat-trends').textContent = trends.length;
+      $('stat-sources').textContent = uniqueSources.size;
+      $('stat-high').textContent = events.filter(event => event.confidence === 'high').length;
+      $('method-limitations').innerHTML = data.metadata.limitations.map(item => `<li>${escapeHtml(item)}</li>`).join('');
+
+      const topEvents = [...events]
+        .filter(event => event.event_date >= data.metadata.analysis_window.start_date)
+        .sort((a, b) => b.significance - a.significance || b.event_date.localeCompare(a.event_date))
+        .slice(0, 6);
+      $('top-events').innerHTML = topEvents.map(event => `
+        <article class="panel event-card">
+          <div class="event-card-head"><span class="pill ${event.theme}">${themeLabels[event.theme]}</span><span>${dateSk(event.event_date)}</span></div>
+          <h3>${escapeHtml(event.title)}</h3>
+          <p>${escapeHtml(event.summary)} <a class="event-ref" href="#event-${escapeHtml(event.id)}">${escapeHtml(event.id)}</a></p>
+          <a class="card-link" href="#event-${escapeHtml(event.id)}">Otvoriť udalosť · ${escapeHtml(event.id)}</a>
+        </article>`).join('');
+
+      $('trend-grid').innerHTML = trends.map(trend => `
+        <article class="panel trend-card">
+          <div class="trend-meta"><span class="pill ${trend.theme}">${themeLabels[trend.theme]}</span><span class="pill ${trend.confidence}">${confidenceLabels[trend.confidence]} istota</span><span class="pill">${directionLabels[trend.direction]}</span></div>
+          <h3>${escapeHtml(trend.title)}</h3>
+          <p>${escapeHtml(trend.assessment)} ${trend.supporting_event_ids.map(id => `<a class="event-ref" href="#event-${escapeHtml(id)}">${escapeHtml(id)}</a>`).join(' ')}</p>
+          <div class="trend-refs">Opora: ${trend.supporting_event_ids.map(id => `<a class="event-ref" href="#event-${escapeHtml(id)}">${escapeHtml(id)}</a>`).join(' ')}</div>
+        </article>`).join('');
+
+      const actors = [...new Set(events.flatMap(event => event.actors))].sort((a, b) => a.localeCompare(b, 'sk'));
+      $('actor').insertAdjacentHTML('beforeend', actors.map(actor => `<option value="${escapeHtml(actor)}">${escapeHtml(actor)}</option>`).join(''));
+
+      const controls = {
+        search: $('search'), theme: $('theme'), from: $('date-from'), to: $('date-to'),
+        significance: $('significance'), confidence: $('confidence'), actor: $('actor')
+      };
+      let sort = { key: 'event_date', direction: 'desc' };
+
+      function haystack(event) {
+        return [event.id, event.title, event.summary, event.subtheme, ...event.geography, ...event.actors, ...event.trend_tags, ...event.evidence.map(item => item.source_name)].join(' ').toLocaleLowerCase('sk');
+      }
+
+      function compare(a, b) {
+        let av, bv;
+        if (sort.key === 'actors') { av = a.actors.join(' '); bv = b.actors.join(' '); }
+        else { av = a[sort.key]; bv = b[sort.key]; }
+        if (typeof av === 'number') return sort.direction === 'asc' ? av - bv : bv - av;
+        const result = String(av).localeCompare(String(bv), 'sk', { numeric: true });
+        return sort.direction === 'asc' ? result : -result;
+      }
+
+      function renderRows() {
+        const query = controls.search.value.trim().toLocaleLowerCase('sk');
+        const filtered = events.filter(event => {
+          if (query && !haystack(event).includes(query)) return false;
+          if (controls.theme.value && event.theme !== controls.theme.value) return false;
+          if (controls.from.value && event.event_date < controls.from.value) return false;
+          if (controls.to.value && event.event_date > controls.to.value) return false;
+          if (event.significance < Number(controls.significance.value)) return false;
+          if (controls.confidence.value && event.confidence !== controls.confidence.value) return false;
+          if (controls.actor.value && !event.actors.includes(controls.actor.value)) return false;
+          return true;
+        }).sort(compare);
+
+        $('event-rows').innerHTML = filtered.map(event => `
+          <tr id="event-${escapeHtml(event.id)}">
+            <td><time datetime="${event.event_date}">${dateSk(event.event_date)}</time>${event.end_date ? `<br>– ${dateSk(event.end_date)}` : ''}</td>
+            <td><span class="pill ${event.theme}">${themeLabels[event.theme]}</span><br><small>${escapeHtml(event.subtheme)}</small></td>
+            <td class="event-title">
+              <strong>${escapeHtml(event.title)}</strong>
+              <p>${escapeHtml(event.summary)} <a class="event-ref" href="#event-${escapeHtml(event.id)}">${escapeHtml(event.id)}</a></p>
+              <span class="event-id">${escapeHtml(event.id)}</span>
+              <details class="source-details">
+                <summary>Zdroje (${event.evidence.length})</summary>
+                <ul>${event.evidence.map(source => `<li><a href="${escapeHtml(source.source_url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.source_name)}</a> <span class="pill">${escapeHtml(source.reliability_tier)}</span><br><small>${escapeHtml(source.claim_supported)}</small></li>`).join('')}</ul>
+              </details>
+              ${event.disputed_points.length ? `<details class="source-details"><summary>Sporné body (${event.disputed_points.length})</summary><ul>${event.disputed_points.map(point => `<li>${escapeHtml(point)}</li>`).join('')}</ul></details>` : ''}
+            </td>
+            <td><span class="sig" title="Významnosť ${event.significance} z 5">${event.significance}</span></td>
+            <td><span class="pill ${event.confidence}">${confidenceLabels[event.confidence]}</span><br><span class="pill ${event.status}">${statusLabels[event.status]}</span><br><small>${escapeHtml(event.confidence_reason)}</small></td>
+            <td class="actor-list">${event.actors.map(escapeHtml).join('<br>')}</td>
+          </tr>`).join('');
+        $('result-count').textContent = filtered.length;
+        $('empty-state').classList.toggle('visible', filtered.length === 0);
+        document.querySelector('.table-wrap').style.display = filtered.length ? 'block' : 'none';
+        $('toggle-details').textContent = 'Rozbaliť podrobnosti udalostí';
+        $('toggle-details').setAttribute('aria-expanded', 'false');
+      }
+
+      Object.values(controls).forEach(control => control.addEventListener(control.type === 'search' ? 'input' : 'change', renderRows));
+      $('filters').addEventListener('reset', () => {
+        setTimeout(() => {
+          controls.from.value = data.metadata.analysis_window.start_date;
+          controls.to.value = data.metadata.analysis_window.end_date;
+          sort = { key: 'event_date', direction: 'desc' };
+          updateSortHeaders();
+          renderRows();
+        });
+      });
+
+      function updateSortHeaders() {
+        document.querySelectorAll('[data-sort]').forEach(button => {
+          button.setAttribute('aria-sort', button.dataset.sort === sort.key ? (sort.direction === 'asc' ? 'ascending' : 'descending') : 'none');
+        });
+      }
+      document.querySelectorAll('[data-sort]').forEach(button => button.addEventListener('click', () => {
+        const key = button.dataset.sort;
+        sort = sort.key === key ? { key, direction: sort.direction === 'asc' ? 'desc' : 'asc' } : { key, direction: key === 'event_date' || key === 'significance' ? 'desc' : 'asc' };
+        updateSortHeaders();
+        renderRows();
+      }));
+
+      $('print-button').addEventListener('click', () => window.print());
+      $('toggle-details').addEventListener('click', event => {
+        const details = [...document.querySelectorAll('#event-rows details.source-details')];
+        const shouldOpen = details.some(item => !item.open);
+        details.forEach(item => { item.open = shouldOpen; });
+        event.currentTarget.textContent = shouldOpen ? 'Zbaliť podrobnosti udalostí' : 'Rozbaliť podrobnosti udalostí';
+        event.currentTarget.setAttribute('aria-expanded', String(shouldOpen));
+      });
+      let printState = [];
+      window.addEventListener('beforeprint', () => {
+        const details = [...document.querySelectorAll('details')];
+        printState = details.map(item => item.open);
+        details.forEach(item => { item.open = true; });
+      });
+      window.addEventListener('afterprint', () => {
+        [...document.querySelectorAll('details')].forEach((item, index) => { item.open = printState[index] ?? item.open; });
+      });
+
+      updateSortHeaders();
+      renderRows();
+    })();
+  </script>
+</body>
+</html>

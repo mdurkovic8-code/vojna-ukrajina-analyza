@@ -1,0 +1,288 @@
+{
+  "trends": [
+    {
+      "id": "TREND-MIL-20260908-001",
+      "theme": "military",
+      "title": "Lokálna ukrajinská iniciatíva pri pokračujúcom ruskom tlaku",
+      "assessment": "Protiútoky podporujú schopnosť Ukrajiny obnovovať pozície; nepreukazujú celkový strategický obrat. Ruské územné zisky zostávajú obmedzené podľa OSINT, ale ruské útoky pokračujú.",
+      "direction": "mixed",
+      "period_start": "2026-08-04",
+      "period_end": "2026-09-08",
+      "supporting_event_ids": [
+        "MIL-20260812-001",
+        "MIL-20260901-001",
+        "MIL-20260901-002"
+      ],
+      "counterevidence_event_ids": [
+        "MIL-20260827-001"
+      ],
+      "indicators_to_watch": [
+        "udržanie obnovených pozícií",
+        "nezávislé hodnotenia územnej kontroly"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "TREND-MIL-20260908-002",
+      "theme": "military",
+      "title": "Vzdušné údery zvyšujú záťaž zázemia",
+      "assessment": "Opakované útoky a zmena dronovej techniky zvyšujú význam ochrany zázemia. Verejné údaje neumožňujú presný výpočet zásob PVO ani porovnateľnej úspešnosti obrany.",
+      "direction": "rising",
+      "period_start": "2026-08-04",
+      "period_end": "2026-09-08",
+      "supporting_event_ids": [
+        "MIL-20260827-001",
+        "MIL-20260908-001"
+      ],
+      "counterevidence_event_ids": [],
+      "indicators_to_watch": [
+        "trvanie opakovaných úderov",
+        "doložené dodávky PVO",
+        "porovnateľnosť hlásení rakiet"
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "events": [
+    {
+      "id": "MIL-20260812-001",
+      "theme": "military",
+      "subtheme": "lokálne protiútoky",
+      "title": "Kyjev zverejnil výsledky protiútoku pri Oleksandrivke",
+      "summary": "Zelenskyj oznámil znovuzískanie 745 km² a 26 obcí počas operácie od januára do augusta. Ide o tvrdenie ukrajinskej strany zverejnené 12. augusta, nie o zisk len v tomto vydaní. ISW podporuje existenciu lokálnych protiútokov, čo samo nepotvrdzuje celý súčet.",
+      "event_date": "2026-08-12",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "juhovýchodná Ukrajina"
+      ],
+      "actors": [
+        "Ozbrojené sily Ukrajiny",
+        "Ozbrojené sily Ruska"
+      ],
+      "significance": 4,
+      "status": "claim_only",
+      "trend_tags": [
+        "lokálne protiútoky"
+      ],
+      "evidence": [
+        {
+          "source_name": "ISW",
+          "source_url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-august-12-2026/",
+          "published_at": "2026-08-12",
+          "accessed_at_utc": "2026-09-08T14:19:28Z",
+          "source_type": "analysis",
+          "reliability_tier": "B",
+          "claim_supported": "Zelenskyj oznámil znovuzískanie 745 km² a 26 obcí počas operácie od januára do augusta. Ide o tvrdenie ukrajinskej strany zverejnené 12. augusta, nie o zisk len v tomto vydaní. ISW podporuje existenciu lokálnych protiútokov, čo samo nepotvrdzuje celý súčet."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Zdroje odlišujú pozorovania od tvrdení strán; presná územná kontrola a účinky útokov zostávajú čiastočne neisté.",
+      "disputed_points": [
+        "Zistenie neoprávňuje odhadovať celkové straty ani budúci výsledok vojny."
+      ],
+      "related_event_ids": [],
+      "quantitative_data": []
+    },
+    {
+      "id": "MIL-20260901-001",
+      "theme": "military",
+      "subtheme": "územná kontrola",
+      "title": "ISW hodnotí augustové ruské územné zisky ako obmedzené",
+      "summary": "Podľa augustovej bilancie ISW ruské sily získavali územie pomaly, bez operačného prielomu. Rozlišovanie obsadenej plochy, infiltrácie a šedej zóny bráni vytvoreniu jednoduchého čistého skóre.",
+      "event_date": "2026-09-01",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Ukrajina"
+      ],
+      "actors": [
+        "Ozbrojené sily Ukrajiny",
+        "Ozbrojené sily Ruska"
+      ],
+      "significance": 4,
+      "status": "likely",
+      "trend_tags": [
+        "územná kontrola"
+      ],
+      "evidence": [
+        {
+          "source_name": "ISW",
+          "source_url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-1-2026/",
+          "published_at": "2026-09-01",
+          "accessed_at_utc": "2026-09-08T14:19:28Z",
+          "source_type": "analysis",
+          "reliability_tier": "B",
+          "claim_supported": "Podľa augustovej bilancie ISW ruské sily získavali územie pomaly, bez operačného prielomu. Rozlišovanie obsadenej plochy, infiltrácie a šedej zóny bráni vytvoreniu jednoduchého čistého skóre."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Zdroje odlišujú pozorovania od tvrdení strán; presná územná kontrola a účinky útokov zostávajú čiastočne neisté.",
+      "disputed_points": [
+        "Zistenie neoprávňuje odhadovať celkové straty ani budúci výsledok vojny."
+      ],
+      "related_event_ids": [],
+      "quantitative_data": []
+    },
+    {
+      "id": "MIL-20260901-002",
+      "theme": "military",
+      "subtheme": "lokálne protiútoky",
+      "title": "Protiútoky pri Lymane narušili ruské postavenie",
+      "summary": "OSW opisuje ústup časti ruských síl po ukrajinských protiútokoch a narušení zásobovania. Časť opustených priestorov zostala šedou zónou; nejde o automaticky potvrdenú ukrajinskú kontrolu. Súčasne pokračoval ruský tlak na ďalších úsekoch.",
+      "event_date": "2026-09-01",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Lyman"
+      ],
+      "actors": [
+        "Ozbrojené sily Ukrajiny",
+        "Ozbrojené sily Ruska"
+      ],
+      "significance": 4,
+      "status": "likely",
+      "trend_tags": [
+        "lokálne protiútoky"
+      ],
+      "evidence": [
+        {
+          "source_name": "OSW",
+          "source_url": "https://www.osw.waw.pl/en/publikacje/analyses/2026-09-01/ukrainian-advances-north-lyman-day-1651-war",
+          "published_at": "2026-09-01",
+          "accessed_at_utc": "2026-09-08T14:19:28Z",
+          "source_type": "analysis",
+          "reliability_tier": "B",
+          "claim_supported": "OSW opisuje ústup časti ruských síl po ukrajinských protiútokoch a narušení zásobovania. Časť opustených priestorov zostala šedou zónou; nejde o automaticky potvrdenú ukrajinskú kontrolu. Súčasne pokračoval ruský tlak na ďalších úsekoch."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Zdroje odlišujú pozorovania od tvrdení strán; presná územná kontrola a účinky útokov zostávajú čiastočne neisté.",
+      "disputed_points": [
+        "Zistenie neoprávňuje odhadovať celkové straty ani budúci výsledok vojny."
+      ],
+      "related_event_ids": [],
+      "quantitative_data": []
+    },
+    {
+      "id": "MIL-20260827-001",
+      "theme": "military",
+      "subtheme": "protivzdušná obrana",
+      "title": "Opakované vzdušné útoky zvyšujú tlak na PVO",
+      "summary": "AP opisuje rozsiahle ruské raketové a dronové útoky a záťaž rýchlejších prúdových dronov. Zásoby protivzdušných striel nie sú verejne auditované; správy o nedostatku nemožno premeniť na presný počet zostávajúcich zásahov.",
+      "event_date": "2026-08-27",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Ukrajina"
+      ],
+      "actors": [
+        "Ozbrojené sily Ukrajiny",
+        "Ozbrojené sily Ruska"
+      ],
+      "significance": 5,
+      "status": "confirmed",
+      "trend_tags": [
+        "protivzdušná obrana"
+      ],
+      "evidence": [
+        {
+          "source_name": "AP",
+          "source_url": "https://apnews.com/article/russia-ukraine-war-drone-missile-attack-c841f3aa849a38ddca94e2dd44556c3a",
+          "published_at": "2026-08-27",
+          "accessed_at_utc": "2026-09-08T14:19:28Z",
+          "source_type": "analysis",
+          "reliability_tier": "B",
+          "claim_supported": "AP opisuje rozsiahle ruské raketové a dronové útoky a záťaž rýchlejších prúdových dronov. Zásoby protivzdušných striel nie sú verejne auditované; správy o nedostatku nemožno premeniť na presný počet zostávajúcich zásahov."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Zdroje odlišujú pozorovania od tvrdení strán; presná územná kontrola a účinky útokov zostávajú čiastočne neisté.",
+      "disputed_points": [
+        "Zistenie neoprávňuje odhadovať celkové straty ani budúci výsledok vojny."
+      ],
+      "related_event_ids": [],
+      "quantitative_data": []
+    },
+    {
+      "id": "MIL-20260907-001",
+      "theme": "military",
+      "subtheme": "územná kontrola",
+      "title": "ISW nepotvrdzuje úplné obsadenie Kosťantynivky",
+      "summary": "ISW uvádza geolokované zábery ukrajinskej prítomnosti a hodnotí ruské tvrdenie o úplnom ovládnutí mesta ako nepodložené. Záznam prítomnosti je dôkazom proti absolútnemu tvrdeniu, nie presným meraním kontroly celého mesta.",
+      "event_date": "2026-09-07",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Kosťantynivka"
+      ],
+      "actors": [
+        "Ozbrojené sily Ukrajiny",
+        "Ozbrojené sily Ruska"
+      ],
+      "significance": 3,
+      "status": "likely",
+      "trend_tags": [
+        "územná kontrola"
+      ],
+      "evidence": [
+        {
+          "source_name": "ISW",
+          "source_url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-7-2026/",
+          "published_at": "2026-09-07",
+          "accessed_at_utc": "2026-09-08T14:19:28Z",
+          "source_type": "analysis",
+          "reliability_tier": "B",
+          "claim_supported": "ISW uvádza geolokované zábery ukrajinskej prítomnosti a hodnotí ruské tvrdenie o úplnom ovládnutí mesta ako nepodložené. Záznam prítomnosti je dôkazom proti absolútnemu tvrdeniu, nie presným meraním kontroly celého mesta."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Zdroje odlišujú pozorovania od tvrdení strán; presná územná kontrola a účinky útokov zostávajú čiastočne neisté.",
+      "disputed_points": [
+        "Zistenie neoprávňuje odhadovať celkové straty ani budúci výsledok vojny."
+      ],
+      "related_event_ids": [],
+      "quantitative_data": []
+    },
+    {
+      "id": "MIL-20260908-001",
+      "theme": "military",
+      "subtheme": "diaľkové údery",
+      "title": "Rusko obnovilo dronové a raketové útoky na Kyjev",
+      "summary": "Reuters informuje o útoku a požiaroch po odchode amerických vyslancov. Podľa starostu zahynuli dvaja ľudia a desať bolo zranených; údaje sú priebežné. Časová následnosť sama nedokazuje politický účel útoku.",
+      "event_date": "2026-09-08",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Kyjev"
+      ],
+      "actors": [
+        "Ozbrojené sily Ukrajiny",
+        "Ozbrojené sily Ruska"
+      ],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": [
+        "diaľkové údery"
+      ],
+      "evidence": [
+        {
+          "source_name": "Reuters cez MarketScreener",
+          "source_url": "https://au.marketscreener.com/news/russia-hits-kyiv-after-brief-pause-for-us-envoys-visit-killing-two-ce785bd8d889fe23",
+          "published_at": "2026-09-08T06:05:00Z",
+          "accessed_at_utc": "2026-09-08T14:19:28Z",
+          "source_type": "analysis",
+          "reliability_tier": "B",
+          "claim_supported": "Reuters informuje o útoku a požiaroch po odchode amerických vyslancov. Podľa starostu zahynuli dvaja ľudia a desať bolo zranených; údaje sú priebežné. Časová následnosť sama nedokazuje politický účel útoku."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Zdroje odlišujú pozorovania od tvrdení strán; presná územná kontrola a účinky útokov zostávajú čiastočne neisté.",
+      "disputed_points": [
+        "Zistenie neoprávňuje odhadovať celkové straty ani budúci výsledok vojny."
+      ],
+      "related_event_ids": [],
+      "quantitative_data": []
+    }
+  ]
+}
