@@ -1,0 +1,311 @@
+{
+  "events": [
+    {
+      "id": "ECO-20260811-001",
+      "theme": "economy",
+      "subtheme": "verejné financie",
+      "title": "Ruský rozpočet vykázal za sedem mesiacov schodok 6,455 bilióna rubľov",
+      "summary": "Predbežné údaje ministerstva financií zverejnené 11. augusta uvádzajú januárový až júlový schodok 6,455 bilióna RUB. Ministerstvo poukazuje na predstihové výdavky. Sedemmesačný schodok nemožno mechanicky previesť na celoročný výsledok.",
+      "event_date": "2026-08-11",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Rusko"
+      ],
+      "actors": [
+        "Interfax"
+      ],
+      "significance": 4,
+      "status": "likely",
+      "trend_tags": [
+        "verejné financie",
+        "financovanie vojny"
+      ],
+      "evidence": [
+        {
+          "source_name": "Interfax",
+          "source_url": "https://www.interfax.ru/business/1108728",
+          "published_at": "2026-08-11",
+          "accessed_at_utc": "2026-09-08T14:19:28Z",
+          "source_type": "news_agency",
+          "reliability_tier": "B",
+          "claim_supported": "Predbežné údaje ministerstva financií zverejnené 11. augusta uvádzajú januárový až júlový schodok 6,455 bilióna RUB. Ministerstvo poukazuje na predstihové výdavky. Sedemmesačný schodok nemožno mechanicky previesť na celoročný výsledok."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Otvorená publikácia obsahuje oficiálne vykázané údaje; nezávislé potvrdenie ich úplnosti chýba.",
+      "disputed_points": [
+        "Údaje vykazuje strana vojny a môžu byť revidované; nejde o nezávislý audit."
+      ],
+      "related_event_ids": [],
+      "quantitative_data": []
+    },
+    {
+      "id": "ECO-20260903-001",
+      "theme": "economy",
+      "subtheme": "palivá a rozpočet",
+      "title": "Augustové palivové kompenzácie ruským rafinériám vzrástli",
+      "summary": "Podľa údajov ministerstva financií sprostredkovaných Interfaxom dostali ropné firmy v auguste 197,3 miliardy RUB v palivových kompenzáciách; júlová výplata bola 113 miliárd. Augustová platba patrí za júl. Mechanizmus reaguje na rozdiel medzi exportnou a domácou cenou, nie priamo na rozsah vojnových škôd.",
+      "event_date": "2026-09-03",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Rusko"
+      ],
+      "actors": [
+        "Interfax"
+      ],
+      "significance": 3,
+      "status": "likely",
+      "trend_tags": [
+        "palivá a rozpočet",
+        "financovanie vojny"
+      ],
+      "evidence": [
+        {
+          "source_name": "Interfax",
+          "source_url": "https://interfax.com/newsroom/top-stories/118978/",
+          "published_at": "2026-09-03",
+          "accessed_at_utc": "2026-09-08T14:19:28Z",
+          "source_type": "news_agency",
+          "reliability_tier": "B",
+          "claim_supported": "Podľa údajov ministerstva financií sprostredkovaných Interfaxom dostali ropné firmy v auguste 197,3 miliardy RUB v palivových kompenzáciách; júlová výplata bola 113 miliárd. Augustová platba patrí za júl. Mechanizmus reaguje na rozdiel medzi exportnou a domácou cenou, nie priamo na rozsah vojnových škôd."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Otvorená publikácia obsahuje oficiálne vykázané údaje; nezávislé potvrdenie ich úplnosti chýba.",
+      "disputed_points": [
+        "Údaje vykazuje strana vojny a môžu byť revidované; nejde o nezávislý audit."
+      ],
+      "related_event_ids": [],
+      "quantitative_data": []
+    },
+    {
+      "id": "ECO-20260827-001",
+      "theme": "economy",
+      "subtheme": "verejný dlh",
+      "title": "Ukrajina zverejnila júlový stav dlhu a nižšie priemerné úročenie",
+      "summary": "Ministerstvo uviedlo k 31. júlu štátny a garantovaný dlh 9 572,19 miliardy UAH. Vážená sadzba štátneho dlhu bola 4,40 % a splatnosť 13,06 roka. Výhodné podmienky zmierňujú obsluhu dlhu, samy nedokazujú jeho dlhodobú udržateľnosť.",
+      "event_date": "2026-08-27",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Ukrajina"
+      ],
+      "actors": [
+        "Ministerstvo financií Ukrajiny"
+      ],
+      "significance": 3,
+      "status": "likely",
+      "trend_tags": [
+        "verejný dlh",
+        "financovanie vojny"
+      ],
+      "evidence": [
+        {
+          "source_name": "Ministerstvo financií Ukrajiny",
+          "source_url": "https://www.mof.gov.ua/en/news/state_and_state-guaranteed_debt_of_ukraine_as_of_the_end_of_july_2026_weighted_average_interest_rate_decreased_to_440-5880",
+          "published_at": "2026-08-27",
+          "accessed_at_utc": "2026-09-08T14:19:28Z",
+          "source_type": "official",
+          "reliability_tier": "A",
+          "claim_supported": "Ministerstvo uviedlo k 31. júlu štátny a garantovaný dlh 9 572,19 miliardy UAH. Vážená sadzba štátneho dlhu bola 4,40 % a splatnosť 13,06 roka. Výhodné podmienky zmierňujú obsluhu dlhu, samy nedokazujú jeho dlhodobú udržateľnosť."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Otvorená publikácia obsahuje oficiálne vykázané údaje; nezávislé potvrdenie ich úplnosti chýba.",
+      "disputed_points": [
+        "Údaje vykazuje strana vojny a môžu byť revidované; nejde o nezávislý audit."
+      ],
+      "related_event_ids": [],
+      "quantitative_data": []
+    },
+    {
+      "id": "ECO-20260807-001",
+      "theme": "economy",
+      "subtheme": "zahraničné financovanie",
+      "title": "Ukrajina oznámila tohtoročnú japonskú rozpočtovú podporu",
+      "summary": "Ministerstvo pri stretnutí s japonským veľvyslancom oznámilo, že v roku 2026 už získalo 850 miliónov USD podpory z Japonska cez projekty Svetovej banky. Ide o kumulatívne oznámenie, nie o novú jednorazovú platbu v deň publikovania.",
+      "event_date": "2026-08-07",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Ukrajina"
+      ],
+      "actors": [
+        "Ministerstvo financií Ukrajiny"
+      ],
+      "significance": 3,
+      "status": "likely",
+      "trend_tags": [
+        "zahraničné financovanie",
+        "financovanie vojny"
+      ],
+      "evidence": [
+        {
+          "source_name": "Ministerstvo financií Ukrajiny",
+          "source_url": "https://mof.gov.ua/en/news/japan_has_already_provided_ukraine_with_usd_850_million_in_budget_support_in_2026__sergii_marchenko_met_with_ambassador_of_japan_to_ukraine-5856",
+          "published_at": "2026-08-07",
+          "accessed_at_utc": "2026-09-08T14:19:28Z",
+          "source_type": "official",
+          "reliability_tier": "A",
+          "claim_supported": "Ministerstvo pri stretnutí s japonským veľvyslancom oznámilo, že v roku 2026 už získalo 850 miliónov USD podpory z Japonska cez projekty Svetovej banky. Ide o kumulatívne oznámenie, nie o novú jednorazovú platbu v deň publikovania."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Otvorená publikácia obsahuje oficiálne vykázané údaje; nezávislé potvrdenie ich úplnosti chýba.",
+      "disputed_points": [
+        "Údaje vykazuje strana vojny a môžu byť revidované; nejde o nezávislý audit."
+      ],
+      "related_event_ids": [],
+      "quantitative_data": []
+    },
+    {
+      "id": "ECO-20260903-002",
+      "theme": "economy",
+      "subtheme": "európske financovanie",
+      "title": "Komisia navrhla ďalšiu čiastočnú platbu cez Ukraine Facility",
+      "summary": "Komisia v návrhu z 3. septembra kladne posúdila časť podmienok žiadosti Ukrajiny a navrhla platbu približne 3,047 miliardy EUR pred zúčtovaním predfinancovania. Dokument je návrhom rozhodnutia, nie dokladom o prijatí peňazí Ukrajinou.",
+      "event_date": "2026-09-03",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Ukrajina"
+      ],
+      "actors": [
+        "Európska komisia – COM(2026)473"
+      ],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": [
+        "európske financovanie",
+        "financovanie vojny"
+      ],
+      "evidence": [
+        {
+          "source_name": "Európska komisia – COM(2026)473",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=comnat:COM_2026_0473_FIN",
+          "published_at": "2026-09-03",
+          "accessed_at_utc": "2026-09-08T14:19:28Z",
+          "source_type": "official",
+          "reliability_tier": "A",
+          "claim_supported": "Komisia v návrhu z 3. septembra kladne posúdila časť podmienok žiadosti Ukrajiny a navrhla platbu približne 3,047 miliardy EUR pred zúčtovaním predfinancovania. Dokument je návrhom rozhodnutia, nie dokladom o prijatí peňazí Ukrajinou."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Primárny dokument potvrdzuje existenciu návrhu; platba nie je potvrdená.",
+      "disputed_points": [
+        "Návrh nie je konečným schválením ani vyplatením."
+      ],
+      "related_event_ids": [],
+      "quantitative_data": []
+    },
+    {
+      "id": "ECO-20260828-001",
+      "theme": "economy",
+      "subtheme": "palivové obmedzenia",
+      "title": "Reuters hlási obnovené palivové obmedzenia a pokles výroby benzínu",
+      "summary": "Reuters 28. augusta podľa dvoch odvetvových zdrojov odhadol ruskú výrobu benzínu približne na 70 % domácej spotreby. Skoršia správa z 19. augusta dokumentovala nákupné limity a rady na moskovských pumpách. Odhad výroby nie je audit; dostupnosť ovplyvňujú aj zásoby, dovozy a sezónny dopyt.",
+      "event_date": "2026-08-28",
+      "date_precision": "exact",
+      "end_date": null,
+      "geography": [
+        "Rusko"
+      ],
+      "actors": [
+        "ruské rafinérie",
+        "predajcovia palív"
+      ],
+      "significance": 4,
+      "status": "likely",
+      "trend_tags": [
+        "palivá",
+        "diaľkové údery",
+        "ekonomické opotrebovanie"
+      ],
+      "evidence": [
+        {
+          "source_name": "Reuters cez Devdiscourse",
+          "source_url": "https://www.devdiscourse.com/article/international/3969142-exclusive-russias-gasoline-output-drops-to-70-of-domestic-demand-late-in-august-after-drone-attacks-sources-say",
+          "published_at": "2026-08-28",
+          "accessed_at_utc": "2026-09-08T14:19:28Z",
+          "source_type": "news_agency",
+          "reliability_tier": "B",
+          "claim_supported": "Dva anonymné odvetvové zdroje odhadujú výrobu benzínu na približne 70 % domácej spotreby."
+        },
+        {
+          "source_name": "Reuters cez Euronext",
+          "source_url": "https://live.euronext.com/en/financial-news/moscows-fuel-stations-limit-sales-amid-shortages",
+          "published_at": "2026-08-19",
+          "accessed_at_utc": "2026-09-08T14:19:28Z",
+          "source_type": "news_agency",
+          "reliability_tier": "B",
+          "claim_supported": "Pozorovania reportérov a informácie predajcov potvrdzujú limity a rady; nepotvrdzujú presnosť odhadu výroby."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Priame svedectvá podporujú existenciu nedostatku, nie anonymný celoštátny odhad výroby. Obe správy sú od Reuters, nejde o dve nezávislé redakcie.",
+      "disputed_points": [
+        "Podiel 70 % nie je oficiálna štatistika ani pokles výroby o 70 %.",
+        "Pokles výroby nemožno stotožniť s rovnakým výpadkom konečnej spotreby.",
+        "Presný príspevok útokov oproti sezónnemu dopytu a údržbe nie je oddelený."
+      ],
+      "related_event_ids": [],
+      "quantitative_data": [
+        {
+          "metric": "odhad výroby benzínu voči domácej spotrebe",
+          "value": 70,
+          "unit": "%",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-08-28"
+        }
+      ]
+    }
+  ],
+  "trends": [
+    {
+      "id": "TREND-ECO-20260908-001",
+      "theme": "economy",
+      "title": "Ruské verejné financie nesú vyššiu záťaž",
+      "assessment": "Nové vykázané údaje o schodku a palivových kompenzáciách ukazujú pokračovanie fiškálneho tlaku. Samy nedokazujú krízu platobnej schopnosti ani presný podiel vojenských úderov.",
+      "direction": "rising",
+      "period_start": "2026-08-04",
+      "period_end": "2026-09-08",
+      "supporting_event_ids": [
+        "ECO-20260811-001",
+        "ECO-20260903-001",
+        "ECO-20260828-001"
+      ],
+      "counterevidence_event_ids": [],
+      "indicators_to_watch": [
+        "revízie rozpočtu",
+        "skutočné výplaty palivových kompenzácií",
+        "náklady domáceho financovania"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "TREND-ECO-20260908-002",
+      "theme": "economy",
+      "title": "Zvýhodnené zahraničné zdroje naďalej podopierajú ukrajinské financovanie",
+      "assessment": "Japonská podpora a podmienky dlhu ukazujú pokračujúcu oporu partnerov. Septembrový návrh EÚ naznačuje ďalší zdroj, ktorého vyplatenie treba ešte potvrdiť.",
+      "direction": "stable",
+      "period_start": "2026-08-04",
+      "period_end": "2026-09-08",
+      "supporting_event_ids": [
+        "ECO-20260827-001",
+        "ECO-20260807-001",
+        "ECO-20260903-002"
+      ],
+      "counterevidence_event_ids": [],
+      "indicators_to_watch": [
+        "schválenie a vyplatenie návrhu EÚ",
+        "úrokové a kurzové riziko dlhu",
+        "plnenie reformných podmienok"
+      ],
+      "confidence": "medium"
+    }
+  ]
+}

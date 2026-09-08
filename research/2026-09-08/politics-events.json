@@ -1,0 +1,290 @@
+{
+  "events": [
+    {
+      "id": "POL-20260819-001",
+      "theme": "politics",
+      "subtheme": "Rada obsadila rezorty obrany a zahraničia",
+      "event_date": "2026-08-19",
+      "date_precision": "exact",
+      "end_date": null,
+      "title": "Rada obsadila rezorty obrany a zahraničia",
+      "summary": "Rada vymenovala Jevhenija Chmaru za ministra obrany a Andrija Sybihu za ministra zahraničia. Formálne obsadenie funkcií nepreukazuje odstránenie vnútropolitických sporov.",
+      "geography": [
+        "Ukrajina"
+      ],
+      "actors": [
+        "Verchovna rada",
+        "Jevhenij Chmara",
+        "Andrij Sybiha"
+      ],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": [
+        "politické riadenie vojny"
+      ],
+      "evidence": [
+        {
+          "source_name": "Verchovna rada – hlasovania 19. augusta",
+          "source_url": "https://meeting.rada.gov.ua/work/vote/en/pz-20260819",
+          "published_at": "2026-08-19",
+          "accessed_at_utc": "2026-09-08T14:19:28Z",
+          "source_type": "official",
+          "reliability_tier": "A",
+          "claim_supported": "Rada vymenovala Jevhenija Chmaru za ministra obrany a Andrija Sybihu za ministra zahraničia. Formálne obsadenie funkcií nepreukazuje odstránenie vnútropolitických sporov."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Primárny zdroj potvrdzuje udalosť; jej širšie dôsledky sa nedajú automaticky odvodiť.",
+      "disputed_points": [],
+      "related_event_ids": [],
+      "quantitative_data": [
+        {
+          "metric": "hlasy za Chmaru",
+          "value": 312,
+          "unit": "hlasov",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-08-19"
+        },
+        {
+          "metric": "hlasy za Sybihu",
+          "value": 266,
+          "unit": "hlasov",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-08-19"
+        }
+      ]
+    },
+    {
+      "id": "POL-20260825-001",
+      "theme": "politics",
+      "subtheme": "Meduza opisuje tlak zamestnávateľov na volebnú účasť",
+      "event_date": "2026-08-25",
+      "date_precision": "exact",
+      "end_date": null,
+      "title": "Meduza opisuje tlak zamestnávateľov na volebnú účasť",
+      "summary": "Podľa Meduzy prezidentská administratíva rozširuje tlak cez manažérov na účasť zamestnancov v septembrových voľbách. Konkrétny celoštátny rozsah nebol nezávisle potvrdený.",
+      "geography": [
+        "Rusko"
+      ],
+      "actors": [
+        "Prezidentská administratíva Ruska"
+      ],
+      "significance": 3,
+      "status": "claim_only",
+      "trend_tags": [
+        "politické riadenie vojny"
+      ],
+      "evidence": [
+        {
+          "source_name": "Meduza",
+          "source_url": "https://meduza.io/en/feature/2026/08/25/the-kremlin-is-sending-mobilizers-to-psychology-classes-to-help-boost-turnout-in-russia-s-elections",
+          "published_at": "2026-08-25",
+          "accessed_at_utc": "2026-09-08T14:19:28Z",
+          "source_type": "media",
+          "reliability_tier": "B",
+          "claim_supported": "Podľa Meduzy prezidentská administratíva rozširuje tlak cez manažérov na účasť zamestnancov v septembrových voľbách. Konkrétny celoštátny rozsah nebol nezávisle potvrdený."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Zdroj dokladá verejný výrok alebo reportované tvrdenie, nie jeho úplnú vecnú platnosť.",
+      "disputed_points": [],
+      "related_event_ids": [],
+      "quantitative_data": []
+    },
+    {
+      "id": "POL-20260828-001",
+      "theme": "politics",
+      "subtheme": "Levada zaznamenala čiastočné zotavenie hodnotenia pomerov",
+      "event_date": "2026-08-28",
+      "date_precision": "exact",
+      "end_date": null,
+      "title": "Levada zaznamenala čiastočné zotavenie hodnotenia pomerov",
+      "summary": "Levada v augustovom prieskume uvádza 76 % schvaľovanie Putinovej činnosti a 56 % respondentov hodnotiacich smerovanie krajiny kladne. Zlepšenie oproti začiatku leta bráni interpretácii monotónneho poklesu podpory.",
+      "geography": [
+        "Rusko"
+      ],
+      "actors": [
+        "Levada-Centr",
+        "Vladimir Putin"
+      ],
+      "significance": 3,
+      "status": "confirmed",
+      "trend_tags": [
+        "politické riadenie vojny"
+      ],
+      "evidence": [
+        {
+          "source_name": "Levada-Centr – augustové ratingy",
+          "source_url": "https://www.levada.ru/2026/08/28/reitingi-avgusta-2026-goda/",
+          "published_at": "2026-08-28",
+          "accessed_at_utc": "2026-09-08T14:19:28Z",
+          "source_type": "poll",
+          "reliability_tier": "A",
+          "claim_supported": "Levada v augustovom prieskume uvádza 76 % schvaľovanie Putinovej činnosti a 56 % respondentov hodnotiacich smerovanie krajiny kladne. Zlepšenie oproti začiatku leta bráni interpretácii monotónneho poklesu podpory."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Primárny zdroj potvrdzuje udalosť; jej širšie dôsledky sa nedajú automaticky odvodiť.",
+      "disputed_points": [
+        "Zber 18.–28. augusta 2026: 1 600 dospelých, osobné rozhovory doma v 137 sídlach a 50 subjektoch RF.",
+        "Otázka sa pýta na všeobecné schvaľovanie Putinovej činnosti vo funkcii prezidenta, nie na podporu vojny.",
+        "Represia a sociálna žiaducnosť môžu ovplyvňovať odpovede; výsledky nie sú priamo porovnateľné s ukrajinskou dôverou."
+      ],
+      "related_event_ids": [],
+      "quantitative_data": [
+        {
+          "metric": "schvaľovanie Putinovej činnosti vo vzorke Levada",
+          "value": 76,
+          "unit": "%",
+          "value_type": "estimate",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-08-28"
+        },
+        {
+          "metric": "veľkosť vzorky Levada",
+          "value": 1600,
+          "unit": "respondentov",
+          "value_type": "exact",
+          "lower_bound": null,
+          "upper_bound": null,
+          "as_of_date": "2026-08-28"
+        }
+      ]
+    },
+    {
+      "id": "POL-20260903-001",
+      "theme": "politics",
+      "subtheme": "Putin odmietol aktuálnu potrebu ďalšej mobilizácie",
+      "event_date": "2026-09-03",
+      "date_precision": "exact",
+      "end_date": null,
+      "title": "Putin odmietol aktuálnu potrebu ďalšej mobilizácie",
+      "summary": "Podľa Le Monde Putin 3. septembra vo Vladivostoku tvrdil, že k danému dňu nie je scenár vyžadujúci mobilizáciu. Časovo obmedzený výrok nie je zárukou ďalšieho postupu.",
+      "geography": [
+        "Rusko"
+      ],
+      "actors": [
+        "Vladimir Putin"
+      ],
+      "significance": 3,
+      "status": "claim_only",
+      "trend_tags": [
+        "politické riadenie vojny"
+      ],
+      "evidence": [
+        {
+          "source_name": "Le Monde",
+          "source_url": "https://www.lemonde.fr/en/international/article/2026/09/06/putin-war-leader-and-election-campaign-chief-prepares-russia-for-military-escalation_6757224_4.html",
+          "published_at": "2026-09-06",
+          "accessed_at_utc": "2026-09-08T14:19:28Z",
+          "source_type": "media",
+          "reliability_tier": "B",
+          "claim_supported": "Podľa Le Monde Putin 3. septembra vo Vladivostoku tvrdil, že k danému dňu nie je scenár vyžadujúci mobilizáciu. Časovo obmedzený výrok nie je zárukou ďalšieho postupu."
+        }
+      ],
+      "confidence": "medium",
+      "confidence_reason": "Zdroj dokladá verejný výrok alebo reportované tvrdenie, nie jeho úplnú vecnú platnosť.",
+      "disputed_points": [],
+      "related_event_ids": [],
+      "quantitative_data": []
+    },
+    {
+      "id": "POL-20260906-001",
+      "theme": "politics",
+      "subtheme": "V Kyjeve sa obnovili rokovania s americkými vyslancami",
+      "event_date": "2026-09-06",
+      "date_precision": "exact",
+      "end_date": null,
+      "title": "V Kyjeve sa obnovili rokovania s americkými vyslancami",
+      "summary": "Zelenskyj rokoval s Witkoffom a Kushnerom; súčasťou širšieho formátu boli európski bezpečnostní poradcovia. Diskusia o zárukách nepredstavuje ich schválenie a územné otázky zostali otvorené.",
+      "geography": [
+        "Ukrajina a Rusko"
+      ],
+      "actors": [
+        "Volodymyr Zelenskyj",
+        "Steve Witkoff",
+        "Jared Kushner"
+      ],
+      "significance": 4,
+      "status": "confirmed",
+      "trend_tags": [
+        "politické riadenie vojny"
+      ],
+      "evidence": [
+        {
+          "source_name": "Prezident Ukrajiny",
+          "source_url": "https://www.president.gov.ua/en/news/vidnovlennya-peregovornogo-procesu-ye-vazhlivim-i-ukrayina-v-106273",
+          "published_at": "2026-09-07",
+          "accessed_at_utc": "2026-09-08T14:19:28Z",
+          "source_type": "official",
+          "reliability_tier": "A",
+          "claim_supported": "Zelenskyj rokoval s Witkoffom a Kushnerom; súčasťou širšieho formátu boli európski bezpečnostní poradcovia. Diskusia o zárukách nepredstavuje ich schválenie a územné otázky zostali otvorené."
+        },
+        {
+          "source_name": "AP",
+          "source_url": "https://apnews.com/article/russia-ukraine-war-kyiv-missiles-drones-attacks-fd634a6786462bc95b7dfefc97d2331e",
+          "published_at": "2026-09-08",
+          "accessed_at_utc": "2026-09-08T14:19:28Z",
+          "source_type": "media",
+          "reliability_tier": "B",
+          "claim_supported": "Rokovania amerických vyslancov nepriniesli významný prielom na zastavenie bojov."
+        }
+      ],
+      "confidence": "high",
+      "confidence_reason": "Primárny zdroj potvrdzuje udalosť; jej širšie dôsledky sa nedajú automaticky odvodiť.",
+      "disputed_points": [
+        "Priebežne aktualizovaný článok AP sa používa iba na výsledok rokovaní 6.–7. septembra, nie na neskôr doplnené vojenské počty."
+      ],
+      "related_event_ids": [],
+      "quantitative_data": []
+    }
+  ],
+  "trends": [
+    {
+      "id": "TREND-POL-NEW-001",
+      "theme": "politics",
+      "title": "Inštitucionálne obsadenie a diplomatická aktivita",
+      "assessment": "Ukrajina dokončila obsadenie rezortov a obnovila kontakt s americkými vyslancami. Nejde o dôkaz trvalého vnútropolitického upokojenia ani o uzavretie mierovej dohody.",
+      "direction": "mixed",
+      "period_start": "2026-08-04",
+      "period_end": "2026-09-08",
+      "supporting_event_ids": [
+        "POL-20260819-001",
+        "POL-20260906-001"
+      ],
+      "counterevidence_event_ids": [],
+      "indicators_to_watch": [
+        "overiteľné vykonávacie rozhodnutia",
+        "ďalšie porovnateľné prieskumy",
+        "konkrétne výsledky rokovaní"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "TREND-POL-NEW-002",
+      "theme": "politics",
+      "title": "Ruská kontrola pred voľbami a neistá mobilizačná perspektíva",
+      "assessment": "Správa o tlaku na účasť a opatrné mobilizačné vyjadrenie kontrastujú s vysokým deklarovaným schvaľovaním. Augustové zotavenie prieskumov je protidôkazom bezprostredného kolapsu legitimity.",
+      "direction": "mixed",
+      "period_start": "2026-08-04",
+      "period_end": "2026-09-08",
+      "supporting_event_ids": [
+        "POL-20260825-001",
+        "POL-20260828-001",
+        "POL-20260903-001"
+      ],
+      "counterevidence_event_ids": [],
+      "indicators_to_watch": [
+        "overiteľné vykonávacie rozhodnutia",
+        "ďalšie porovnateľné prieskumy",
+        "konkrétne výsledky rokovaní"
+      ],
+      "confidence": "medium"
+    }
+  ]
+}
